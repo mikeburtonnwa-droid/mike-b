@@ -1,0 +1,79 @@
+[
+  {
+    "argv": [
+      "python3",
+      "/Users/michaelburton/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/skills/agent-architect"
+    ],
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "stdout": "Skill is valid!\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/michaelburton/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/skills/architecture-delivery"
+    ],
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "stdout": "Skill is valid!\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/michaelburton/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/skills/data-discovery"
+    ],
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "stdout": "Skill is valid!\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/michaelburton/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/skills/evidence-curation"
+    ],
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "stdout": "Skill is valid!\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/michaelburton/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/skills/operations-review"
+    ],
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "stdout": "Skill is valid!\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/michaelburton/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/skills/process-discovery"
+    ],
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "stdout": "Skill is valid!\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/michaelburton/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/skills/workflow-design"
+    ],
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "stdout": "Skill is valid!\n",
+    "stderr": "",
+    "returncode": 0
+  }
+]

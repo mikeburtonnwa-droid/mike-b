@@ -6,6 +6,7 @@ from datetime import date
 from pathlib import Path
 from .core import Invalid, Project, context, impact
 from . import workflow
+from . import __version__
 
 
 def load(path):
@@ -14,6 +15,7 @@ def load(path):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description='Agent Architect local project tools (Python 3.10+, macOS/Linux).')
+    parser.add_argument('--version', action='version', version='agent-architect ' + __version__)
     parser.add_argument('--project', required=True, help='Adopter project directory, separate from the public library')
     parser.add_argument('--actor', default='local-user')
     sub = parser.add_subparsers(dest='command', required=True)

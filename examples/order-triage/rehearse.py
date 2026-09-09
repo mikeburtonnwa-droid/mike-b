@@ -318,8 +318,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
-    build(Rehearsal(args.output))
+    try:
+        build(Rehearsal(args.output))
+    except Invalid as exc:
+        print('Cannot run rehearsal: ' + str(exc), file=sys.stderr)
+        return 2
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(main())

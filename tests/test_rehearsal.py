@@ -46,8 +46,9 @@ class RehearsalTests(unittest.TestCase):
             marker.write_text('keep this')
             run = subprocess.run([sys.executable, str(ROOT / 'examples/order-triage/rehearse.py'),
                                   '--output', directory], capture_output=True, text=True)
-            self.assertNotEqual(run.returncode, 0)
+            self.assertEqual(run.returncode, 2)
             self.assertIn('never overwritten', run.stderr)
+            self.assertNotIn('Traceback', run.stderr)
             self.assertEqual(marker.read_text(), 'keep this')
             self.assertEqual(list(Path(directory).iterdir()), [marker])
 

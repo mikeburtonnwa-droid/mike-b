@@ -22,3 +22,7 @@ Validation is specific to the cases and environment recorded. A successful run d
 Check that another person can identify when to use it, supply the inputs, and recognize completion. Remove generic advice that does not change the agent's decisions. Include missing-input behavior and external action boundaries where relevant.
 
 Open relative links and check any skill's frontmatter. For behavioral validation, run one typical case and one relevant edge case, then record what actually happened using [the evaluation template](templates/evaluation.md). Never invent test results.
+
+For library changes, run `python3 -S scripts/check_library.py` and `python3 -S -m unittest discover -s tests -v`. Preserve the existing behavioral regressions and add meaningful new cases when a consequential behavior changes. The suite includes the real SQLite rehearsal, not only structural fixtures. Follow [release verification](docs/RELEASE.md) and the [bounded review protocol](docs/DEVELOPMENT.md) for a reviewed release. Capture reviewer commands incrementally so exceptions do not discard their evidence.
+
+Keep adopter interviews, schemas and credentials in their private project. Public examples must be synthetic or explicitly cleared for publication. Original library contributions use the repository's [MIT license](LICENSE); do not copy restricted reference texts into the library.

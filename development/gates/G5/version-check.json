@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "python3",
+    "-S",
+    "scripts/aa.py",
+    "--version"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started_at": "2026-09-09T13:02:37.504690+00:00",
+  "state": "completed",
+  "returncode": 0,
+  "stdout": "agent-architect 0.1.0\n",
+  "stderr": "",
+  "finished_at": "2026-09-09T13:02:37.555257+00:00"
+}

@@ -2,6 +2,8 @@
 
 Clone this library into a directory your agent can read. Use a tool-enabled agent application with file and terminal access. Skill installation is optional: an explicit instruction to read the guide works without changing your application's configuration.
 
+If you need the clone command or want to run the local checks first, see [release instructions](docs/RELEASE.md). [Anatomy](docs/ANATOMY.md) explains where specifications, memory, decisions, tools and tests belong.
+
 Copy this prompt and replace the two paths. Supply your first interview, existing design or problem statement in the same session when available:
 
 > Read `<absolute-library-path>/skills/agent-architect/SKILL.md` and use it to guide my work. Keep my project in `<absolute-private-project-path>`, outside the public library. My problem is: … . Inspect existing artifacts first. Maintain the map, evidence, decisions and checkpoint as we work. Show me the most useful next artifact and consequential unknowns in plain language. Preserve my existing authorizations.

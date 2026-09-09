@@ -2,6 +2,8 @@
 
 Requires Python 3.10+ on macOS or Linux (uses POSIX file locking). No third-party Python packages, model API keys or network calls. The agent-facing interface is JSON; the [guide skill](../skills/agent-architect/SKILL.md) manages it for the user. `render` prints Markdown. Exit 1 denotes a completed check with blockers; exit 2 denotes an input/integrity/precommit error. Inspect JSON status even for exit 0.
 
+`python3 scripts/aa.py --version` prints the library version without requiring a project. Use an absolute script path when invoking the CLI from another directory. `python3 -S` also works; site packages are not needed.
+
 Run from the library root, or use the absolute path to `scripts/aa.py` from anywhere. Choose a project directory outside the public repository. The examples below use `/tmp/aa-project` for disposable practice; use a durable private directory for real work.
 
 ```sh

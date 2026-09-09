@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "-S",
+    "scripts/check_library.py"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started_at": "2026-09-09T13:04:05.550422+00:00",
+  "state": "completed",
+  "returncode": 0,
+  "stdout": "{\n  \"status\": \"pass\",\n  \"documents\": 44,\n  \"local_links\": 122,\n  \"skills\": 7,\n  \"errors\": [],\n  \"limits\": \"Checks file destinations and basic name/description only; excludes fenced examples and historical development records. Does not verify external URLs, heading anchors or full YAML semantics.\"\n}\n",
+  "stderr": "",
+  "finished_at": "2026-09-09T13:04:05.596724+00:00"
+}
