@@ -1,0 +1,19 @@
+candidate {"sha256": "e8a00bad2799cdb17ea8dd2567bc9d87984d2e6d94945054d37f138f040478ef", "entries": 44, "matches_current": true}
+proposed_only_current_coverage_rejected True
+archived_only_current_coverage_rejected True
+valid_handoff_passes_and_normalized_missing_payload_fails True
+missing_provenance_fails_and_captured_schema_passes True
+sql_parameters_assets_rewrites_rejected True
+new_query_needs_new_result {"original_rows": [[1, 10], [2, 20]], "new_rows": [[1, 10]], "old_binding_rejected": true, "new_binding_passed": true}
+asset_drift_blocks_readiness_and_warns_in_context True
+evaluation_binding_receipts_and_latest_outcome True
+brief_binding_invalidates_old_evidence True
+stale_critical_knowledge_rejected True
+original_artifacts_preserved_and_candidate_unchanged True
+same_source_exact_alias_and_reformatted_identity_replays_rejected True
+older_run_import_order_cannot_promote_evidence True
+timezone_equivalent_pass_failure_tie_remains_blocked True
+strictly_later_fresh_identity_pass_restores_readiness True
+canonical_uuid_timezone_and_utc_date_enforced True
+incident_replay_blocked_and_fresh_later_recovery_closes True
+r2_artifacts_preserved_and_r3_candidate_unchanged True

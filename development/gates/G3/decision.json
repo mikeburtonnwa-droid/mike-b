@@ -1,0 +1,40 @@
+{
+  "gate": "G3",
+  "verdict": "PASS",
+  "time": "2026-09-09T12:10:30.251491+00:00",
+  "orchestrator": "/root",
+  "candidate": "candidate-r3.json",
+  "candidate_hash": "e8a00bad2799cdb17ea8dd2567bc9d87984d2e6d94945054d37f138f040478ef",
+  "reviews": [
+    {
+      "role": "product",
+      "verdict": "APPROVE",
+      "report": "product-r3.md",
+      "hash": "3c357ad7f3d06a52b48cc1c39216883d4004d95e68750c4b3af84a8deacd6122"
+    },
+    {
+      "role": "integrity",
+      "verdict": "APPROVE",
+      "report": "integrity-r3.md",
+      "hash": "78fdfab9a0af79e1e062428b2ffa3d6043cce985e412b45b5c31bb70b8ae78ed"
+    },
+    {
+      "role": "architecture",
+      "verdict": "APPROVE",
+      "report": "architecture-r3.md",
+      "hash": "5ffb855a0115659829d456c30e7b1a7c8ab25cc9148c828d84fac8aef3261a4f"
+    }
+  ],
+  "previous_gates": [
+    {
+      "gate": "G2",
+      "hash": "c4e45bb89d5e93b0c0748c504c338fd706729c3136b1bbaad8d099527451a150"
+    }
+  ],
+  "reason": "All three independent reviewers approve revision 3. Initial structural/provenance/journey defects and the later execution-replay blocker are resolved with preserved negative cases. Eighty-four regression tests pass; independent SQLite, CLI, replay, timestamp, persistence and lifecycle probes pass.",
+  "rework": [
+    "rework.md",
+    "rework-r3.md"
+  ],
+  "scope": "Process/data/architecture/evaluation/release/incident functions and guide skills. Authorizes G4 synthetic and fresh-context rehearsal; no real deployment sign-off."
+}
