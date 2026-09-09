@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "python3",
+    "-S",
+    "scripts/check_council.py",
+    "G5",
+    "--current"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started_at": "2026-09-09T13:25:19.130408+00:00",
+  "state": "completed",
+  "returncode": 0,
+  "stdout": "{\n  \"gate\": \"G5\",\n  \"status\": \"pass\",\n  \"messages\": 8,\n  \"reviewers\": 3,\n  \"current_candidate_checked\": true,\n  \"limit\": \"Recorded agreement and local integrity; does not prove review quality or message delivery.\"\n}\n",
+  "stderr": "",
+  "finished_at": "2026-09-09T13:25:19.363706+00:00"
+}

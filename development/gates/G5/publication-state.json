@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "gh",
+    "repo",
+    "view",
+    "mikeburtonnwa-droid/mike-b",
+    "--json",
+    "nameWithOwner,url,visibility,defaultBranchRef"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started_at": "2026-09-09T13:23:41.948974+00:00",
+  "state": "completed",
+  "returncode": 0,
+  "stdout": "{\"defaultBranchRef\":{\"name\":\"main\"},\"nameWithOwner\":\"mikeburtonnwa-droid/mike-b\",\"url\":\"https://github.com/mikeburtonnwa-droid/mike-b\",\"visibility\":\"PUBLIC\"}\n",
+  "stderr": "",
+  "finished_at": "2026-09-09T13:23:42.475327+00:00"
+}
