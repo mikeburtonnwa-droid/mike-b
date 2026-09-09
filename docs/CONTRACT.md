@@ -26,7 +26,7 @@ Requirements link to process elements and claims and define acceptance criteria 
 
 Evaluations link to requirements/components, define expected behavior and record observed outcome, run time, status, environment, artifact evidence and the record revision or relevant dependency hashes they exercised. Changed dependencies invalidate applicability. A release is an immutable snapshot of checked records and evaluation evidence. Activation records an explicit release ID; newer knowledge cannot silently rewrite the active snapshot. A later change yields drift/impact findings and a candidate release. Rollback activates an existing checked release and records the action. Historical release availability does not imply current fitness; activation checks source/evaluation integrity and reports current drift.
 
-Incidents link to deployed release and affected elements, record symptom, evidence, diagnosis, action, authority, verification and follow-up. Closing requires verification evidence. Permission expansion and acceptance-criterion weakening are not recovery actions. This library records/simulates a deployment decision; real infrastructure release requires the connected runtime and actual authorization.
+Incidents link to a release and affected elements, recording symptom, evidence, diagnosis, action, authority, verification and follow-up. Closing requires verification evidence. Permission expansion and acceptance-criterion weakening are not recovery actions. This library records/simulates a deployment decision; real infrastructure release requires the connected runtime and actual authorization.
 
 ## Usability contract
 

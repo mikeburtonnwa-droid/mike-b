@@ -184,8 +184,9 @@ def process_check(state, view='current'):
         errors.append(f'{view}: map requires start and end nodes')
     graph = {k: {e['to'] for e in r['edges']} for k, r in nodes.items()}
     for rid, r in nodes.items():
-        if any(unknown(r[f]) for f in ('actor', 'system', 'boundary', 'variant')):
-            errors.append(f'{rid}: unknown actor/system/boundary/variant')
+        missing = [f for f in ('actor', 'system', 'boundary', 'variant') if unknown(r[f])]
+        if missing:
+            errors.append(f'{rid}: unknown ' + ', '.join(missing))
         if not r['inputs'] or not r['outputs'] or any(unknown(x) for x in r['inputs'] + r['outputs']):
             errors.append(f'{rid}: unresolved inputs/outputs')
         if r['kind'] != 'end' and not r['edges']:
@@ -512,12 +513,15 @@ def render(state, as_of, view='current'):
     def safe(value):
         return html.escape(str(value), quote=True).replace('|', '&#124;').replace('\n', ' ')
     nodes = [r for r in active(state, 'process') if r['view'] == view]
+    activation = ('Active local simulation: **' + safe(state['active_release']) + '**. No infrastructure deployment is recorded here.'
+                  if state.get('active_release') else 'No local simulation is activated. No infrastructure deployment is recorded here.')
     out = [f'# {safe(state["title"])} — {view} state', '',
-           f'Derived from revision {state["revision"]}; as of {as_of}. Deployment mode: **local-simulation**.', '',
+           f'Derived from revision {state["revision"]}; as of {as_of}.', '', activation, '',
            '```mermaid', 'flowchart TD']
     for r in sorted(nodes, key=lambda r: r['id']):
         label = safe(f'{r["id"]}: {r["title"]} / {r["actor"]}')
-        out.append(f'  {r["id"]}["{label}"]')
+        opening, closing = ('{"', '"}') if r['kind'] == 'decision' else ('(["', '"])') if r['kind'] in {'start', 'end'} else ('["', '"]')
+        out.append(f'  {r["id"]}{opening}{label}{closing}')
     for r in sorted(nodes, key=lambda r: r['id']):
         for e in r['edges']:
             out.append(f'  {r["id"]} -->|"{safe(e["kind"] + ": " + e["condition"])}"| {e["to"]}')
@@ -526,18 +530,29 @@ def render(state, as_of, view='current'):
     for r in nodes:
         out.append('| ' + ' | '.join(safe(x) for x in [r['id']+' / '+r['variant'], f'{r["actor"]} / {r["system"]} / {r["boundary"]}',
                   ', '.join(r['inputs'])+' → '+', '.join(r['outputs']), ', '.join(sorted(dependencies(r)))]) + ' |')
-    out += ['', '## Gaps and coverage', ''] + ['- ' + safe(x) for x in process_check(state, view)['errors']]
+    errors = process_check(state, view)['errors']
+    out += ['', '## Gaps and coverage', ''] + (['- ' + safe(x) for x in errors] if errors else ['No structural gaps found in the declared map.'])
     out += ['', '## Handoffs and paths', '', '| From → to | Kind / condition | Payload | Receiver |', '| --- | --- | --- | --- |']
     for r in nodes:
         for e in r['edges']:
             out.append('| ' + ' | '.join(safe(x) for x in [r['id']+' → '+e['to'],e['kind']+' / '+e['condition'],e['payload'],e['receiver']]) + ' |')
-    out += ['', '## Declared coverage', '', '| Dimension / value | Status | Steps | Source locators / gap |', '| --- | --- | --- | --- |']
+    out += ['', '## Declared coverage', '', 'Covered means an attributed account exists for the declared step; it does not establish exhaustive or independently verified coverage.', '', '| Dimension / value | Status | Steps | Source locators / gap |', '| --- | --- | --- | --- |']
     for r in active(state, 'coverage'):
         evidence = '; '.join(e['source']+' '+e['locator'] for e in r.get('evidence', []))
         out.append('| ' + ' | '.join(safe(x) for x in [r['dimension']+' / '+r['value'],r['status'],', '.join(r['steps']),evidence+' '+r.get('gap','')]) + ' |')
     out += ['', '## Knowledge', '', '| Claim | Status / freshness | Sources and locators |', '| --- | --- | --- |']
     for r in active(state, 'claim'):
         out.append(f'| {safe(r["id"] + ": " + r["assertion"])} | {r["status"]} / {freshness(r, as_of)} | ' + safe('; '.join(e['source']+' '+e['locator'] for e in r['evidence'])) + ' |')
-    out += ['', '## Resume', '', safe(json.dumps(state.get('checkpoint', {}), ensure_ascii=False)), '',
-            'Structural checks cannot prove that every stakeholder or real exception has been discovered.', '']
+    checkpoint = state.get('checkpoint', {})
+    out += ['', '## Resume', '']
+    if checkpoint:
+        out += ['Current task: ' + safe(checkpoint['current_task']), '', 'Stage: ' + safe(checkpoint['stage']), '',
+                'Next action: **' + safe(checkpoint['next_action']) + '**', '', 'Completed:', '']
+        out += ['- ' + safe(x) for x in checkpoint['completed']] or ['- None recorded.']
+        out += ['', 'Unresolved:', '']
+        out += ['- ' + safe(x) for x in checkpoint['unresolved']] or ['- None recorded; reassess when new evidence arrives.']
+        out += ['', 'Relevant records: ' + ', '.join(safe(x) for x in checkpoint['relevant_ids'])]
+    else:
+        out.append('No checkpoint saved. Capture the current task, unresolved questions and next action before handing off.')
+    out += ['', 'Structural checks cannot prove that every stakeholder or real exception has been discovered.', '']
     return '\n'.join(out)

@@ -36,7 +36,7 @@ class WorkflowTests(unittest.TestCase):
     def test_complete_structural_fixture_passes_and_renders(self):
         self.assertEqual(self.check()['errors'], [])
         view = w.render(self.p.read(), DATE)
-        for text in ('local-simulation', 'P2', 'operations / requests / internal', 'S1 line 1', 'rejected'):
+        for text in ('No local simulation is activated', 'P2', 'operations / requests / internal', 'S1 line 1', 'rejected'):
             self.assertIn(text, view)
         self.assertEqual(self.p.audit()['status'], 'pass')
 

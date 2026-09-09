@@ -1,0 +1,5 @@
+{
+  "cardinality": [["north", "R1"], ["north", "R2"], ["north", "R3"], ["south", "R4"]],
+  "isolation": [],
+  "routing": [["north", "R1", "fulfillment"], ["north", "R2", "finance-review"], ["north", "R3", "service-desk"], ["south", "R4", "fulfillment"]]
+}

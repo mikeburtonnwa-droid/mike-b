@@ -24,6 +24,7 @@ Checks expose missing declared structure and outdated evidence. They cannot prov
 | Professional perspectives and handoffs | [Skills](skills/README.md) |
 | Record model and commands | [Records](docs/RECORDS.md), [CLI](docs/CLI.md), [contract](docs/CONTRACT.md) |
 | Methods and their limits | [Professional references](references/professional-methods.md) |
+| Reproduce the ten-stakeholder journey | [Executed order-triage example](examples/order-triage/README.md) |
 | This build's requirements, reviews and rework | [Development plan](development/PLAN.md), [gate records](development/gates/) |
 | Lightweight, standalone prompts | [Seeds](seeds/README.md), [templates](templates/) |
 
