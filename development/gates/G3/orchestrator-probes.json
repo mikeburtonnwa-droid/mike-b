@@ -1,0 +1,32 @@
+[
+  {
+    "case": "record_release_namespace_collision",
+    "observed": true,
+    "expected": false
+  },
+  {
+    "case": "query_rewrite_retains_execution",
+    "observed": "executed",
+    "expected": "rejected or new execution evidence"
+  },
+  {
+    "case": "new_stakeholder_without_declared_coverage",
+    "observed": "pass",
+    "expected": "fail"
+  },
+  {
+    "case": "stale_evaluation_context_warning",
+    "observed": [],
+    "expected": "evaluation dependencies changed warning"
+  },
+  {
+    "case": "later_failure_cannot_hide_behind_old_pass",
+    "observed": "pass",
+    "expected": "fail"
+  },
+  {
+    "case": "new_critical_requirement_absent_from_old_release",
+    "observed": "saved",
+    "expected": "blocked"
+  }
+]

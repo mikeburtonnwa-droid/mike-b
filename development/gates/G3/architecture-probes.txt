@@ -1,0 +1,21 @@
+{"expected": "local simulation, immutable snapshot, no critical drift", "observed": {"active": "REL1", "audit": "pass", "changed": [], "mode": "local-simulation", "snapshot_unchanged": true}, "passed": true, "probe": "release_activation_and_note"}
+{"expected": "reject and leave HEAD unchanged", "observed": {"error": "Activation blocked: REQ: no passing applicable evaluation of criterion and implementing components; changed COMP", "head_unchanged": true, "rejected": true}, "passed": true, "probe": "changed_dependency_rollback"}
+{"expected": "original release unchanged", "observed": true, "passed": true, "probe": "snapshot_after_component_change"}
+{"expected": "reject globally reused stable ID", "observed": {"head_unchanged": false, "id_in_records_and_releases": true, "rejected": false}, "passed": false, "probe": "release_id_collision_put"}
+{"expected": "reject globally reused stable ID", "observed": {"head_unchanged": false, "id_in_records_and_releases": true, "rejected": false}, "passed": false, "probe": "release_id_collision_source"}
+{"expected": "reject globally reused stable ID", "observed": {"head_unchanged": false, "id_in_records_and_releases": true, "rejected": false}, "passed": false, "probe": "release_id_collision_evaluate"}
+{"expected": "fail readiness until a subsequent passing run resolves the failure", "observed": {"later_result": "fail", "readiness": "pass", "selected": ["EV1"]}, "passed": false, "probe": "later_failed_critical_run"}
+{"expected": "reject and leave HEAD unchanged", "observed": {"head_unchanged": false, "rejected": false}, "passed": false, "probe": "release_after_later_failed_run"}
+{"expected": "new passing run restores readiness", "observed": {"selected": ["RECOVERED_RUN"], "status": "pass"}, "passed": true, "probe": "passing_run_after_failure"}
+{"expected": "reject and leave HEAD unchanged", "observed": {"head_unchanged": false, "rejected": false}, "passed": false, "probe": "activate_after_later_failed_run"}
+{"expected": "reject and leave HEAD unchanged", "observed": {"head_unchanged": false, "rejected": false}, "passed": false, "probe": "incident_future_captured_evidence"}
+{"expected": "incident remains open", "observed": "closed", "passed": false, "probe": "incident_future_capture_status"}
+{"expected": "close with applicable recovery evidence", "observed": {"audit": "pass", "status": "closed"}, "passed": true, "probe": "valid_incident_recovery"}
+{"expected": "reject and leave HEAD unchanged", "observed": {"error": "Stale revision: expected 4, current 5; reread and reconcile", "head_unchanged": true, "rejected": true}, "passed": true, "probe": "stale_release_revision"}
+{"expected": "unapplied release failure preserves history", "observed": {"audit": "pass", "error": true, "release_absent": true, "unchanged": true}, "passed": true, "probe": "pre_head_release_fault"}
+{"expected": "explicit visible local-simulation commit uncertainty", "observed": {"commit_matches": true, "mode": "local-simulation", "present": true, "status": "committed-durability-uncertain"}, "passed": true, "probe": "post_head_release_fault"}
+{"expected": "exit 2 JSON error without mutation", "observed": {"exit": 2, "head_unchanged": true, "json_error": true}, "passed": true, "probe": "malformed_evaluation_16"}
+{"expected": "exit 2 JSON error without mutation", "observed": {"exit": 2, "head_unchanged": true, "json_error": true}, "passed": true, "probe": "malformed_evaluation_17"}
+{"expected": "exit 2 JSON error without mutation", "observed": {"exit": 2, "head_unchanged": true, "json_error": true}, "passed": true, "probe": "malformed_evaluation_18"}
+{"expected": "exit 2 JSON error without mutation", "observed": {"exit": 2, "head_unchanged": true, "json_error": true}, "passed": true, "probe": "malformed_evaluation_19"}
+{"failed": 8, "passed": 12, "total": 20}

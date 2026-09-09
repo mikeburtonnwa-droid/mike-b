@@ -1,0 +1,13 @@
+candidate {"sha256": "0023c1931ce0b089325966a06fbcfa7fbdf851c6cc37eb478cfc16ccc1617be3", "entries": 42, "matches_current": true}
+baseline {"process": "pass", "readiness": "pass"}
+current_coverage_using_only_proposed_steps {"process_status": "pass", "errors": [], "readiness": "pass"}
+current_coverage_using_archived_step {"process_status": "pass", "readiness": "fail"}
+boundary_change_requires_valid_handoff True
+normalized_missing_handoff_payload pass
+data_without_provenance {"readiness": "pass", "context_ids": ["TABLE"], "data_has_evidence": false}
+executed_query_positive {"rows": [[1, 10], [2, 20]], "readiness": "pass", "schema_impact": ["QUERY", "TABLE"]}
+query_environment_and_source_kind_negative_checks True
+executed_query_reuses_result_after_sql_change {"old_rows": [[1, 10], [2, 20]], "actual_new_rows": [[1, 10]], "stored_status": "executed", "result_source": "QUERY_RESULT", "readiness": "pass"}
+evaluation_result_criterion_targets_and_dependency_binding True
+stale_critical_knowledge_rejected True
+candidate_unchanged True

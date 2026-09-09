@@ -1,0 +1,12 @@
+candidate {"sha256": "b31b54410b38b01152facc471906a8c6d09bb392ae22513787bcd17c64d3e5fe", "entries": 43, "matches_current": true}
+proposed_only_current_coverage_rejected True
+archived_only_current_coverage_rejected True
+valid_handoff_passes_and_normalized_missing_payload_fails True
+missing_provenance_fails_and_captured_schema_passes True
+sql_parameters_assets_rewrites_rejected True
+new_query_needs_new_result {"original_rows": [[1, 10], [2, 20]], "new_rows": [[1, 10]], "old_binding_rejected": true, "new_binding_passed": true}
+asset_drift_blocks_readiness_and_warns_in_context True
+evaluation_binding_receipts_and_latest_outcome True
+brief_binding_invalidates_old_evidence True
+stale_critical_knowledge_rejected True
+original_artifacts_preserved_and_candidate_unchanged True

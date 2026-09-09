@@ -1,9 +1,15 @@
 # Skills
 
-| Skill | Capability | Status |
+Start with [agent-architect](agent-architect/SKILL.md). It selects these bounded methods and maintains formal handoffs:
+
+| Skill | Professional perspective | Output |
 | --- | --- | --- |
-| [Workflow design](workflow-design/SKILL.md) | Turn a recurring task into an executable specification | Draft |
+| [Process discovery](process-discovery/SKILL.md) | Qualitative research, anthropological observation, process analysis | Evidence-linked current map and coverage gaps |
+| [Evidence curation](evidence-curation/SKILL.md) | Research/provenance stewardship | Attributed current knowledge, conflicts and impact |
+| [Data discovery](data-discovery/SKILL.md) | Data analysis/engineering | Grain, schema/query lineage and executed evidence |
+| [Architecture delivery](architecture-delivery/SKILL.md) | Architecture, implementation and evaluation | Proposed workflow, decisions, components and tests |
+| [Operations review](operations-review/SKILL.md) | Reliability and release review | Checked simulation release and verified recovery |
 
-Each skill lives in a named folder with a `SKILL.md` entrypoint. Add scripts, references, or assets inside the skill only when they serve the capability.
+These are methods and review perspectives, not replicas of named professionals. Each defines inputs, outputs, handoff and failure behavior, with selective [references](../references/professional-methods.md). The guide works through one agent by default. Cloning does not install anything; load the guide explicitly or use your host's supported skill installation.
 
-The starter workflow-design skill links to shared repository files. Keep the repository available when using it. If packaging that skill independently, bundle its referenced files and update the links first. Your agent tool determines how skills are discovered or installed.
+[Workflow design](workflow-design/SKILL.md) remains a lightweight standalone specification skill for the original seed exercises. Use the guide when you need canonical project records and end-to-end traceability.

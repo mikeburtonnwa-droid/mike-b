@@ -1,0 +1,18 @@
+# Professional methods and source register
+
+Reviewed for this library: 2026-09-09. Recheck the authoritative source when adapting to a regulated domain or a changed platform. These are selective public references, not a complete professional library, copied standards, certification or conformance evidence. The operational rules below are **local interpretations**; the source defines its own normative status.
+
+| ID / perspective | Authoritative reference / edition | Applied here | Limit and recheck trigger |
+| --- | --- | --- | --- |
+| REF-ANTH / qualitative discovery | [American Anthropological Association ethics](https://americananthro.org/about/anthropological-ethics/) | Separate observation/interpretation; consider participant context, sharing constraints and excluded voices | Ethical principles, not proof of valid fieldwork; recheck domain/institution policy |
+| REF-PROC / process analysis | [OMG BPMN 2.0.2](https://www.omg.org/spec/BPMN/2.0.2) | Explicit activities/decisions, responsibility, flows and boundaries | Our Mermaid/JSON is a local simplified representation, not BPMN interchange or conformance |
+| REF-PROV / evidence stewardship | [W3C PROV overview, 2013 Note](https://www.w3.org/TR/prov-overview/) | Attribute source entities, interpretation/verification activities and actors; preserve derivation | Local ID/hash model does not implement the complete PROV ontology |
+| REF-ARCH / architecture review | [ISO/IEC/IEEE 42010:2022 public abstract](https://www.iso.org/standard/74393.html) | Explicit stakeholder concerns, architecture views and rationale | Public abstract only; no claim of reviewing the paywalled standard or conformance |
+| REF-RISK / evaluation and operations | [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | Identify context, measure behavior, manage residual issues and accountability | Adaptation aid; passing library checks is not an AI RMF assessment |
+| REF-EVAL / agent evaluation | [OpenAI agent evals](https://developers.openai.com/api/docs/guides/agent-evals), [Anthropic evaluation engineering](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) | Task-specific criteria, executed outcomes, traces and failure analysis | Vendor guidance; refresh for actual model/host; no cross-model empirical claim here |
+| REF-CONTEXT / knowledge and memory | [Anthropic context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Retrieve selected evidence and maintain resumable state outside conversation | Vendor guidance; lexical retrieval is not exhaustive semantic search |
+| REF-SKILL / workflow packaging | [Matt Pocock skills](https://github.com/mattpocock/skills) | Concrete tasks and useful artifacts/handoffs; selectively loaded methods | Inspiration from inspected public material; independent implementation, no endorsement or copied professional twin |
+
+Data discovery uses locally defined grain/key/cardinality/reconciliation checks tied to actual database documentation and the adopter's environment. Load that database's official SQL/schema documentation when needed; no generic reference establishes the semantics of an unfamiliar table. Domain rules, privacy constraints, safety criteria and retention policy come from the actual organization or relevant authoritative source.
+
+Record project-specific references as captured research/document sources with original URL/edition, exact locator, capture/effective date where known and applicability. Keep authority, freshness and certainty separate. When a reference changes, assess impact before replacing claims or releasing updated work.

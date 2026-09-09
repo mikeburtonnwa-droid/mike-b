@@ -1,0 +1,7 @@
+skills/agent-architect/SKILL.md: Skill is valid!
+skills/architecture-delivery/SKILL.md: Skill is valid!
+skills/data-discovery/SKILL.md: Skill is valid!
+skills/evidence-curation/SKILL.md: Skill is valid!
+skills/operations-review/SKILL.md: Skill is valid!
+skills/process-discovery/SKILL.md: Skill is valid!
+skills/workflow-design/SKILL.md: Skill is valid!

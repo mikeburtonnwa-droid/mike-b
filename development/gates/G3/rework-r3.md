@@ -1,0 +1,11 @@
+# G3 rework, revision 3
+
+Revision 2 received product and integrity approvals, but architecture found an execution-replay bypass. The gate stayed blocked. All prior opinions/probes/candidates are preserved.
+
+An old successful captured result could be imported with a new evaluation ID after a same-day failure, acquiring a later recorded revision without a new execution. The fix gives each executed case a canonical UUID run_id and timezone-aware run_at in captured result JSON; run_on must match its UTC date. The evaluation retains run identity, execution timestamp and captured result-content hash. Duplicate run identities or content-addressed aliases are rejected atomically. Reformatting the same JSON does not evade run-ID uniqueness.
+
+Readiness and incident closure now order by execution timestamp, not import order. Backfilling a previously unimported older result cannot promote it. Every result tied at the latest execution time must pass applicability; a tied failure requires a strictly later passing execution. recorded_revision remains audit metadata and selects a representative only among equally timed passing results. Declared execution metadata is not external authentication; the runner must faithfully produce it.
+
+Six added regressions cover identical-source and content-alias replay, reformatted run-ID replay, old-run backfill, tied pass/fail results, incident replay and genuine later recovery, and malformed run identity/time. The earlier failed rebind assertions were restored by checking target/criterion/brief mismatch before duplicate-run detection, preserving useful error specificity. Product's nonblocking query error message now explicitly directs changed executed queries to a new ID and execution.
+
+Validation: all 84 tests pass in development/G3-rework-r3-tests-final.txt. The initial revision-3 output with two message-expectation failures is retained. This round changes the execution evidence protocol; all three reviewers must re-review candidate-r3.json. Adapt new positive runs to emit run_id/run_at from the executed procedure. Replay probes must reuse the original source content unchanged, including identity and time, to test the actual bypass. No G4 work has begun.

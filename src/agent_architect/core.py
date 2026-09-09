@@ -16,6 +16,7 @@ import tempfile
 from contextlib import contextmanager
 from datetime import date, datetime, timezone
 from pathlib import Path
+from . import schema
 
 
 class Invalid(ValueError):
@@ -75,11 +76,18 @@ REQUIRED = {
 STATUSES = {'source': {'captured'},
             'claim': {'reported', 'inferred', 'verified', 'disputed', 'superseded'},
             'note': {'active', 'archived'}, 'issue': {'open', 'resolved'}}
+SPECS.update(schema.SPECS)
+REQUIRED.update(schema.REQUIRED)
+STATUSES.update(schema.STATUSES)
 
 
 def dependencies(record):
     """Knowledge prerequisites, excluding process control flow and symmetric conflicts."""
-    return set(record.get('depends_on', [])) | {x['source'] for x in record.get('evidence', [])}
+    refs = set(record.get('depends_on', [])) | {x['source'] for x in record.get('evidence', [])}
+    for field in schema.REFS.get(record['type'], {}):
+        value = record.get(field, [])
+        refs.update([value] if isinstance(value, str) else value)
+    return refs
 
 
 def closure(records, roots):
@@ -152,6 +160,8 @@ def validate_record(record):
         text(record.get('resolution'), f'{rid}.resolution')
         if not record.get('evidence'):
             raise Invalid(f'{rid}: resolved issue needs evidence')
+    from .workflow import validate_workflow_record
+    validate_workflow_record(record)
 
 
 def validate_state(state):
@@ -160,6 +170,17 @@ def validate_state(state):
     if state.get('stage') not in {'intake', 'discovery', 'design', 'build', 'release', 'operate'}:
         raise Invalid('Invalid stage')
     records = state['records']
+    if set(records) & set(state.get('releases', {})):
+        raise Invalid('Stable IDs must be unique across records and releases')
+    for label in ('title', 'scope', 'owner'):
+        text(state.get(label), 'project.' + label)
+    for e in state.get('brief_evidence', []):
+        if not isinstance(e, dict) or set(e) != {'source', 'locator'}:
+            raise Invalid('Brief evidence requires source and locator')
+        identifier(e['source'])
+        text(e['locator'], 'brief evidence locator')
+        if records.get(e['source'], {}).get('type') != 'source':
+            raise Invalid('Brief evidence must reference captured sources')
     for rid, record in records.items():
         validate_record(record)
         if rid != record['id']:
@@ -204,6 +225,8 @@ def validate_state(state):
     for rid in checkpoint.get('relevant_ids', []):
         if rid not in records:
             raise Invalid(f'Checkpoint references missing record {rid}')
+    from .workflow import validate_workflow_state
+    validate_workflow_state(state)
 
 
 def atomic(path, data):
@@ -351,11 +374,27 @@ class Project:
             for record in incoming:
                 validate_record(record)
                 rid = record['id']
+                if rid in state['releases']:
+                    raise Invalid('Stable ID already belongs to a release')
                 old = state['records'].get(rid)
                 if record['type'] == 'source' or (old and old['type'] == 'source'):
                     raise Invalid('Sources are immutable; use source to capture a new record')
                 if old and old['type'] != record['type']:
                     raise Invalid(f'{rid}: cannot change record type')
+                if record['type'] == 'evaluation':
+                    raise Invalid('Evaluations are immutable; use evaluate to bind captured results')
+                if record['type'] == 'query':
+                    if old and old.get('result_source') and {k:v for k,v in record.items() if k != 'status'} != {k:v for k,v in old.items() if k != 'status'}:
+                        raise Invalid('Executed query identity is immutable; archive and create a new query version')
+                    if record['status'] == 'executed' and record != old:
+                        raise Invalid('Use bind-query for a draft; changed executed queries require a new query ID and execution')
+                if record['type'] == 'incident':
+                    if record['status'] == 'closed' or (old and old['status'] == 'closed'):
+                        raise Invalid('Use close-incident; closed incident history is immutable')
+                    if record.get('verification'):
+                        raise Invalid('Use close-incident to bind verification')
+                    if old and any(record[f] != old[f] for f in ('release', 'affected', 'environment', 'recovery_criterion', 'opened_on')):
+                        raise Invalid('Incident scope and recovery criterion are immutable; open a separately linked incident')
                 if record['type'] == 'claim':
                     if old and old.get('superseded_by'):
                         raise Invalid(f'{rid}: superseded history is immutable')
@@ -381,7 +420,7 @@ class Project:
             record['effective_on'] = effective_on
         validate_record(record)
         def update(state):
-            if rid in state['records']:
+            if rid in state['records'] or rid in state['releases']:
                 raise Invalid(f'ID already exists: {rid}')
             (self.path / 'sources').mkdir(exist_ok=True)
             p = self.path / record['blob']
@@ -392,6 +431,18 @@ class Project:
                 atomic(p, content)
             state['records'][rid] = record
         return self.mutate('source ' + rid, update, expected, actor)
+
+    def brief(self, value, expected, actor='local-user'):
+        if not isinstance(value, dict) or set(value) != {'title', 'scope', 'owner', 'rationale', 'evidence'}:
+            raise Invalid('Brief requires title, scope, owner, rationale and captured evidence')
+        for field in ('title', 'scope', 'owner', 'rationale'):
+            text(value[field], 'brief.' + field)
+        if not isinstance(value['evidence'], list) or not value['evidence']:
+            raise Invalid('Brief clarification requires captured source evidence')
+        def update(state):
+            state.update(title=value['title'], scope=value['scope'], owner=value['owner'],
+                         brief_rationale=value['rationale'], brief_evidence=copy.deepcopy(value['evidence']))
+        return self.mutate('update project brief', update, expected, actor)
 
     def supersede(self, old_id, new_id, reason, expected, actor='local-user'):
         text(reason, 'supersession rationale')
@@ -443,6 +494,7 @@ def context(state, query='', as_of=None):
     roots = {rid for rid, r in records.items()
              if (not words and r.get('status') != 'superseded') or (words and
                  any(w in json.dumps(r, ensure_ascii=False).casefold() for w in words))}
+    roots |= {e['source'] for e in state.get('brief_evidence', [])}
     selected = closure(records, roots)
     # Dependencies, replacements and conflicts reach one common fixed point.
     while True:
@@ -455,6 +507,18 @@ def context(state, query='', as_of=None):
     warnings, active, historical = [], [], []
     for rid in sorted(selected):
         r = copy.deepcopy(records[rid])
+        if r['status'] == 'archived':
+            historical.append(r)
+            warnings.append(f'{rid}: archived; dependent records may need revision')
+            continue
+        if r['type'] == 'evaluation':
+            from .workflow import applicable
+            r['applicability_errors'] = applicable(state, r, as_of, r['environment'])
+            warnings.extend(f'{rid}: {x}' for x in r['applicability_errors'])
+        if r['type'] == 'query' and r['status'] == 'executed':
+            from .workflow import query_fingerprint
+            if digest(query_fingerprint(state, rid)) != r['execution_hash']:
+                warnings.append(f'{rid}: executed query dependencies changed')
         if r['type'] == 'claim':
             r['freshness'] = freshness(r, as_of)
             if r['status'] == 'superseded':
@@ -465,9 +529,10 @@ def context(state, query='', as_of=None):
                 warnings.append(f'{rid}: {r["status"]}, freshness={r["freshness"]}')
         active.append(r)
     return dict(project=state['title'], revision=state['revision'], as_of=as_of,
-                stage=state['stage'], checkpoint=state['checkpoint'], query=query,
+                brief={k: state.get(k) for k in ('title','scope','owner','brief_evidence','brief_rationale')},
+                stage=state['stage'], checkpoint=state.get('checkpoint', {}), query=query,
                 records=active, historical_dependencies=historical, warnings=warnings,
-                active_release=state['active_release'], deployment_mode='local-simulation')
+                active_release=state.get('active_release'), deployment_mode='local-simulation')
 
 
 def impact(state, rid):

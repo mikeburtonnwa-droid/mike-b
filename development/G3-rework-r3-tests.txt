@@ -1,0 +1,115 @@
+test_applicability_cannot_be_superseded (test_core.CoreTests.test_applicability_cannot_be_superseded) ... ok
+test_assertion_rewrite_fails (test_core.CoreTests.test_assertion_rewrite_fails) ... ok
+test_capture_is_content_addressed_and_auditable (test_core.CoreTests.test_capture_is_content_addressed_and_auditable) ... ok
+test_changed_scope_requires_new_claim (test_core.CoreTests.test_changed_scope_requires_new_claim) ... ok
+test_claim_requires_source_and_locator (test_core.CoreTests.test_claim_requires_source_and_locator) ... ok
+test_cli_from_unrelated_working_directory (test_core.CoreTests.test_cli_from_unrelated_working_directory) ... ok
+test_cli_missing_project_is_nonzero_json_error (test_core.CoreTests.test_cli_missing_project_is_nonzero_json_error) ... ok
+test_cold_resume_preserves_pending_work (test_core.CoreTests.test_cold_resume_preserves_pending_work) ... ok
+test_conflicts_must_be_bilateral_and_not_verified (test_core.CoreTests.test_conflicts_must_be_bilateral_and_not_verified) ... ok
+test_date_status_is_explicit (test_core.CoreTests.test_date_status_is_explicit) ... ok
+test_deleted_source_fails (test_core.CoreTests.test_deleted_source_fails) ... ok
+test_dependency_cycle_rejected (test_core.CoreTests.test_dependency_cycle_rejected) ... ok
+test_duplicate_batch_ids_rejected (test_core.CoreTests.test_duplicate_batch_ids_rejected) ... ok
+test_explicit_supersession_preserves_history_and_context (test_core.CoreTests.test_explicit_supersession_preserves_history_and_context) ... ok
+test_failure_before_head_does_not_publish_partial_commit (test_core.CoreTests.test_failure_before_head_does_not_publish_partial_commit) ... ok
+test_forward_links_are_atomic (test_core.CoreTests.test_forward_links_are_atomic) ... ok
+test_history_tampering_blocks_writes (test_core.CoreTests.test_history_tampering_blocks_writes) ... ok
+test_init_never_overwrites (test_core.CoreTests.test_init_never_overwrites) ... ok
+test_invalid_batch_rolls_back (test_core.CoreTests.test_invalid_batch_rolls_back) ... ok
+test_invalid_shapes_are_structured_cli_errors (test_core.CoreTests.test_invalid_shapes_are_structured_cli_errors) ... ok
+test_post_commit_fault_has_explicit_visible_outcome (test_core.CoreTests.test_post_commit_fault_has_explicit_visible_outcome) ... ok
+test_process_lock_and_killed_writer_recovery (test_core.CoreTests.test_process_lock_and_killed_writer_recovery) ... ok
+test_replacement_conflict_fixed_point (test_core.CoreTests.test_replacement_conflict_fixed_point) ... ok
+test_source_records_are_immutable (test_core.CoreTests.test_source_records_are_immutable) ... ok
+test_source_tampering_blocks_read_and_mutation (test_core.CoreTests.test_source_tampering_blocks_read_and_mutation) ... ok
+test_stale_expected_revision_cannot_lose_an_update (test_core.CoreTests.test_stale_expected_revision_cannot_lose_an_update) ... ok
+test_supersession_chain_reaches_latest (test_core.CoreTests.test_supersession_chain_reaches_latest) ... ok
+test_symlink_source_fails (test_core.CoreTests.test_symlink_source_fails) ... ok
+test_unknown_fields_and_bad_types_rejected (test_core.CoreTests.test_unknown_fields_and_bad_types_rejected) ... ok
+test_verified_claim_needs_verification_and_dates (test_core.CoreTests.test_verified_claim_needs_verification_and_dates) ... ok
+test_denial_cannot_be_overridden_by_example (test_council.CouncilTests.test_denial_cannot_be_overridden_by_example) ... ok
+test_early_decision_rejected (test_council.CouncilTests.test_early_decision_rejected) ... ok
+test_missing_predecessor_rejected (test_council.CouncilTests.test_missing_predecessor_rejected) ... ok
+test_missing_reviewer_fails (test_council.CouncilTests.test_missing_reviewer_fails) ... ok
+test_missing_timestamp_rejected (test_council.CouncilTests.test_missing_timestamp_rejected) ... ok
+test_path_escape_rejected (test_council.CouncilTests.test_path_escape_rejected) ... ok
+test_real_recorded_gate (test_council.CouncilTests.test_real_recorded_gate) ... ok
+test_tampered_approval_fails (test_council.CouncilTests.test_tampered_approval_fails) ... ok
+test_tampered_transcript_fails (test_council.CouncilTests.test_tampered_transcript_fails) ... ok
+test_wrong_candidate_approval_rejected (test_council.CouncilTests.test_wrong_candidate_approval_rejected) ... ok
+test_brief_change_invalidates_evaluations_and_old_release_activation (test_g3_regressions.G3RegressionTests.test_brief_change_invalidates_evaluations_and_old_release_activation) ... ok
+test_brief_clarification_resumes_with_provenance_and_keeps_history (test_g3_regressions.G3RegressionTests.test_brief_clarification_resumes_with_provenance_and_keeps_history) ... ok
+test_context_warns_on_changed_evaluation_and_evaluate_reports_failure (test_g3_regressions.G3RegressionTests.test_context_warns_on_changed_evaluation_and_evaluate_reports_failure) ... ok
+test_current_coverage_rejects_proposed_archived_and_unmatched_actors (test_g3_regressions.G3RegressionTests.test_current_coverage_rejects_proposed_archived_and_unmatched_actors) ... ok
+test_data_needs_captured_provenance_for_release (test_g3_regressions.G3RegressionTests.test_data_needs_captured_provenance_for_release) ... ok
+test_future_captured_incident_evidence_and_later_failure_cannot_close (test_g3_regressions.G3RegressionTests.test_future_captured_incident_evidence_and_later_failure_cannot_close) ... ok
+test_later_failure_blocks_release_activation_and_recovers_on_later_pass (test_g3_regressions.G3RegressionTests.test_later_failure_blocks_release_activation_and_recovers_on_later_pass) ... ok
+test_missing_payload_sentinel_and_rendered_handoff (test_g3_regressions.G3RegressionTests.test_missing_payload_sentinel_and_rendered_handoff) ... ok
+test_new_consequential_requirement_blocks_old_snapshot (test_g3_regressions.G3RegressionTests.test_new_consequential_requirement_blocks_old_snapshot) ... ok
+test_release_namespace_is_unique_in_every_creation_direction (test_g3_regressions.G3RegressionTests.test_release_namespace_is_unique_in_every_creation_direction) ... ok
+test_same_day_run_order_uses_execution_time_not_id (test_g3_regressions.G3RegressionTests.test_same_day_run_order_uses_execution_time_not_id) ... ok
+test_sql_parameters_assets_and_asset_drift_cannot_reuse_execution (test_g3_regressions.G3RegressionTests.test_sql_parameters_assets_and_asset_drift_cannot_reuse_execution) ... ok
+test_duplicate_run_id_survives_reformatted_json (test_run_identity.RunIdentityTests.test_duplicate_run_id_survives_reformatted_json) ... ok
+test_import_order_cannot_promote_older_previously_unimported_run (test_run_identity.RunIdentityTests.test_import_order_cannot_promote_older_previously_unimported_run) ... ok
+test_old_source_and_content_alias_cannot_resolve_later_failure (test_run_identity.RunIdentityTests.test_old_source_and_content_alias_cannot_resolve_later_failure) ... ok
+test_recovery_replay_cannot_close_incident (test_run_identity.RunIdentityTests.test_recovery_replay_cannot_close_incident) ... ok
+test_run_timestamp_and_identity_are_validated (test_run_identity.RunIdentityTests.test_run_timestamp_and_identity_are_validated) ... ok
+test_same_time_conflict_requires_a_strictly_later_success (test_run_identity.RunIdentityTests.test_same_time_conflict_requires_a_strictly_later_success) ... ok
+test_boundary_handoff_payload_and_owner_required (test_workflow.WorkflowTests.test_boundary_handoff_payload_and_owner_required) ... ok
+test_changed_dependency_blocks_incident_closure (test_workflow.WorkflowTests.test_changed_dependency_blocks_incident_closure) ... ok
+test_cli_check_fails_with_nonzero_and_schema_is_discoverable (test_workflow.WorkflowTests.test_cli_check_fails_with_nonzero_and_schema_is_discoverable) ... ok
+test_complete_structural_fixture_passes_and_renders (test_workflow.WorkflowTests.test_complete_structural_fixture_passes_and_renders) ... ok
+test_coverage_gap_and_critical_issue_block (test_workflow.WorkflowTests.test_coverage_gap_and_critical_issue_block) ... ok
+test_critical_criterion_and_implementing_component_coverage (test_workflow.WorkflowTests.test_critical_criterion_and_implementing_component_coverage) ... ok
+test_cross_view_edges_and_wrong_reference_types_rejected_atomically (test_workflow.WorkflowTests.test_cross_view_edges_and_wrong_reference_types_rejected_atomically) ... ok
+test_dependency_change_invalidates_evaluation (test_workflow.WorkflowTests.test_dependency_change_invalidates_evaluation) ... ok
+test_evaluation_status_is_computed_and_immutable (test_workflow.WorkflowTests.test_evaluation_status_is_computed_and_immutable) ... ok
+test_exit_code_failure_cannot_pass_equal_observations (test_workflow.WorkflowTests.test_exit_code_failure_cannot_pass_equal_observations) ... ok
+test_expired_and_environment_mismatch_activation_and_rollback (test_workflow.WorkflowTests.test_expired_and_environment_mismatch_activation_and_rollback) ... ok
+test_failed_missing_and_inapplicable_incident_verification_remain_open (test_workflow.WorkflowTests.test_failed_missing_and_inapplicable_incident_verification_remain_open) ... ok
+test_missing_failed_expired_future_and_wrong_environment_evals (test_workflow.WorkflowTests.test_missing_failed_expired_future_and_wrong_environment_evals) ... ok
+test_missing_or_deferred_concern_blocks (test_workflow.WorkflowTests.test_missing_or_deferred_concern_blocks) ... ok
+test_new_critical_issue_blocks_activation (test_workflow.WorkflowTests.test_new_critical_issue_blocks_activation) ... ok
+test_old_captured_result_cannot_be_rebound_to_changed_targets (test_workflow.WorkflowTests.test_old_captured_result_cannot_be_rebound_to_changed_targets) ... FAIL
+test_partial_first_interview_cannot_pass (test_workflow.WorkflowTests.test_partial_first_interview_cannot_pass) ... ok
+test_queries_have_environment_and_execution_evidence (test_workflow.WorkflowTests.test_queries_have_environment_and_execution_evidence) ... ok
+test_release_is_immutable_and_activation_is_only_simulation (test_workflow.WorkflowTests.test_release_is_immutable_and_activation_is_only_simulation) ... ok
+test_result_cannot_be_relabelled_as_another_criterion (test_workflow.WorkflowTests.test_result_cannot_be_relabelled_as_another_criterion) ... FAIL
+test_semantic_reference_fields_participate_in_impact (test_workflow.WorkflowTests.test_semantic_reference_fields_participate_in_impact) ... ok
+test_source_tampering_blocks_release_activation (test_workflow.WorkflowTests.test_source_tampering_blocks_release_activation) ... ok
+test_stale_reported_disputed_and_superseded_knowledge_blocks (test_workflow.WorkflowTests.test_stale_reported_disputed_and_superseded_knowledge_blocks) ... ok
+test_successful_incident_closure_and_immutable_history (test_workflow.WorkflowTests.test_successful_incident_closure_and_immutable_history) ... ok
+test_unreachable_and_nonterminating_cycle_reported (test_workflow.WorkflowTests.test_unreachable_and_nonterminating_cycle_reported) ... ok
+test_unrelated_note_is_informational_drift (test_workflow.WorkflowTests.test_unrelated_note_is_informational_drift) ... ok
+
+======================================================================
+FAIL: test_old_captured_result_cannot_be_rebound_to_changed_targets (test_workflow.WorkflowTests.test_old_captured_result_cannot_be_rebound_to_changed_targets)
+----------------------------------------------------------------------
+agent_architect.core.Invalid: Execution evidence already evaluated; reuse its existing evaluation ID, not a new run order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/tests/test_workflow.py", line 114, in test_old_captured_result_cannot_be_rebound_to_changed_targets
+    with self.assertRaisesRegex(Invalid, 'Captured result'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "Captured result" does not match "Execution evidence already evaluated; reuse its existing evaluation ID, not a new run order"
+
+======================================================================
+FAIL: test_result_cannot_be_relabelled_as_another_criterion (test_workflow.WorkflowTests.test_result_cannot_be_relabelled_as_another_criterion)
+----------------------------------------------------------------------
+agent_architect.core.Invalid: Execution evidence already evaluated; reuse its existing evaluation ID, not a new run order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/tests/test_workflow.py", line 119, in test_result_cannot_be_relabelled_as_another_criterion
+    with self.assertRaisesRegex(Invalid, 'Captured result'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "Captured result" does not match "Execution evidence already evaluated; reuse its existing evaluation ID, not a new run order"
+
+----------------------------------------------------------------------
+Ran 84 tests in 2.226s
+
+FAILED (failures=2)
