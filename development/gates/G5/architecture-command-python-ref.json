@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "git",
+    "ls-remote",
+    "https://github.com/actions/setup-python.git",
+    "refs/tags/v7.0.0"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T13:12:07.448577+00:00",
+  "status": "finished",
+  "finished": "2026-09-09T13:12:08.010002+00:00",
+  "exit_code": 0,
+  "stdout": "5fda3b95a4ea91299a34e894583c3862153e4b97\trefs/tags/v7.0.0\n",
+  "stderr": ""
+}

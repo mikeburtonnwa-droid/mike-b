@@ -1,0 +1,15 @@
+{
+  "scope": "Additional environment metadata only; original argv, cwd, stdout, stderr and exit codes are unaffected.",
+  "affected_file": "architecture-clone-commands.json",
+  "affected_zero_based_command_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "actual_setup_PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+  "reason": "The review harness stored the mutable environment dictionary by reference. After creating the virtual environment it updated PATH, and later saves consequently display that later PATH for the five earlier setup commands. The actual setup PATH is explicitly established before those calls in architecture-clean-clone.py. Runtime commands from index 5 onward used the displayed virtual-environment PATH.",
+  "preservation": "Original script and results are unchanged. This separate correction does not represent a rerun.",
+  "impact": "No effect on command execution, captured outputs, empty-runtime inspection, regression outcome or clone hashes."
+}

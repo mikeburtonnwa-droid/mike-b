@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "commit": "a0e93349b556709290068ef9aa8d3288de9122af",
+  "clone": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/g5-clean-clone-1/clean library clone",
+  "runtime": {
+    "executable": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/g5-clean-clone-1/empty runtime/bin/python",
+    "version": "3.12.7 (v3.12.7:0b05ead877f, Sep 30 2024, 23:18:00) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "user_site_enabled": false,
+    "site_packages": {
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/g5-clean-clone-1/empty runtime/lib/python3.12/site-packages": []
+    }
+  },
+  "commands": 14,
+  "tests": 86,
+  "rehearsal_checks": 37,
+  "site_packages_disabled_for_top_level_python_commands": true,
+  "nested_interpreter_has_empty_site_packages": true,
+  "checkout_clean": true,
+  "limits": "Actual local macOS clone and empty virtual environment. Hosted Linux/macOS jobs run after approved publication; no CI outcome is inferred here."
+}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "from pathlib import Path; import json,hashlib; p=Path(\"development/gates/G5/candidate.json\"); m=json.loads(p.read_text()); print(json.dumps({\"candidate_sha256\":hashlib.sha256(p.read_bytes()).hexdigest(),\"entries\":len(m),\"mismatches\":[k for k,v in m.items() if hashlib.sha256(Path(k).read_bytes()).hexdigest()!=v]},sort_keys=True))"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started_at": "2026-09-09T13:09:09.039036+00:00",
+  "state": "completed",
+  "returncode": 0,
+  "stdout": "{\"candidate_sha256\": \"0b11c98f3e77f99f304fe545ea57de34a93a5d9e5ddcabe06f8cfd045049bfaf\", \"entries\": 72, \"mismatches\": []}\n",
+  "stderr": "",
+  "finished_at": "2026-09-09T13:09:09.091216+00:00"
+}

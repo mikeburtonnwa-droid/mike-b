@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "commit": "a0e93349b556709290068ef9aa8d3288de9122af",
+  "checks": 22,
+  "commands": 23,
+  "runtime": {
+    "executable": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+    "version": "3.12.7 (v3.12.7:0b05ead877f, Sep 30 2024, 23:18:00) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "prefix": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime",
+    "base_prefix": "/Library/Frameworks/Python.framework/Versions/3.12",
+    "user_site_enabled": false,
+    "site_packages": {
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/lib/python3.12/site-packages": []
+    },
+    "pip_available": false
+  },
+  "limits": "Actual local macOS Python 3.12 execution only. Python 3.10 grammar is not execution proof. Hosted Linux/macOS matrix and final G5 decision are pending publication."
+}

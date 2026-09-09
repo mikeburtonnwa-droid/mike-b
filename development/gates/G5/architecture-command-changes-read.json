@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "git",
+    "diff",
+    "71afb9e",
+    "a0e93349b556709290068ef9aa8d3288de9122af",
+    "--",
+    "src/agent_architect/cli.py",
+    "examples/order-triage/rehearse.py",
+    "tests/test_rehearsal.py",
+    "scripts/record_development.py",
+    "scripts/check_council.py"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T13:10:05.871510+00:00",
+  "status": "finished",
+  "finished": "2026-09-09T13:10:05.888448+00:00",
+  "exit_code": 0,
+  "stdout": "diff --git a/examples/order-triage/rehearse.py b/examples/order-triage/rehearse.py\nindex 031d83a..cd8cdcc 100644\n--- a/examples/order-triage/rehearse.py\n+++ b/examples/order-triage/rehearse.py\n@@ -318,8 +318,13 @@ def main():\n     parser = argparse.ArgumentParser(description=__doc__)\n     parser.add_argument('--output', type=Path, required=True)\n     args = parser.parse_args()\n-    build(Rehearsal(args.output))\n+    try:\n+        build(Rehearsal(args.output))\n+    except Invalid as exc:\n+        print('Cannot run rehearsal: ' + str(exc), file=sys.stderr)\n+        return 2\n+    return 0\n \n \n if __name__ == '__main__':\n-    main()\n+    raise SystemExit(main())\ndiff --git a/src/agent_architect/cli.py b/src/agent_architect/cli.py\nindex 87b69c6..19746c6 100644\n--- a/src/agent_architect/cli.py\n+++ b/src/agent_architect/cli.py\n@@ -6,6 +6,7 @@ from datetime import date\n from pathlib import Path\n from .core import Invalid, Project, context, impact\n from . import workflow\n+from . import __version__\n \n \n def load(path):\n@@ -14,6 +15,7 @@ def load(path):\n \n def main(argv=None):\n     parser = argparse.ArgumentParser(description='Agent Architect local project tools (Python 3.10+, macOS/Linux).')\n+    parser.add_argument('--version', action='version', version='agent-architect ' + __version__)\n     parser.add_argument('--project', required=True, help='Adopter project directory, separate from the public library')\n     parser.add_argument('--actor', default='local-user')\n     sub = parser.add_subparsers(dest='command', required=True)\ndiff --git a/tests/test_rehearsal.py b/tests/test_rehearsal.py\nindex 51515da..ec7ed85 100644\n--- a/tests/test_rehearsal.py\n+++ b/tests/test_rehearsal.py\n@@ -46,8 +46,9 @@ class RehearsalTests(unittest.TestCase):\n             marker.write_text('keep this')\n             run = subprocess.run([sys.executable, str(ROOT / 'examples/order-triage/rehearse.py'),\n                                   '--output', directory], capture_output=True, text=True)\n-            self.assertNotEqual(run.returncode, 0)\n+            self.assertEqual(run.returncode, 2)\n             self.assertIn('never overwritten', run.stderr)\n+            self.assertNotIn('Traceback', run.stderr)\n             self.assertEqual(marker.read_text(), 'keep this')\n             self.assertEqual(list(Path(directory).iterdir()), [marker])\n \n",
+  "stderr": ""
+}

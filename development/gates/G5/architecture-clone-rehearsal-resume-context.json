@@ -1,0 +1,1658 @@
+{
+  "project": "Order triage exercise",
+  "revision": 53,
+  "as_of": "2026-09-09",
+  "brief": {
+    "title": "Order triage exercise",
+    "scope": "Synthetic intake acceptance through recorded routing disposition; excludes shipment and credit authorization",
+    "owner": "operations",
+    "brief_evidence": [
+      {
+        "locator": "complete captured fixture document",
+        "source": "S03"
+      },
+      {
+        "locator": "complete captured fixture document",
+        "source": "S10"
+      }
+    ],
+    "brief_rationale": "Operations and sponsor define the bounded simulation"
+  },
+  "stage": "operate",
+  "checkpoint": {
+    "completed": [
+      "Ten-source reconciliation",
+      "Current/proposed map",
+      "Actual query and three criterion runs",
+      "Verified incident recovery"
+    ],
+    "current_task": "Bounded simulation complete",
+    "next_action": "Review operating handoff; validate real inputs and authorization before adapting for production",
+    "relevant_ids": [
+      "HANDOFF",
+      "INC_FEED",
+      "Q_ROUTES",
+      "COMP_ROUTER"
+    ],
+    "stage": "operate",
+    "unresolved": [
+      "Real deployment, input feed controls and field validation are outside this exercise"
+    ]
+  },
+  "query": "urgent Q_ROUTES HANDOFF",
+  "records": [
+    {
+      "applicability": "Supplied SQLite fixture only",
+      "assertion": "Tenant is part of request and customer identity; approvals/handoffs have event grain",
+      "description": "Synthetic order-triage exercise",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S05"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_SETUP"
+        }
+      ],
+      "id": "CL_KEYS",
+      "review_due": "2026-10-09",
+      "status": "verified",
+      "title": "CL_KEYS",
+      "type": "claim",
+      "verification": "Inspected composite primary keys in captured setup.sql against S05",
+      "verified_on": "2026-09-09",
+      "freshness": "current"
+    },
+    {
+      "applicability": "Urgent request ownership in fixture current policy",
+      "assertion": "Service desk owns urgent manual review",
+      "conflicts_with": [],
+      "description": "Synthetic order-triage exercise",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S04"
+        }
+      ],
+      "id": "CL_OWNER",
+      "review_due": "2026-10-09",
+      "status": "verified",
+      "supersedes": "CL_OLD_OWNER",
+      "title": "CL_OWNER",
+      "type": "claim",
+      "verification": "Confirmed only within the fictional scenario by S03/S04; not field research",
+      "verified_on": "2026-09-09",
+      "freshness": "current"
+    },
+    {
+      "artifact": "examples/order-triage/execute.py and versioned SQL",
+      "decisions": [
+        "DEC_CODE"
+      ],
+      "depends_on": [
+        "Q_ROUTES"
+      ],
+      "description": "Synthetic order-triage exercise",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_RUNNER"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_EXPECTED"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_SQL"
+        }
+      ],
+      "failure": "Nonzero criterion test blocks release; missing approval routes finance review and is detected against expectations",
+      "id": "COMP_ROUTER",
+      "inputs": [
+        "versioned synthetic four-schema export"
+      ],
+      "method": "code",
+      "outputs": [
+        "one tenant-scoped routing disposition per request"
+      ],
+      "process": [
+        "F_TRIAGE",
+        "F_CREDIT"
+      ],
+      "state": "Ephemeral SQLite for execution; durable project records for evidence",
+      "status": "active",
+      "title": "COMP_ROUTER",
+      "tools": [
+        "Python standard library sqlite3"
+      ],
+      "type": "component"
+    },
+    {
+      "category": "operations",
+      "critical": true,
+      "description": "Synthetic order-triage exercise",
+      "disposition": "implemented",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S08"
+        }
+      ],
+      "id": "CON_operations",
+      "rationale": "Operating handoff is explicitly a local exercise; real hosting and monitoring remain separate",
+      "reference": "S08: bounded exercise implementation",
+      "status": "active",
+      "title": "CON_operations",
+      "type": "concern"
+    },
+    {
+      "critical": true,
+      "description": "Synthetic order-triage exercise",
+      "dimension": "exception",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S04"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "COV_exception_0",
+      "owner": "operations",
+      "status": "covered",
+      "steps": [
+        "P_TRIAGE"
+      ],
+      "title": "COV_exception_0",
+      "type": "coverage",
+      "value": "urgent"
+    },
+    {
+      "critical": true,
+      "description": "Synthetic order-triage exercise",
+      "dimension": "stakeholder",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S04"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "COV_stakeholder_4",
+      "owner": "operations",
+      "status": "covered",
+      "steps": [
+        "P_URGENT"
+      ],
+      "title": "COV_stakeholder_4",
+      "type": "coverage",
+      "value": "service-desk"
+    },
+    {
+      "critical": true,
+      "description": "Synthetic order-triage exercise",
+      "dimension": "variant",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S04"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "COV_variant_2",
+      "owner": "operations",
+      "status": "covered",
+      "steps": [
+        "P_URGENT"
+      ],
+      "title": "COV_variant_2",
+      "type": "coverage",
+      "value": "urgent"
+    },
+    {
+      "alternatives": [
+        "Deterministic SQL joins and explicit routing rules",
+        "LLM selects joins and routes at runtime",
+        "Manual routing with a checklist"
+      ],
+      "description": "Synthetic order-triage exercise",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S05"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S07"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "DEC_CODE",
+      "rationale": "Structured identity and policy require exact reproducible behavior; an LLM helps discovery but no runtime inference is needed",
+      "requirements": [
+        "REQ_CARDINALITY",
+        "REQ_ISOLATION",
+        "REQ_ROUTING"
+      ],
+      "status": "active",
+      "title": "DEC_CODE",
+      "type": "decision"
+    },
+    {
+      "depends_on": [
+        "CL_KEYS"
+      ],
+      "description": "Synthetic order-triage exercise",
+      "environment": "fixture",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S05"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S08"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_SETUP"
+        }
+      ],
+      "grain": "One decision event per tenant/request/sequence",
+      "id": "D_APPROVALS",
+      "keys": [
+        "tenant",
+        "request_id",
+        "decision_seq"
+      ],
+      "refresh": "Fixed synthetic export; models daily refresh; capture a new version before reuse",
+      "schema": "finance",
+      "status": "active",
+      "table": "approvals",
+      "title": "D_APPROVALS",
+      "type": "data"
+    },
+    {
+      "depends_on": [
+        "CL_KEYS"
+      ],
+      "description": "Synthetic order-triage exercise",
+      "environment": "fixture",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S05"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S08"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_SETUP"
+        }
+      ],
+      "grain": "One customer per tenant/customer",
+      "id": "D_CUSTOMERS",
+      "keys": [
+        "tenant",
+        "customer_id"
+      ],
+      "refresh": "Fixed synthetic export; models daily refresh; capture a new version before reuse",
+      "schema": "crm",
+      "status": "active",
+      "table": "customers",
+      "title": "D_CUSTOMERS",
+      "type": "data"
+    },
+    {
+      "depends_on": [
+        "CL_KEYS"
+      ],
+      "description": "Synthetic order-triage exercise",
+      "environment": "fixture",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S05"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S08"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_SETUP"
+        }
+      ],
+      "grain": "One handoff event per tenant/request/sequence",
+      "id": "D_HANDOFFS",
+      "keys": [
+        "tenant",
+        "request_id",
+        "event_seq"
+      ],
+      "refresh": "Fixed synthetic export; models daily refresh; capture a new version before reuse",
+      "schema": "operations",
+      "status": "active",
+      "table": "handoffs",
+      "title": "D_HANDOFFS",
+      "type": "data"
+    },
+    {
+      "depends_on": [
+        "CL_KEYS"
+      ],
+      "description": "Synthetic order-triage exercise",
+      "environment": "fixture",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S05"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S08"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_SETUP"
+        }
+      ],
+      "grain": "One request per tenant/request",
+      "id": "D_REQUESTS",
+      "keys": [
+        "tenant",
+        "request_id"
+      ],
+      "refresh": "Fixed synthetic export; models daily refresh; capture a new version before reuse",
+      "schema": "intake",
+      "status": "active",
+      "table": "requests",
+      "title": "D_REQUESTS",
+      "type": "data"
+    },
+    {
+      "brief_hash": "faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4",
+      "criterion": "Exactly one output per supplied tenant/request",
+      "description": "Actual local SQLite execution against synthetic fixture",
+      "environment": "fixture",
+      "hashes": {
+        "CL_KEYS": "da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706",
+        "CL_OWNER": "7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915",
+        "COMP_ROUTER": "a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc",
+        "DEC_CODE": "21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812",
+        "D_APPROVALS": "0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3",
+        "D_CUSTOMERS": "ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab",
+        "D_HANDOFFS": "87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587",
+        "D_REQUESTS": "5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5",
+        "F_CREDIT": "81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e",
+        "F_TRIAGE": "ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c",
+        "P_CREDIT": "cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f",
+        "P_TRIAGE": "62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7",
+        "Q_ROUTES": "768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1",
+        "REQ_CARDINALITY": "1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984",
+        "REQ_ISOLATION": "09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb",
+        "REQ_ROUTING": "75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b",
+        "RESULT_EV_CARDINALITY": "b3151fb94ba62d05e22556933d0418cc684dde3c32a92462b96ba6613d5d2d57",
+        "RESULT_Q_ROUTES": "cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e",
+        "S01": "ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490",
+        "S03": "181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885",
+        "S04": "f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329",
+        "S05": "1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65",
+        "S06": "6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec",
+        "S07": "e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c",
+        "S08": "3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159",
+        "S10": "8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342",
+        "SRC_EXPECTED": "497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01",
+        "SRC_RUNNER": "312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d",
+        "SRC_SETUP": "e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3",
+        "SRC_SQL": "d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b"
+      },
+      "id": "EV_CARDINALITY",
+      "recorded_revision": 36,
+      "result_hash": "7818e127473da7ee7b953e8261fe71b7a5dcc45313c22db682525c10d2d88205",
+      "result_source": "RESULT_EV_CARDINALITY",
+      "run_at": "2026-09-09T13:11:50.319498+00:00",
+      "run_id": "27b69473-d7da-4b0a-a30e-bb01035c0b33",
+      "run_on": "2026-09-09",
+      "status": "pass",
+      "targets": [
+        "REQ_CARDINALITY",
+        "COMP_ROUTER"
+      ],
+      "title": "EV_CARDINALITY",
+      "type": "evaluation",
+      "valid_until": "2026-10-09",
+      "applicability_errors": []
+    },
+    {
+      "brief_hash": "faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4",
+      "criterion": "Routing dispositions match the declared fixture",
+      "description": "Actual local SQLite execution against synthetic fixture",
+      "environment": "fixture",
+      "hashes": {
+        "CL_KEYS": "da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706",
+        "CL_OWNER": "7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915",
+        "COMP_ROUTER": "a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc",
+        "DEC_CODE": "21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812",
+        "D_APPROVALS": "0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3",
+        "D_CUSTOMERS": "ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab",
+        "D_HANDOFFS": "87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587",
+        "D_REQUESTS": "5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5",
+        "F_CREDIT": "81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e",
+        "F_TRIAGE": "ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c",
+        "P_CREDIT": "cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f",
+        "P_TRIAGE": "62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7",
+        "Q_ROUTES": "768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1",
+        "REQ_CARDINALITY": "1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984",
+        "REQ_ISOLATION": "09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb",
+        "REQ_ROUTING": "75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b",
+        "RESULT_EV_FAILED_RECOVERY": "92f0193869f72211af1a1ffff7ca2d0a0b653431681a7bd763c675fe964c9639",
+        "RESULT_Q_ROUTES": "cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e",
+        "S01": "ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490",
+        "S03": "181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885",
+        "S04": "f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329",
+        "S05": "1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65",
+        "S06": "6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec",
+        "S07": "e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c",
+        "S08": "3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159",
+        "S10": "8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342",
+        "SRC_EXPECTED": "497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01",
+        "SRC_RUNNER": "312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d",
+        "SRC_SETUP": "e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3",
+        "SRC_SQL": "d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b"
+      },
+      "id": "EV_FAILED_RECOVERY",
+      "recorded_revision": 47,
+      "result_hash": "339d4bbfbecd7920eb86b0fa6b08c2693120765325e1deae88511e05993e08b8",
+      "result_source": "RESULT_EV_FAILED_RECOVERY",
+      "run_at": "2026-09-09T13:11:50.963733+00:00",
+      "run_id": "ab1aa55b-5eb0-4ad5-bbe2-893247db8b6e",
+      "run_on": "2026-09-09",
+      "status": "fail",
+      "targets": [
+        "REQ_ROUTING",
+        "COMP_ROUTER"
+      ],
+      "title": "EV_FAILED_RECOVERY",
+      "type": "evaluation",
+      "valid_until": "2026-10-09",
+      "applicability_errors": [
+        "result failed"
+      ]
+    },
+    {
+      "brief_hash": "faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4",
+      "criterion": "No customer data crosses tenant boundaries",
+      "description": "Actual local SQLite execution against synthetic fixture",
+      "environment": "fixture",
+      "hashes": {
+        "CL_KEYS": "da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706",
+        "CL_OWNER": "7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915",
+        "COMP_ROUTER": "a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc",
+        "DEC_CODE": "21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812",
+        "D_APPROVALS": "0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3",
+        "D_CUSTOMERS": "ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab",
+        "D_HANDOFFS": "87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587",
+        "D_REQUESTS": "5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5",
+        "F_CREDIT": "81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e",
+        "F_TRIAGE": "ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c",
+        "P_CREDIT": "cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f",
+        "P_TRIAGE": "62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7",
+        "Q_ROUTES": "768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1",
+        "REQ_CARDINALITY": "1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984",
+        "REQ_ISOLATION": "09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb",
+        "REQ_ROUTING": "75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b",
+        "RESULT_EV_ISOLATION": "36325e8afe173b547a4b471298a30cacca89735a1fc2deea8250bb276345f350",
+        "RESULT_Q_ROUTES": "cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e",
+        "S01": "ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490",
+        "S03": "181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885",
+        "S04": "f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329",
+        "S05": "1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65",
+        "S06": "6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec",
+        "S07": "e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c",
+        "S08": "3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159",
+        "S10": "8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342",
+        "SRC_EXPECTED": "497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01",
+        "SRC_RUNNER": "312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d",
+        "SRC_SETUP": "e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3",
+        "SRC_SQL": "d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b"
+      },
+      "id": "EV_ISOLATION",
+      "recorded_revision": 38,
+      "result_hash": "83eb3d55686c5b978329b92e6841143633136b8d472a8307265b48cb69c88ae3",
+      "result_source": "RESULT_EV_ISOLATION",
+      "run_at": "2026-09-09T13:11:50.417274+00:00",
+      "run_id": "54767169-963e-43ac-a311-8a69f9d9ca09",
+      "run_on": "2026-09-09",
+      "status": "pass",
+      "targets": [
+        "REQ_ISOLATION",
+        "COMP_ROUTER"
+      ],
+      "title": "EV_ISOLATION",
+      "type": "evaluation",
+      "valid_until": "2026-10-09",
+      "applicability_errors": []
+    },
+    {
+      "brief_hash": "faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4",
+      "criterion": "Exactly one output per supplied tenant/request",
+      "description": "Actual local SQLite execution against synthetic fixture",
+      "environment": "fixture",
+      "hashes": {
+        "CL_KEYS": "da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706",
+        "CL_OWNER": "7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915",
+        "COMP_ROUTER": "63d524fc8bdc92565e4f7369052a930782b6dc55607a92040d32a46bacb8d502",
+        "DEC_CODE": "21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812",
+        "D_APPROVALS": "0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3",
+        "D_CUSTOMERS": "ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab",
+        "D_HANDOFFS": "87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587",
+        "D_REQUESTS": "5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5",
+        "F_CREDIT": "81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e",
+        "F_TRIAGE": "ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c",
+        "P_CREDIT": "cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f",
+        "P_TRIAGE": "62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7",
+        "Q_NAIVE": "52b0723966d3350e6e6076aed7627b994df5da3a705a1e439aabe08385387536",
+        "REQ_CARDINALITY": "1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984",
+        "REQ_ISOLATION": "09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb",
+        "REQ_ROUTING": "75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b",
+        "RESULT_EV_NAIVE": "bc7505fa77308bfe71428a294f8e8bf7043c719f47d1445b9067c3cecb0d11e1",
+        "RESULT_Q_NAIVE": "45050a546625a6a099aa39a250d7090d76c63760719b4a13acd5997287edb32c",
+        "S01": "ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490",
+        "S03": "181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885",
+        "S04": "f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329",
+        "S05": "1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65",
+        "S06": "6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec",
+        "S07": "e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c",
+        "S08": "3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159",
+        "S10": "8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342",
+        "SRC_EXPECTED": "497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01",
+        "SRC_NAIVE": "297e20339c3ae599fa13f7b679779eb96a706827da901d5b6b291354ac9e24b1",
+        "SRC_RUNNER": "312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d",
+        "SRC_SETUP": "e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3"
+      },
+      "id": "EV_NAIVE",
+      "recorded_revision": 29,
+      "result_hash": "4a3afbc11438555949acf6b6007c783b20230467737d95d69bd31e5f98e7d0bf",
+      "result_source": "RESULT_EV_NAIVE",
+      "run_at": "2026-09-09T13:11:50.051051+00:00",
+      "run_id": "b024a5b1-ac45-455f-898e-d356db7ac8f3",
+      "run_on": "2026-09-09",
+      "status": "fail",
+      "targets": [
+        "REQ_CARDINALITY",
+        "COMP_ROUTER"
+      ],
+      "title": "EV_NAIVE",
+      "type": "evaluation",
+      "valid_until": "2026-10-09",
+      "applicability_errors": [
+        "result failed",
+        "evaluated dependencies changed"
+      ]
+    },
+    {
+      "brief_hash": "faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4",
+      "criterion": "Routing dispositions match the declared fixture",
+      "description": "Actual local SQLite execution against synthetic fixture",
+      "environment": "fixture",
+      "hashes": {
+        "CL_KEYS": "da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706",
+        "CL_OWNER": "7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915",
+        "COMP_ROUTER": "a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc",
+        "DEC_CODE": "21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812",
+        "D_APPROVALS": "0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3",
+        "D_CUSTOMERS": "ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab",
+        "D_HANDOFFS": "87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587",
+        "D_REQUESTS": "5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5",
+        "F_CREDIT": "81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e",
+        "F_TRIAGE": "ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c",
+        "P_CREDIT": "cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f",
+        "P_TRIAGE": "62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7",
+        "Q_ROUTES": "768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1",
+        "REQ_CARDINALITY": "1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984",
+        "REQ_ISOLATION": "09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb",
+        "REQ_ROUTING": "75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b",
+        "RESULT_EV_OUTAGE": "b1cb0322cdf837040801906a0fece2f5637f1cd1f75dd31a2eeb9c37842c212c",
+        "RESULT_Q_ROUTES": "cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e",
+        "S01": "ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490",
+        "S03": "181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885",
+        "S04": "f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329",
+        "S05": "1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65",
+        "S06": "6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec",
+        "S07": "e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c",
+        "S08": "3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159",
+        "S10": "8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342",
+        "SRC_EXPECTED": "497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01",
+        "SRC_RUNNER": "312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d",
+        "SRC_SETUP": "e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3",
+        "SRC_SQL": "d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b"
+      },
+      "id": "EV_OUTAGE",
+      "recorded_revision": 44,
+      "result_hash": "89c5b7851c301053f2617414453f4c0eda8756001e209543c7912136440c5687",
+      "result_source": "RESULT_EV_OUTAGE",
+      "run_at": "2026-09-09T13:11:50.757322+00:00",
+      "run_id": "a9461c60-5077-4058-8d4a-dd20ead4c6ee",
+      "run_on": "2026-09-09",
+      "status": "fail",
+      "targets": [
+        "REQ_ROUTING",
+        "COMP_ROUTER"
+      ],
+      "title": "EV_OUTAGE",
+      "type": "evaluation",
+      "valid_until": "2026-10-09",
+      "applicability_errors": [
+        "result failed"
+      ]
+    },
+    {
+      "brief_hash": "faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4",
+      "criterion": "Routing dispositions match the declared fixture",
+      "description": "Actual local SQLite execution against synthetic fixture",
+      "environment": "fixture",
+      "hashes": {
+        "CL_KEYS": "da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706",
+        "CL_OWNER": "7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915",
+        "COMP_ROUTER": "a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc",
+        "DEC_CODE": "21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812",
+        "D_APPROVALS": "0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3",
+        "D_CUSTOMERS": "ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab",
+        "D_HANDOFFS": "87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587",
+        "D_REQUESTS": "5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5",
+        "F_CREDIT": "81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e",
+        "F_TRIAGE": "ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c",
+        "P_CREDIT": "cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f",
+        "P_TRIAGE": "62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7",
+        "Q_ROUTES": "768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1",
+        "REQ_CARDINALITY": "1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984",
+        "REQ_ISOLATION": "09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb",
+        "REQ_ROUTING": "75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b",
+        "RESULT_EV_RECOVERED": "c9c07ffdd6dc8c7de7ae72260e379031cee1e7dc5c66af570c7ed01022e9881f",
+        "RESULT_Q_ROUTES": "cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e",
+        "S01": "ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490",
+        "S03": "181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885",
+        "S04": "f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329",
+        "S05": "1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65",
+        "S06": "6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec",
+        "S07": "e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c",
+        "S08": "3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159",
+        "S10": "8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342",
+        "SRC_EXPECTED": "497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01",
+        "SRC_RUNNER": "312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d",
+        "SRC_SETUP": "e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3",
+        "SRC_SQL": "d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b"
+      },
+      "id": "EV_RECOVERED",
+      "recorded_revision": 49,
+      "result_hash": "3c25a8ff7ce6dd27b44539c5e3d92185aab41e37033bfec620d2688985f7809c",
+      "result_source": "RESULT_EV_RECOVERED",
+      "run_at": "2026-09-09T13:11:51.194671+00:00",
+      "run_id": "393b5dd8-b235-4283-b367-70dda83eb204",
+      "run_on": "2026-09-09",
+      "status": "pass",
+      "targets": [
+        "REQ_ROUTING",
+        "COMP_ROUTER"
+      ],
+      "title": "EV_RECOVERED",
+      "type": "evaluation",
+      "valid_until": "2026-10-09",
+      "applicability_errors": []
+    },
+    {
+      "brief_hash": "faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4",
+      "criterion": "Routing dispositions match the declared fixture",
+      "description": "Actual local SQLite execution against synthetic fixture",
+      "environment": "fixture",
+      "hashes": {
+        "CL_KEYS": "da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706",
+        "CL_OWNER": "7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915",
+        "COMP_ROUTER": "a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc",
+        "DEC_CODE": "21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812",
+        "D_APPROVALS": "0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3",
+        "D_CUSTOMERS": "ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab",
+        "D_HANDOFFS": "87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587",
+        "D_REQUESTS": "5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5",
+        "F_CREDIT": "81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e",
+        "F_TRIAGE": "ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c",
+        "P_CREDIT": "cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f",
+        "P_TRIAGE": "62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7",
+        "Q_ROUTES": "768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1",
+        "REQ_CARDINALITY": "1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984",
+        "REQ_ISOLATION": "09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb",
+        "REQ_ROUTING": "75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b",
+        "RESULT_EV_ROUTING": "369d0cee99656a3e4d83014d0b613a867d14d6cdf2da19f32d8402f53541a072",
+        "RESULT_Q_ROUTES": "cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e",
+        "S01": "ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490",
+        "S03": "181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885",
+        "S04": "f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329",
+        "S05": "1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65",
+        "S06": "6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec",
+        "S07": "e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c",
+        "S08": "3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159",
+        "S10": "8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342",
+        "SRC_EXPECTED": "497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01",
+        "SRC_RUNNER": "312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d",
+        "SRC_SETUP": "e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3",
+        "SRC_SQL": "d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b"
+      },
+      "id": "EV_ROUTING",
+      "recorded_revision": 40,
+      "result_hash": "1c0d7b733f8ab7d7dc056268a9619098c71adbaa7dbee48c07e6499b4134b4cd",
+      "result_source": "RESULT_EV_ROUTING",
+      "run_at": "2026-09-09T13:11:50.523998+00:00",
+      "run_id": "a45f6470-88c7-43e3-996a-09502510e21b",
+      "run_on": "2026-09-09",
+      "status": "pass",
+      "targets": [
+        "REQ_ROUTING",
+        "COMP_ROUTER"
+      ],
+      "title": "EV_ROUTING",
+      "type": "evaluation",
+      "valid_until": "2026-10-09",
+      "applicability_errors": []
+    },
+    {
+      "actor": "routing-service",
+      "baseline": [
+        "P_CREDIT"
+      ],
+      "boundary": "internal",
+      "description": "Synthetic order-triage exercise",
+      "edges": [
+        {
+          "condition": "approved",
+          "kind": "handoff",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "fulfillment",
+          "to": "F_FULFILL"
+        },
+        {
+          "condition": "denied-or-missing",
+          "kind": "exception",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "finance",
+          "to": "F_HOLD"
+        }
+      ],
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S07"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "F_CREDIT",
+      "inputs": [
+        "tenant, request ID, customer ID, urgency and available latest credit decision"
+      ],
+      "kind": "decision",
+      "outputs": [
+        "request and routing context"
+      ],
+      "status": "active",
+      "system": "local-sqlite-router",
+      "title": "Assess latest credit status",
+      "type": "process",
+      "variant": "standard",
+      "view": "proposed"
+    },
+    {
+      "actor": "frontline",
+      "baseline": [
+        "P_INTAKE"
+      ],
+      "boundary": "internal",
+      "description": "Synthetic order-triage exercise",
+      "edges": [
+        {
+          "condition": "accepted",
+          "kind": "handoff",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "routing-service",
+          "to": "F_TRIAGE"
+        }
+      ],
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S07"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "F_INTAKE",
+      "inputs": [
+        "tenant, request ID, customer ID, urgency and available latest credit decision"
+      ],
+      "kind": "start",
+      "outputs": [
+        "request and routing context"
+      ],
+      "status": "active",
+      "system": "intake-queue",
+      "title": "Accept request",
+      "type": "process",
+      "variant": "shared",
+      "view": "proposed"
+    },
+    {
+      "actor": "routing-service",
+      "baseline": [
+        "P_TRIAGE"
+      ],
+      "boundary": "internal",
+      "description": "Synthetic order-triage exercise",
+      "edges": [
+        {
+          "condition": "urgent",
+          "kind": "exception",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "service-desk",
+          "to": "F_URGENT"
+        },
+        {
+          "condition": "standard",
+          "kind": "handoff",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "routing-service",
+          "to": "F_CREDIT"
+        }
+      ],
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S07"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "F_TRIAGE",
+      "inputs": [
+        "tenant, request ID, customer ID, urgency and available latest credit decision"
+      ],
+      "kind": "decision",
+      "outputs": [
+        "request and routing context"
+      ],
+      "status": "active",
+      "system": "local-sqlite-router",
+      "title": "Triage urgency",
+      "type": "process",
+      "variant": "shared",
+      "view": "proposed"
+    },
+    {
+      "actor": "service-desk",
+      "baseline": [
+        "P_URGENT"
+      ],
+      "boundary": "support",
+      "description": "Synthetic order-triage exercise",
+      "edges": [],
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S07"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "F_URGENT",
+      "inputs": [
+        "tenant, request ID, customer ID, urgency and available latest credit decision"
+      ],
+      "kind": "end",
+      "outputs": [
+        "attributed routing disposition"
+      ],
+      "status": "active",
+      "system": "support-queue",
+      "title": "Record manual-review disposition",
+      "type": "process",
+      "variant": "urgent",
+      "view": "proposed"
+    },
+    {
+      "artifact": "examples/order-triage/execute.py; reproduce via rehearse.py",
+      "authorization": "Local synthetic SQLite/Python and simulation only; S07, S09",
+      "description": "Synthetic order-triage exercise",
+      "environment": "fixture",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S07"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S08"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "HANDOFF",
+      "owner": "operations",
+      "prerequisites": [
+        "Python with sqlite3",
+        "Captured fixture and expected outcomes"
+      ],
+      "remaining_steps": [
+        "Select and authorize real runtime",
+        "Validate real stakeholders, schema, volume and input freshness",
+        "Implement identity/access controls, deployment integration, monitoring and service objectives before real deployment"
+      ],
+      "runtime": "Local Python 3.10+ and SQLite with window functions",
+      "status": "active",
+      "title": "HANDOFF",
+      "type": "handoff"
+    },
+    {
+      "actor": "finance",
+      "boundary": "internal",
+      "description": "Synthetic order-triage exercise",
+      "edges": [
+        {
+          "condition": "approved",
+          "kind": "handoff",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "fulfillment",
+          "to": "P_FULFILL"
+        },
+        {
+          "condition": "denied-or-missing",
+          "kind": "exception",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "finance",
+          "to": "P_HOLD"
+        }
+      ],
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S01"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S04"
+        }
+      ],
+      "id": "P_CREDIT",
+      "inputs": [
+        "tenant, request ID, customer ID, urgency and available latest credit decision"
+      ],
+      "kind": "decision",
+      "outputs": [
+        "request and routing context"
+      ],
+      "status": "active",
+      "system": "credit-export",
+      "title": "Assess latest credit status",
+      "type": "process",
+      "variant": "standard",
+      "view": "current"
+    },
+    {
+      "actor": "frontline",
+      "boundary": "internal",
+      "description": "Synthetic order-triage exercise",
+      "edges": [
+        {
+          "condition": "accepted",
+          "kind": "handoff",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "operations",
+          "to": "P_TRIAGE"
+        }
+      ],
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S01"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S04"
+        }
+      ],
+      "id": "P_INTAKE",
+      "inputs": [
+        "tenant, request ID, customer ID, urgency and available latest credit decision"
+      ],
+      "kind": "start",
+      "outputs": [
+        "request and routing context"
+      ],
+      "status": "active",
+      "system": "intake-queue",
+      "title": "Accept request",
+      "type": "process",
+      "variant": "shared",
+      "view": "current"
+    },
+    {
+      "actor": "operations",
+      "boundary": "internal",
+      "description": "Synthetic order-triage exercise",
+      "edges": [
+        {
+          "condition": "urgent",
+          "kind": "exception",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "service-desk",
+          "to": "P_URGENT"
+        },
+        {
+          "condition": "standard",
+          "kind": "handoff",
+          "payload": "tenant, request ID, customer ID, urgency, latest credit status",
+          "receiver": "finance",
+          "to": "P_CREDIT"
+        }
+      ],
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S01"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S04"
+        }
+      ],
+      "id": "P_TRIAGE",
+      "inputs": [
+        "tenant, request ID, customer ID, urgency and available latest credit decision"
+      ],
+      "kind": "decision",
+      "outputs": [
+        "request and routing context"
+      ],
+      "status": "active",
+      "system": "operations-email",
+      "title": "Triage urgency",
+      "type": "process",
+      "variant": "shared",
+      "view": "current"
+    },
+    {
+      "actor": "service-desk",
+      "boundary": "support",
+      "description": "Synthetic order-triage exercise",
+      "edges": [],
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S01"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S03"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S04"
+        }
+      ],
+      "id": "P_URGENT",
+      "inputs": [
+        "tenant, request ID, customer ID, urgency and available latest credit decision"
+      ],
+      "kind": "end",
+      "outputs": [
+        "attributed routing disposition"
+      ],
+      "status": "active",
+      "system": "support-queue",
+      "title": "Record manual-review disposition",
+      "type": "process",
+      "variant": "urgent",
+      "view": "current"
+    },
+    {
+      "assets": [
+        "D_REQUESTS",
+        "D_CUSTOMERS",
+        "D_APPROVALS",
+        "D_HANDOFFS"
+      ],
+      "description": "Synthetic order-triage exercise",
+      "environment": "fixture",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_SQL"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S05"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S06"
+        }
+      ],
+      "executed_on": "2026-09-09",
+      "execution_hash": "5a2730f4fc69bf65ae4865645fb5b1e84e62c4afcb738fddf7525cdc16499ffb",
+      "id": "Q_ROUTES",
+      "join_assumptions": "Composite tenant identity and latest event required; naive version intentionally violates these",
+      "limitations": "Four synthetic requests; daily fixed export; no live database",
+      "parameters": {},
+      "result_source": "RESULT_Q_ROUTES",
+      "sql": "-- Correct for this declared fixture: composite identities and latest event per request.\nWITH approvals AS (\n  SELECT *, ROW_NUMBER() OVER (PARTITION BY tenant, request_id ORDER BY decision_seq DESC) AS rn\n  FROM finance.approvals\n), handoffs AS (\n  SELECT *, ROW_NUMBER() OVER (PARTITION BY tenant, request_id ORDER BY event_seq DESC) AS rn\n  FROM operations.handoffs\n)\nSELECT r.tenant, r.request_id, c.tenant AS customer_tenant, c.name,\n       r.urgency, a.approved, h.owner,\n       CASE WHEN r.urgency = 'urgent' THEN 'service-desk'\n            WHEN a.approved = 1 THEN 'fulfillment' ELSE 'finance-review' END AS route\nFROM intake.requests r\nLEFT JOIN crm.customers c ON c.tenant = r.tenant AND c.customer_id = r.customer_id\nLEFT JOIN approvals a ON a.tenant = r.tenant AND a.request_id = r.request_id AND a.rn = 1\nLEFT JOIN handoffs h ON h.tenant = r.tenant AND h.request_id = r.request_id AND h.rn = 1\nORDER BY r.tenant, r.request_id;\n",
+      "status": "executed",
+      "title": "Q_ROUTES",
+      "type": "query"
+    },
+    {
+      "acceptance": "Exactly one output per supplied tenant/request",
+      "claims": [
+        "CL_KEYS",
+        "CL_OWNER"
+      ],
+      "critical": true,
+      "description": "Synthetic order-triage exercise",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "REQ_CARDINALITY",
+      "process": [
+        "P_TRIAGE",
+        "P_CREDIT"
+      ],
+      "status": "active",
+      "title": "REQ_CARDINALITY",
+      "type": "requirement"
+    },
+    {
+      "acceptance": "No customer data crosses tenant boundaries",
+      "claims": [
+        "CL_KEYS",
+        "CL_OWNER"
+      ],
+      "critical": true,
+      "description": "Synthetic order-triage exercise",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "REQ_ISOLATION",
+      "process": [
+        "P_TRIAGE",
+        "P_CREDIT"
+      ],
+      "status": "active",
+      "title": "REQ_ISOLATION",
+      "type": "requirement"
+    },
+    {
+      "acceptance": "Routing dispositions match the declared fixture",
+      "claims": [
+        "CL_KEYS",
+        "CL_OWNER"
+      ],
+      "critical": true,
+      "description": "Synthetic order-triage exercise",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "REQ_ROUTING",
+      "process": [
+        "P_TRIAGE",
+        "P_CREDIT"
+      ],
+      "status": "active",
+      "title": "REQ_ROUTING",
+      "type": "requirement"
+    },
+    {
+      "blob": "sources/7818e127473da7ee7b953e8261fe71b7a5dcc45313c22db682525c10d2d88205.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "7818e127473da7ee7b953e8261fe71b7a5dcc45313c22db682525c10d2d88205",
+      "description": "RESULT_EV_CARDINALITY",
+      "environment": "fixture",
+      "id": "RESULT_EV_CARDINALITY",
+      "kind": "query-result",
+      "locator": "Executed command and output in events.json: EV_CARDINALITY",
+      "status": "captured",
+      "title": "RESULT_EV_CARDINALITY",
+      "type": "source"
+    },
+    {
+      "blob": "sources/339d4bbfbecd7920eb86b0fa6b08c2693120765325e1deae88511e05993e08b8.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "339d4bbfbecd7920eb86b0fa6b08c2693120765325e1deae88511e05993e08b8",
+      "description": "RESULT_EV_FAILED_RECOVERY",
+      "environment": "fixture",
+      "id": "RESULT_EV_FAILED_RECOVERY",
+      "kind": "query-result",
+      "locator": "Executed command and output in events.json: EV_FAILED_RECOVERY",
+      "status": "captured",
+      "title": "RESULT_EV_FAILED_RECOVERY",
+      "type": "source"
+    },
+    {
+      "blob": "sources/83eb3d55686c5b978329b92e6841143633136b8d472a8307265b48cb69c88ae3.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "83eb3d55686c5b978329b92e6841143633136b8d472a8307265b48cb69c88ae3",
+      "description": "RESULT_EV_ISOLATION",
+      "environment": "fixture",
+      "id": "RESULT_EV_ISOLATION",
+      "kind": "query-result",
+      "locator": "Executed command and output in events.json: EV_ISOLATION",
+      "status": "captured",
+      "title": "RESULT_EV_ISOLATION",
+      "type": "source"
+    },
+    {
+      "blob": "sources/4a3afbc11438555949acf6b6007c783b20230467737d95d69bd31e5f98e7d0bf.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "4a3afbc11438555949acf6b6007c783b20230467737d95d69bd31e5f98e7d0bf",
+      "description": "RESULT_EV_NAIVE",
+      "environment": "fixture",
+      "id": "RESULT_EV_NAIVE",
+      "kind": "query-result",
+      "locator": "Executed command and output in events.json: EV_NAIVE",
+      "status": "captured",
+      "title": "RESULT_EV_NAIVE",
+      "type": "source"
+    },
+    {
+      "blob": "sources/89c5b7851c301053f2617414453f4c0eda8756001e209543c7912136440c5687.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "89c5b7851c301053f2617414453f4c0eda8756001e209543c7912136440c5687",
+      "description": "RESULT_EV_OUTAGE",
+      "environment": "fixture",
+      "id": "RESULT_EV_OUTAGE",
+      "kind": "query-result",
+      "locator": "Executed command and output in events.json: EV_OUTAGE",
+      "status": "captured",
+      "title": "RESULT_EV_OUTAGE",
+      "type": "source"
+    },
+    {
+      "blob": "sources/3c25a8ff7ce6dd27b44539c5e3d92185aab41e37033bfec620d2688985f7809c.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "3c25a8ff7ce6dd27b44539c5e3d92185aab41e37033bfec620d2688985f7809c",
+      "description": "RESULT_EV_RECOVERED",
+      "environment": "fixture",
+      "id": "RESULT_EV_RECOVERED",
+      "kind": "query-result",
+      "locator": "Executed command and output in events.json: EV_RECOVERED",
+      "status": "captured",
+      "title": "RESULT_EV_RECOVERED",
+      "type": "source"
+    },
+    {
+      "blob": "sources/1c0d7b733f8ab7d7dc056268a9619098c71adbaa7dbee48c07e6499b4134b4cd.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "1c0d7b733f8ab7d7dc056268a9619098c71adbaa7dbee48c07e6499b4134b4cd",
+      "description": "RESULT_EV_ROUTING",
+      "environment": "fixture",
+      "id": "RESULT_EV_ROUTING",
+      "kind": "query-result",
+      "locator": "Executed command and output in events.json: EV_ROUTING",
+      "status": "captured",
+      "title": "RESULT_EV_ROUTING",
+      "type": "source"
+    },
+    {
+      "blob": "sources/99da03f5e89032a0e8ddd1fef47bcf952da5360f467aeca6ff317b92738ffb2f.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "99da03f5e89032a0e8ddd1fef47bcf952da5360f467aeca6ff317b92738ffb2f",
+      "description": "RESULT_Q_NAIVE",
+      "environment": "fixture",
+      "id": "RESULT_Q_NAIVE",
+      "kind": "query-result",
+      "locator": "Executed command and output in events.json: Q_NAIVE",
+      "status": "captured",
+      "title": "RESULT_Q_NAIVE",
+      "type": "source"
+    },
+    {
+      "blob": "sources/4c1f46e07d609ab961002ecb0d8f24e504b0ea42bfaee0cc2d3940e900407f5f.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "4c1f46e07d609ab961002ecb0d8f24e504b0ea42bfaee0cc2d3940e900407f5f",
+      "description": "RESULT_Q_ROUTES",
+      "environment": "fixture",
+      "id": "RESULT_Q_ROUTES",
+      "kind": "query-result",
+      "locator": "Executed command and output in events.json: Q_ROUTES",
+      "status": "captured",
+      "title": "RESULT_Q_ROUTES",
+      "type": "source"
+    },
+    {
+      "blob": "sources/0de325f62e9928787f41072d94c6780b58be759d9b591334b9a7bdaabb74cc3f.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "0de325f62e9928787f41072d94c6780b58be759d9b591334b9a7bdaabb74cc3f",
+      "description": "S01",
+      "environment": "fixture",
+      "id": "S01",
+      "kind": "interview",
+      "locator": "examples/order-triage/inputs/01-frontline.md",
+      "status": "captured",
+      "title": "S01",
+      "type": "source"
+    },
+    {
+      "blob": "sources/3e02ea32f03e2bbd0aad132ef21012da487b9c17d71bdcafd7c4230bb91cb24d.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "3e02ea32f03e2bbd0aad132ef21012da487b9c17d71bdcafd7c4230bb91cb24d",
+      "description": "S02",
+      "environment": "fixture",
+      "id": "S02",
+      "kind": "interview",
+      "locator": "examples/order-triage/inputs/02-sales.md",
+      "status": "captured",
+      "title": "S02",
+      "type": "source"
+    },
+    {
+      "blob": "sources/65bcb9b162bf861e7d9c80f83e8232f5b6fe8c03dcc20dbfa414dcafb6becf4f.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "65bcb9b162bf861e7d9c80f83e8232f5b6fe8c03dcc20dbfa414dcafb6becf4f",
+      "description": "S03",
+      "environment": "fixture",
+      "id": "S03",
+      "kind": "interview",
+      "locator": "examples/order-triage/inputs/03-operations.md",
+      "status": "captured",
+      "title": "S03",
+      "type": "source"
+    },
+    {
+      "blob": "sources/16ddbb20c9f0f223b350544dca7a47537a3c29e8315f3a29dead314dc422d366.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "16ddbb20c9f0f223b350544dca7a47537a3c29e8315f3a29dead314dc422d366",
+      "description": "S04",
+      "environment": "fixture",
+      "id": "S04",
+      "kind": "interview",
+      "locator": "examples/order-triage/inputs/04-finance.md",
+      "status": "captured",
+      "title": "S04",
+      "type": "source"
+    },
+    {
+      "blob": "sources/585cd10e85fad23002a86b94baea6ac6c9c38e1cb7ce3aa371d3f689d60ccfec.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "585cd10e85fad23002a86b94baea6ac6c9c38e1cb7ce3aa371d3f689d60ccfec",
+      "description": "S05",
+      "environment": "fixture",
+      "id": "S05",
+      "kind": "interview",
+      "locator": "examples/order-triage/inputs/05-data-engineer.md",
+      "status": "captured",
+      "title": "S05",
+      "type": "source"
+    },
+    {
+      "blob": "sources/ab24eb088611494a3849885aabdfe7f4976ffd685bc90571f1b694dfd86292f7.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "ab24eb088611494a3849885aabdfe7f4976ffd685bc90571f1b694dfd86292f7",
+      "description": "S06",
+      "environment": "fixture",
+      "id": "S06",
+      "kind": "interview",
+      "locator": "examples/order-triage/inputs/06-reporting.md",
+      "status": "captured",
+      "title": "S06",
+      "type": "source"
+    },
+    {
+      "blob": "sources/412eaa7d93822f26b71c7ad05456cd504e91ba08bfc50580d11ea1fe37c5cd0e.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "412eaa7d93822f26b71c7ad05456cd504e91ba08bfc50580d11ea1fe37c5cd0e",
+      "description": "S07",
+      "environment": "fixture",
+      "id": "S07",
+      "kind": "interview",
+      "locator": "examples/order-triage/inputs/07-security.md",
+      "status": "captured",
+      "title": "S07",
+      "type": "source"
+    },
+    {
+      "blob": "sources/3c03d21f0a53da909d2e430470acecd26a58720f4d405c32143eb0177f8b928c.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "3c03d21f0a53da909d2e430470acecd26a58720f4d405c32143eb0177f8b928c",
+      "description": "S08",
+      "environment": "fixture",
+      "id": "S08",
+      "kind": "interview",
+      "locator": "examples/order-triage/inputs/08-platform.md",
+      "status": "captured",
+      "title": "S08",
+      "type": "source"
+    },
+    {
+      "blob": "sources/8bbd579329a347cc851cfe69c530c93fbc7d6b281a0d5425fd10a97b62da2c1d.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "8bbd579329a347cc851cfe69c530c93fbc7d6b281a0d5425fd10a97b62da2c1d",
+      "description": "S10",
+      "environment": "fixture",
+      "id": "S10",
+      "kind": "interview",
+      "locator": "examples/order-triage/inputs/10-sponsor.md",
+      "status": "captured",
+      "title": "S10",
+      "type": "source"
+    },
+    {
+      "blob": "sources/d8c48b812f4d9c0cf2003a965897090db051c0934fa850b1f01bc7db0143e0d9.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "d8c48b812f4d9c0cf2003a965897090db051c0934fa850b1f01bc7db0143e0d9",
+      "description": "SRC_EXPECTED",
+      "environment": "fixture",
+      "id": "SRC_EXPECTED",
+      "kind": "document",
+      "locator": "examples/order-triage/expected.json",
+      "status": "captured",
+      "title": "SRC_EXPECTED",
+      "type": "source"
+    },
+    {
+      "blob": "sources/174aab66f6cf74439c81b6b80e8a0f3c71a49937ede55a8973d73566b6903bc0.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "174aab66f6cf74439c81b6b80e8a0f3c71a49937ede55a8973d73566b6903bc0",
+      "description": "SRC_NAIVE",
+      "environment": "fixture",
+      "id": "SRC_NAIVE",
+      "kind": "document",
+      "locator": "examples/order-triage/naive.sql",
+      "status": "captured",
+      "title": "SRC_NAIVE",
+      "type": "source"
+    },
+    {
+      "blob": "sources/2fab120e8cebe62b38ffd019eecaf057c8d1c9a48a41bd08d8c71aab6a02e447.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "2fab120e8cebe62b38ffd019eecaf057c8d1c9a48a41bd08d8c71aab6a02e447",
+      "description": "SRC_RUNNER",
+      "environment": "fixture",
+      "id": "SRC_RUNNER",
+      "kind": "document",
+      "locator": "examples/order-triage/execute.py",
+      "status": "captured",
+      "title": "SRC_RUNNER",
+      "type": "source"
+    },
+    {
+      "blob": "sources/557b27c532d1158d52b600e71752bf960b70feb88e9ff2ece6c96b0e3add83ef.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "557b27c532d1158d52b600e71752bf960b70feb88e9ff2ece6c96b0e3add83ef",
+      "description": "SRC_SETUP",
+      "environment": "fixture",
+      "id": "SRC_SETUP",
+      "kind": "document",
+      "locator": "examples/order-triage/inputs/setup.sql",
+      "status": "captured",
+      "title": "SRC_SETUP",
+      "type": "source"
+    },
+    {
+      "blob": "sources/7d1b7925c7bce36f5c375a9a387eab068ef16b1081d40dd4a22b5f3f8e07c01f.blob",
+      "captured_on": "2026-09-09",
+      "content_hash": "7d1b7925c7bce36f5c375a9a387eab068ef16b1081d40dd4a22b5f3f8e07c01f",
+      "description": "SRC_SQL",
+      "environment": "fixture",
+      "id": "SRC_SQL",
+      "kind": "document",
+      "locator": "examples/order-triage/routes.sql",
+      "status": "captured",
+      "title": "SRC_SQL",
+      "type": "source"
+    }
+  ],
+  "historical_dependencies": [
+    {
+      "applicability": "Urgent request ownership in fixture current policy",
+      "assertion": "Finance owns urgent exceptions",
+      "conflicts_with": [],
+      "description": "Synthetic order-triage exercise",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S02"
+        }
+      ],
+      "id": "CL_OLD_OWNER",
+      "rationale": "S02 explicitly hearsay; S03 and S04 confirm current synthetic policy",
+      "status": "superseded",
+      "superseded_by": "CL_OWNER",
+      "title": "CL_OLD_OWNER",
+      "type": "claim",
+      "freshness": "unknown"
+    },
+    {
+      "assets": [
+        "D_REQUESTS",
+        "D_CUSTOMERS",
+        "D_APPROVALS",
+        "D_HANDOFFS"
+      ],
+      "description": "Synthetic order-triage exercise",
+      "environment": "fixture",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "SRC_NAIVE"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S05"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S06"
+        }
+      ],
+      "executed_on": "2026-09-09",
+      "execution_hash": "bf1353c8cfa7357e6e095ef1258f768b8c91ed7aba993001125caae6f1753b5d",
+      "id": "Q_NAIVE",
+      "join_assumptions": "Composite tenant identity and latest event required; naive version intentionally violates these",
+      "limitations": "Four synthetic requests; daily fixed export; no live database",
+      "parameters": {},
+      "result_source": "RESULT_Q_NAIVE",
+      "sql": "-- Intentionally incorrect: omits tenant at the customer join and keeps all events.\nSELECT r.tenant, r.request_id, c.tenant AS customer_tenant, c.name,\n       r.urgency, a.approved, h.owner,\n       CASE WHEN r.urgency = 'urgent' THEN 'service-desk'\n            WHEN a.approved = 1 THEN 'fulfillment' ELSE 'finance-review' END AS route\nFROM intake.requests r\nJOIN crm.customers c ON c.customer_id = r.customer_id\nLEFT JOIN finance.approvals a ON a.tenant = r.tenant AND a.request_id = r.request_id\nLEFT JOIN operations.handoffs h ON h.tenant = r.tenant AND h.request_id = r.request_id\nORDER BY r.tenant, r.request_id, c.tenant, a.decision_seq, h.event_seq;\n",
+      "status": "archived",
+      "title": "Q_NAIVE",
+      "type": "query"
+    }
+  ],
+  "warnings": [
+    "CL_OLD_OWNER superseded by CL_OWNER; dependent records may need revision",
+    "EV_FAILED_RECOVERY: result failed",
+    "EV_NAIVE: result failed",
+    "EV_NAIVE: evaluated dependencies changed",
+    "EV_OUTAGE: result failed",
+    "Q_NAIVE: archived; dependent records may need revision"
+  ],
+  "active_release": "REL2",
+  "deployment_mode": "local-simulation"
+}

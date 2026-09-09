@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/actions/setup-python/contents/action.yml?ref=5fda3b95a4ea91299a34e894583c3862153e4b97",
+    "-H",
+    "Accept: application/vnd.github.raw+json"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T13:12:07.439200+00:00",
+  "status": "finished",
+  "finished": "2026-09-09T13:12:07.893727+00:00",
+  "exit_code": 0,
+  "stdout": "---\nname: \"Setup Python\"\ndescription: \"Set up a specific version of Python and add the command-line tools to the PATH.\"\nauthor: \"GitHub\"\ninputs:\n  python-version:\n    description: \"Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset.\"\n  python-version-file:\n    description: \"File containing the Python version to use. Example: .python-version\"\n  cache:\n    description: \"Used to specify a package manager for caching in the default directory. Supported values: pip, pipenv, poetry.\"\n    required: false\n  architecture:\n    description: \"The target architecture (x86, x64, arm64) of the Python or PyPy interpreter.\"\n  check-latest:\n    description: \"Set this option if you want the action to check for the latest available version that satisfies the version spec.\"\n    default: false\n  token:\n    description: \"The token used to authenticate when fetching Python distributions from https://github.com/actions/python-versions. When running this action on github.com, the default value is sufficient. When running on GHES, you can pass a personal access token for github.com if you are experiencing rate limiting.\"\n    default: ${{ github.server_url == 'https://github.com' && github.token || '' }}\n  cache-dependency-path:\n    description: \"Used to specify the path to dependency files. Supports wildcards or a list of file names for caching multiple dependencies.\"\n  update-environment:\n    description: \"Set this option if you want the action to update environment variables.\"\n    default: true\n  allow-prereleases:\n    description: \"When 'true', a version range passed to 'python-version' input will match prerelease versions if no GA versions are found. Only 'x.y' version range is supported for CPython.\"\n    default: false\n  freethreaded:\n    description: \"When 'true', use the freethreaded version of Python.\"\n    default: false\n  pip-version:\n    description: \"Used to specify the version of pip to install with the Python. Supported format: major[.minor][.patch].\"\noutputs:\n  python-version:\n    description: \"The installed Python or PyPy version. Useful when given a version range as input.\"\n  cache-hit:\n    description: \"A boolean value to indicate a cache entry was found\"\n  python-path:\n    description: \"The absolute path to the Python or PyPy executable.\"\nruns:\n  using: 'node24'\n  main: 'dist/setup/index.js'\n  post: 'dist/cache-save/index.js'\n  post-if: success()\nbranding:\n  icon: 'code'\n  color: 'yellow'\n",
+  "stderr": ""
+}

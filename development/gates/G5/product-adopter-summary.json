@@ -1,0 +1,376 @@
+{
+  "completed": true,
+  "checks": 31,
+  "failed": [],
+  "commands": 32,
+  "assertions": [
+    {
+      "name": "candidate_before",
+      "passed": true,
+      "details": {
+        "entries": 72,
+        "candidate_sha256": "0b11c98f3e77f99f304fe545ea57de34a93a5d9e5ddcabe06f8cfd045049bfaf"
+      },
+      "command_index": 0
+    },
+    {
+      "name": "independent_git_clone",
+      "passed": true,
+      "details": {
+        "exit_code": 0,
+        "stderr": ""
+      },
+      "command_index": 1
+    },
+    {
+      "name": "frozen_source_checked_out",
+      "passed": true,
+      "details": {
+        "exit_code": 0,
+        "stderr": "HEAD is now at a0e9334 Prepare v0.1.0 release candidate; final council gate pending\n"
+      },
+      "command_index": 2
+    },
+    {
+      "name": "source_commit_identity",
+      "passed": true,
+      "details": {
+        "commit": "a0e93349b556709290068ef9aa8d3288de9122af"
+      },
+      "command_index": 3
+    },
+    {
+      "name": "clone_matches_every_product_hash",
+      "passed": true,
+      "details": {
+        "entries": 72
+      },
+      "command_index": 3
+    },
+    {
+      "name": "empty_virtual_environment",
+      "passed": true,
+      "details": {
+        "exit_code": 0
+      },
+      "command_index": 4
+    },
+    {
+      "name": "nested_python_is_isolated",
+      "passed": true,
+      "details": {
+        "prefix": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g5-product-t6zdnk3q/empty venv",
+        "base_prefix": "/Library/Frameworks/Python.framework/Versions/3.12",
+        "pip_available": false
+      },
+      "command_index": 5
+    },
+    {
+      "name": "version_without_project_or_site_packages",
+      "passed": true,
+      "details": {
+        "stdout": "agent-architect 0.1.0\n",
+        "stderr": ""
+      },
+      "command_index": 6
+    },
+    {
+      "name": "documented_library_check",
+      "passed": true,
+      "details": {
+        "status": "pass",
+        "documents": 44,
+        "local_links": 122,
+        "skills": 7,
+        "errors": [],
+        "limits": "Checks file destinations and basic name/description only; excludes fenced examples and historical development records. Does not verify external URLs, heading anchors or full YAML semantics."
+      },
+      "command_index": 7
+    },
+    {
+      "name": "documented_complete_regression",
+      "passed": true,
+      "details": {
+        "exit_code": 0,
+        "result_tail": [
+          "",
+          "----------------------------------------------------------------------",
+          "Ran 86 tests in 4.907s",
+          "",
+          "OK"
+        ]
+      },
+      "command_index": 8
+    },
+    {
+      "name": "adapted_project_starts_with_unknowns",
+      "passed": true,
+      "details": {
+        "status": "saved",
+        "revision": 1,
+        "commit": "be0ffe4f8ec0ad52b589c75a8506b1efed641b1ad66b104493925afb7eac4e4c"
+      },
+      "command_index": 9
+    },
+    {
+      "name": "adapted_input_captured",
+      "passed": true,
+      "details": {
+        "status": "saved",
+        "revision": 2,
+        "commit": "b60c20cfe0579ee98ef2841cd1aab84aa875adb90ef222a8143fafc57b59528a"
+      },
+      "command_index": 11
+    },
+    {
+      "name": "guide_managed_record_inputs_save",
+      "passed": true,
+      "details": {
+        "status": "saved",
+        "revision": 3,
+        "commit": "9c8e8145e69227c213ec5c999b3d9345c7631a33cb20574d4c1300b8514cb8e5"
+      },
+      "command_index": 13
+    },
+    {
+      "name": "adapted_checkpoint_saves",
+      "passed": true,
+      "details": {
+        "status": "saved",
+        "revision": 4,
+        "commit": "6e2f646106b168178b30f2f65975dc34758f51d81a10fa420cc3deb1ec93f60f"
+      },
+      "command_index": 15
+    },
+    {
+      "name": "saved_handoff_resumes_without_chat",
+      "passed": true,
+      "details": {
+        "checkpoint": {
+          "completed": [
+            "Captured first invoice interview"
+          ],
+          "current_task": "Clarify invoice ownership and exceptions",
+          "next_action": "Ask the receiving reviewer for a routine and an exception example",
+          "relevant_ids": [
+            "ACCOUNT",
+            "OWNER",
+            "FIRST"
+          ],
+          "stage": "discovery",
+          "unresolved": [
+            "Overall owner unknown",
+            "Exception route unknown"
+          ]
+        },
+        "brief": {
+          "title": "Synthetic invoice discovery",
+          "scope": "unknown",
+          "owner": "unknown",
+          "brief_evidence": null,
+          "brief_rationale": null
+        }
+      },
+      "command_index": 16
+    },
+    {
+      "name": "incomplete_map_and_next_action_are_explicit",
+      "passed": true,
+      "details": {
+        "characters": 1471
+      },
+      "command_index": 17
+    },
+    {
+      "name": "whole_project_backup_is_portable",
+      "passed": true,
+      "details": {
+        "status": "pass",
+        "commits": 4,
+        "head": "6e2f646106b168178b30f2f65975dc34758f51d81a10fa420cc3deb1ec93f60f",
+        "limit": "Local hash consistency; does not authenticate authors or truth."
+      },
+      "command_index": 18
+    },
+    {
+      "name": "relocated_context_keeps_source_and_uncertainty",
+      "passed": true,
+      "details": {
+        "warnings": [
+          "ACCOUNT: reported, freshness=unknown"
+        ],
+        "record_ids": [
+          "ACCOUNT",
+          "FIRST"
+        ]
+      },
+      "command_index": 19
+    },
+    {
+      "name": "clarification_input_captured",
+      "passed": true,
+      "details": {
+        "status": "saved",
+        "revision": 5,
+        "commit": "2ef044ea0140c4e5a7b74b6da8592d66cb7ba442c56c825a0fa88792e771e7ac"
+      },
+      "command_index": 21
+    },
+    {
+      "name": "adaptation_updates_authoritative_brief",
+      "passed": true,
+      "details": {
+        "status": "saved",
+        "revision": 6,
+        "commit": "30998e2f2872cd062cf96990bad495831c55711fd7e3b4ffec9a8d22eb955e74"
+      },
+      "command_index": 23
+    },
+    {
+      "name": "clarified_context_preserves_prior_boundary",
+      "passed": true,
+      "details": {
+        "current_owner": "Invoice Operations",
+        "historical_owner": "unknown"
+      },
+      "command_index": 24
+    },
+    {
+      "name": "stale_resume_edit_is_actionable_and_atomic",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "Stale revision: expected 4, current 6; reread and reconcile"
+      },
+      "command_index": 25
+    },
+    {
+      "name": "adapted_project_audits",
+      "passed": true,
+      "details": {
+        "status": "pass",
+        "commits": 6,
+        "head": "30998e2f2872cd062cf96990bad495831c55711fd7e3b4ffec9a8d22eb955e74",
+        "limit": "Local hash consistency; does not authenticate authors or truth."
+      },
+      "command_index": 26
+    },
+    {
+      "name": "documented_example_works_in_isolated_clone",
+      "passed": true,
+      "details": {
+        "synthetic": true,
+        "deployment_mode": "local-simulation",
+        "as_of": "2026-09-09",
+        "checks": 37,
+        "failed": [],
+        "naive_rows": 13,
+        "corrected_rows": 4,
+        "ready_project": "ready-project",
+        "adversarial_changed_project": "project",
+        "incident": "INC_FEED closed using EV_RECOVERED",
+        "final_release": "REL2",
+        "limits": [
+          "Not real stakeholder research",
+          "Not a production deployment",
+          "No model-provider performance benchmark",
+          "Fixed four-request dataset does not certify other schemas or policy variants"
+        ]
+      },
+      "command_index": 27
+    },
+    {
+      "name": "documented_outputs_exist",
+      "passed": true,
+      "details": {
+        "outputs": [
+          "ready-project",
+          "project",
+          "current-map.md",
+          "proposed-map.md",
+          "report.json",
+          "checks.json",
+          "events.json",
+          "resume-context.json",
+          "change-impact.json"
+        ]
+      },
+      "command_index": 27
+    },
+    {
+      "name": "g4_error_finding_resolved_without_overwrite",
+      "passed": true,
+      "details": {
+        "exit_code": 2,
+        "stderr": "Cannot run rehearsal: Output must be a new directory; previous evidence is never overwritten\n",
+        "unchanged_files": 177
+      },
+      "command_index": 28
+    },
+    {
+      "name": "documented_ready_project_audits",
+      "passed": true,
+      "details": {
+        "status": "pass",
+        "commits": 53,
+        "head": "6e7d285da6804f2171b34cda788c04fd5ab27722b1ebefe94fbb4f2d80021e03",
+        "limit": "Local hash consistency; does not authenticate authors or truth."
+      },
+      "command_index": 29
+    },
+    {
+      "name": "documented_ready_project_resumes",
+      "passed": true,
+      "details": {
+        "active_release": "REL2",
+        "checkpoint": {
+          "completed": [
+            "Ten-source reconciliation",
+            "Current/proposed map",
+            "Actual query and three criterion runs",
+            "Verified incident recovery"
+          ],
+          "current_task": "Bounded simulation complete",
+          "next_action": "Review operating handoff; validate real inputs and authorization before adapting for production",
+          "relevant_ids": [
+            "HANDOFF",
+            "INC_FEED",
+            "Q_ROUTES",
+            "COMP_ROUTER"
+          ],
+          "stage": "operate",
+          "unresolved": [
+            "Real deployment, input feed controls and field validation are outside this exercise"
+          ]
+        }
+      },
+      "command_index": 30
+    },
+    {
+      "name": "recovered_proposed_map_disclaims_deployment",
+      "passed": true,
+      "details": {
+        "characters": 5980
+      },
+      "command_index": 31
+    },
+    {
+      "name": "adopter_checks_leave_clone_clean",
+      "passed": true,
+      "details": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "command_index": 32
+    },
+    {
+      "name": "candidate_after",
+      "passed": true,
+      "details": {
+        "entries": 72,
+        "candidate_sha256": "0b11c98f3e77f99f304fe545ea57de34a93a5d9e5ddcabe06f8cfd045049bfaf"
+      },
+      "command_index": 32
+    }
+  ]
+}

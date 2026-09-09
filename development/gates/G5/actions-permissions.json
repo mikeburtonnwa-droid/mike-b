@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/mikeburtonnwa-droid/mike-b/actions/permissions"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started_at": "2026-09-09T13:09:09.073489+00:00",
+  "state": "completed",
+  "returncode": 0,
+  "stdout": "{\"enabled\":true,\"allowed_actions\":\"all\",\"sha_pinning_required\":false}",
+  "stderr": "",
+  "finished_at": "2026-09-09T13:09:09.619344+00:00"
+}

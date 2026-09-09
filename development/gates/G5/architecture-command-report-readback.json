@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "import hashlib,json,runpy; from pathlib import Path; p=Path(\"development/gates/G5/architecture.md\"); s=p.read_text(); header=s.split(\"##\",1)[0]; assert header.count(\"Verdict:\")==1 and header.count(\"Candidate SHA-256:\")==1; assert json.loads(Path(\"development/gates/G5/candidate.json\").read_text())==runpy.run_path(\"scripts/record_development.py\")[\"manifest\"](); print(\"report_sha256\",hashlib.sha256(p.read_bytes()).hexdigest()); print(\"authoritative_header_and_unchanged_candidate\",True)"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T13:17:22.111055+00:00",
+  "status": "finished",
+  "finished": "2026-09-09T13:17:22.203892+00:00",
+  "exit_code": 0,
+  "stdout": "report_sha256 dfaf886249545f56639cacec945d1be98dd36f449908bc41c62d9b120f4fdadc\nauthoritative_header_and_unchanged_candidate True\n",
+  "stderr": ""
+}

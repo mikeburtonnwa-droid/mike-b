@@ -1,0 +1,16 @@
+{
+  "record": "D_APPROVALS",
+  "affected": [
+    "COMP_ROUTER",
+    "EV_CARDINALITY",
+    "EV_FAILED_RECOVERY",
+    "EV_ISOLATION",
+    "EV_NAIVE",
+    "EV_OUTAGE",
+    "EV_RECOVERED",
+    "EV_ROUTING",
+    "INC_FEED",
+    "Q_NAIVE",
+    "Q_ROUTES"
+  ]
+}

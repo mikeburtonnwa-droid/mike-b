@@ -1,0 +1,39 @@
+{
+  "gate": "G5",
+  "verdict": "PASS",
+  "time": "2026-09-09T13:20:38.911120+00:00",
+  "orchestrator": "/root",
+  "candidate": "candidate.json",
+  "candidate_hash": "0b11c98f3e77f99f304fe545ea57de34a93a5d9e5ddcabe06f8cfd045049bfaf",
+  "reviews": [
+    {
+      "role": "product",
+      "verdict": "APPROVE",
+      "report": "product.md",
+      "hash": "c3287abee3f7c89b98f04c006ce02a868fe8723beafa4f8b5128bddba02ade45"
+    },
+    {
+      "role": "integrity",
+      "verdict": "APPROVE",
+      "report": "integrity.md",
+      "hash": "899c5269ed518ddccaf725fb506ef623ab4045a74658ac2427890ba828bf0df9"
+    },
+    {
+      "role": "architecture",
+      "verdict": "APPROVE",
+      "report": "architecture.md",
+      "hash": "dfaf886249545f56639cacec945d1be98dd36f449908bc41c62d9b120f4fdadc"
+    }
+  ],
+  "previous_gates": [
+    {
+      "gate": "G4",
+      "hash": "62b0c8e788efb20f344451bb9f3f5be443914ebb94341f410dc4d8b860ab6b28"
+    }
+  ],
+  "reason": "All three independent reviewers approve the identical 72-file source candidate. Independent clean clones and empty runtimes pass all 86 regressions and the 37-check actual SQLite rehearsal; seven skills and 122 local links validate. Adopter relocation/resumption, tamper/council negatives, preserved failures and the G4 error refinement are independently checked. No unresolved blocker remains.",
+  "rework": [
+    "development-observations.md"
+  ],
+  "scope": "Version 0.1.0 source and local verification accepted for publication. Hosted Linux/Python3.10+3.12 and macOS/Python3.12 CI must actually pass before final delivery sign-off. No real deployment, human usability rate or provider performance claim is approved."
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "rg",
+    "--files",
+    "development/gates/G5",
+    "docs",
+    ".github",
+    "scripts"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T13:09:11.622426+00:00",
+  "status": "finished",
+  "finished": "2026-09-09T13:09:11.629283+00:00",
+  "exit_code": 0,
+  "stdout": ".github/pull_request_template.md\ndocs/RECORDS.md\nscripts/aa.py\nscripts/check_library.py\nscripts/check_council.py\nscripts/record_development.py\ndocs/RELEASE.md\ndocs/CONTRACT.md\ndocs/CLI.md\ndocs/DEVELOPMENT.md\ndocs/ANATOMY.md\n.github/workflows/verify.yml\ndevelopment/gates/G5/run-command.py\ndevelopment/gates/G5/clean-clone-commands.json\ndevelopment/gates/G5/checkout-pin.json\ndevelopment/gates/G5/setup-python-pin.json\ndevelopment/gates/G5/development-observations.md\ndevelopment/gates/G5/regression.json\ndevelopment/gates/G5/integrity-dispatch.txt\ndevelopment/gates/G5/signoff.md\ndevelopment/gates/G5/version-check.json\ndevelopment/gates/G5/candidate.json\ndevelopment/gates/G5/transcript.jsonl\ndevelopment/gates/G5/product-01-docs.json\ndevelopment/gates/G5/architecture-dispatch.txt\ndevelopment/gates/G5/license-template.json\ndevelopment/gates/G5/architecture-run.py\ndevelopment/gates/G5/actions-permissions.json\ndevelopment/gates/G5/architecture-command-inventory.json\ndevelopment/gates/G5/product-05-code-and-ci.json\ndevelopment/gates/G5/product-dispatch.txt\ndevelopment/gates/G5/setup-python-action.json\ndevelopment/gates/G5/integrity-commands.jsonl\ndevelopment/gates/G5/clean-clone-report.json\ndevelopment/gates/G5/product-03-adopter-docs.json\ndevelopment/gates/G5/product-bootstrap-read.json\ndevelopment/gates/G5/final-library-check.json\ndevelopment/gates/G5/architecture-review-instructions.md\ndevelopment/gates/G5/product-04-verification.json\ndevelopment/gates/G5/integrity-run.py\ndevelopment/gates/G5/product-review-instructions.md\ndevelopment/gates/G5/initial-library-check.json\ndevelopment/gates/G5/product-02-candidate.json\ndevelopment/gates/G5/integrity-review-instructions.md\ndevelopment/gates/G5/g4-integration.json\ndevelopment/gates/G5/clean-clone.py\ndevelopment/gates/G5/clean-clone-run.json\ndevelopment/gates/G5/checkout-action.json\ndevelopment/gates/G5/skill-validation.json\n",
+  "stderr": ""
+}

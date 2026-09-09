@@ -1,0 +1,7 @@
+{
+  "command": "cat development/gates/G5/run-command.py",
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "stdout": "\"\"\"Incremental, per-command release evidence. Arguments are executed without a shell.\"\"\"\nfrom datetime import datetime,timezone\nimport json\nfrom pathlib import Path\nimport subprocess\nimport sys\n\nroot=Path(__file__).resolve().parents[3]\nname,*command=sys.argv[1:]\npath=Path(__file__).parent/(name+'.json')\nif path.exists():\n raise SystemExit('Refusing to overwrite command evidence: '+str(path))\nrecord={'argv':command,'cwd':str(root),'started_at':datetime.now(timezone.utc).isoformat(),'state':'started'}\npath.write_text(json.dumps(record,indent=2)+'\\n')\ntry:\n result=subprocess.run(command,cwd=root,capture_output=True,text=True)\n record.update(state='completed',returncode=result.returncode,stdout=result.stdout,stderr=result.stderr)\nexcept BaseException as exc:\n record.update(state='interrupted',error=repr(exc))\n raise\nfinally:\n record['finished_at']=datetime.now(timezone.utc).isoformat()\n path.write_text(json.dumps(record,indent=2)+'\\n')\nprint(result.stdout,end='')\nprint(result.stderr,end='',file=sys.stderr)\nraise SystemExit(result.returncode)\n",
+  "stderr": "",
+  "exit_code": 0
+}

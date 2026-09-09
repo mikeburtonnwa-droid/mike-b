@@ -1,0 +1,179 @@
+[
+  {
+    "name": "independent clone is exact frozen commit",
+    "passed": true,
+    "detail": "a0e93349b556709290068ef9aa8d3288de9122af"
+  },
+  {
+    "name": "all 72 candidate product files match clone",
+    "passed": true,
+    "detail": 72
+  },
+  {
+    "name": "clone starts clean",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "clone object store has no alternates",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "nested interpreter uses empty virtual environment without pip or user site",
+    "passed": true,
+    "detail": {
+      "executable": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "version": "3.12.7 (v3.12.7:0b05ead877f, Sep 30 2024, 23:18:00) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "platform": "macOS-26.2-arm64-arm-64bit",
+      "prefix": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime",
+      "base_prefix": "/Library/Frameworks/Python.framework/Versions/3.12",
+      "user_site_enabled": false,
+      "site_packages": {
+        "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/lib/python3.12/site-packages": []
+      },
+      "pip_available": false
+    }
+  },
+  {
+    "name": "CLI version works from unrelated cwd without project",
+    "passed": true,
+    "detail": "agent-architect 0.1.0"
+  },
+  {
+    "name": "missing project has structured exit 2 without traceback",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "missing CLI arguments preserve parser exit 2",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "packaging links and seven basic skill metadata checks pass",
+    "passed": true,
+    "detail": {
+      "status": "pass",
+      "documents": 44,
+      "local_links": 122,
+      "skills": 7,
+      "errors": [],
+      "limits": "Checks file destinations and basic name/description only; excludes fenced examples and historical development records. Does not verify external URLs, heading anchors or full YAML semantics."
+    }
+  },
+  {
+    "name": "complete regression runs in empty environment",
+    "passed": true,
+    "detail": [
+      "----------------------------------------------------------------------",
+      "Ran 86 tests in 4.852s",
+      "",
+      "OK"
+    ]
+  },
+  {
+    "name": "independent actual SQLite rehearsal passes all 37 assertions",
+    "passed": true,
+    "detail": {
+      "synthetic": true,
+      "deployment_mode": "local-simulation",
+      "as_of": "2026-09-09",
+      "checks": 37,
+      "failed": [],
+      "naive_rows": 13,
+      "corrected_rows": 4,
+      "ready_project": "ready-project",
+      "adversarial_changed_project": "project",
+      "incident": "INC_FEED closed using EV_RECOVERED",
+      "final_release": "REL2",
+      "limits": [
+        "Not real stakeholder research",
+        "Not a production deployment",
+        "No model-provider performance benchmark",
+        "Fixed four-request dataset does not certify other schemas or policy variants"
+      ]
+    }
+  },
+  {
+    "name": "ready-project retained project audits through unrelated-cwd CLI",
+    "passed": true,
+    "detail": {
+      "status": "pass",
+      "commits": 53,
+      "head": "1c8de61ac4bf4df31a9e3140586617b3d24c6fd1187c4f8fbb17fa8c90cb84ad",
+      "limit": "Local hash consistency; does not authenticate authors or truth."
+    }
+  },
+  {
+    "name": "project retained project audits through unrelated-cwd CLI",
+    "passed": true,
+    "detail": {
+      "status": "pass",
+      "commits": 54,
+      "head": "dcb36b8fe20a5c67420f6ebbe02748e5c9939202a53b484d5af6f0f1aab11a6f",
+      "limit": "Local hash consistency; does not authenticate authors or truth."
+    }
+  },
+  {
+    "name": "CLI differentiates passing readiness and deliberate dependency failure",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "existing output rejection is concise exit 2 and byte-preserving",
+    "passed": true,
+    "detail": "Cannot run rehearsal: Output must be a new directory; previous evidence is never overwritten"
+  },
+  {
+    "name": "example rejects project inside library without creating directory",
+    "passed": true,
+    "detail": "Cannot run rehearsal: Generate project outside the public library"
+  },
+  {
+    "name": "recorded G4 council and G1-G3 predecessor chain pass",
+    "passed": true,
+    "detail": {
+      "gate": "G4",
+      "status": "pass",
+      "messages": 12,
+      "reviewers": 3,
+      "current_candidate_checked": false,
+      "limit": "Recorded agreement and local integrity; does not prove review quality or message delivery."
+    }
+  },
+  {
+    "name": "historical approval does not approve current changed product",
+    "passed": true,
+    "detail": {
+      "status": "error",
+      "message": "G4: current product differs from reviewed candidate"
+    }
+  },
+  {
+    "name": "pending G5 does not falsely pass before final decision",
+    "passed": true,
+    "detail": {
+      "status": "error",
+      "message": "[Errno 2] No such file or directory: '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/development/gates/G5/decision.json'"
+    }
+  },
+  {
+    "name": "product Python parses under 3.10 grammar",
+    "passed": true,
+    "detail": {
+      "python_310_syntax_files": 18,
+      "status": "pass"
+    }
+  },
+  {
+    "name": "all verification leaves tracked checkout clean",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "candidate hashes unchanged after clone verification",
+    "passed": true,
+    "detail": null
+  }
+]

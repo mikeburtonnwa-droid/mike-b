@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "from pathlib import Path; import hashlib,json,re; p=Path(\"development/gates/G5\"); s=(p/\"product.md\").read_text(); m=json.loads((p/\"candidate.json\").read_text()); assert len(re.findall(r\"^Verdict:\",s,re.M))==1; assert len(re.findall(r\"^Candidate SHA-256:\",s,re.M))==1; assert s.splitlines()[1]==\"Candidate SHA-256: \"+hashlib.sha256((p/\"candidate.json\").read_bytes()).hexdigest(); assert all(hashlib.sha256(Path(k).read_bytes()).hexdigest()==v for k,v in m.items()); print(\"Report header verified; all 72 frozen product files unchanged.\")"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started_at": "2026-09-09T13:14:27.126440+00:00",
+  "state": "completed",
+  "returncode": 0,
+  "stdout": "Report header verified; all 72 frozen product files unchanged.\n",
+  "stderr": "",
+  "finished_at": "2026-09-09T13:14:27.157372+00:00"
+}

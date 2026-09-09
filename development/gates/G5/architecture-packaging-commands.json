@@ -1,0 +1,88 @@
+[
+  {
+    "argv": [
+      "git",
+      "archive",
+      "a0e93349b556709290068ef9aa8d3288de9122af",
+      "-o",
+      "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm/source.tar"
+    ],
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "started": "2026-09-09T13:13:46.038466+00:00",
+    "status": "finished",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "finished": "2026-09-09T13:13:46.095294+00:00"
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "-S",
+      "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm/tree/scripts/check_library.py"
+    ],
+    "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm",
+    "started": "2026-09-09T13:13:46.160147+00:00",
+    "status": "finished",
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"pass\",\n  \"documents\": 44,\n  \"local_links\": 122,\n  \"skills\": 7,\n  \"errors\": [],\n  \"limits\": \"Checks file destinations and basic name/description only; excludes fenced examples and historical development records. Does not verify external URLs, heading anchors or full YAML semantics.\"\n}\n",
+    "stderr": "",
+    "finished": "2026-09-09T13:13:46.193384+00:00"
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "-S",
+      "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm/tree/scripts/check_library.py"
+    ],
+    "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm",
+    "started": "2026-09-09T13:13:46.193844+00:00",
+    "status": "finished",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"fail\",\n  \"documents\": 44,\n  \"local_links\": 123,\n  \"skills\": 7,\n  \"errors\": [\n    \"README.md: missing/nonportable local link never-exists-for-review.md\"\n  ],\n  \"limits\": \"Checks file destinations and basic name/description only; excludes fenced examples and historical development records. Does not verify external URLs, heading anchors or full YAML semantics.\"\n}\n",
+    "stderr": "",
+    "finished": "2026-09-09T13:13:46.226022+00:00"
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "-S",
+      "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm/tree/scripts/check_library.py"
+    ],
+    "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm",
+    "started": "2026-09-09T13:13:46.226475+00:00",
+    "status": "finished",
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"pass\",\n  \"documents\": 44,\n  \"local_links\": 122,\n  \"skills\": 7,\n  \"errors\": [],\n  \"limits\": \"Checks file destinations and basic name/description only; excludes fenced examples and historical development records. Does not verify external URLs, heading anchors or full YAML semantics.\"\n}\n",
+    "stderr": "",
+    "finished": "2026-09-09T13:13:46.259653+00:00"
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "-S",
+      "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm/tree/scripts/check_library.py"
+    ],
+    "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm",
+    "started": "2026-09-09T13:13:46.260256+00:00",
+    "status": "finished",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"fail\",\n  \"documents\": 44,\n  \"local_links\": 122,\n  \"skills\": 7,\n  \"errors\": [\n    \"skills/agent-architect/SKILL.md: name/directory mismatch or missing description\"\n  ],\n  \"limits\": \"Checks file destinations and basic name/description only; excludes fenced examples and historical development records. Does not verify external URLs, heading anchors or full YAML semantics.\"\n}\n",
+    "stderr": "",
+    "finished": "2026-09-09T13:13:46.291461+00:00"
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "-S",
+      "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm/tree/scripts/check_library.py"
+    ],
+    "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-packaging-7t5e6lpm",
+    "started": "2026-09-09T13:13:46.291842+00:00",
+    "status": "finished",
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"pass\",\n  \"documents\": 44,\n  \"local_links\": 122,\n  \"skills\": 7,\n  \"errors\": [],\n  \"limits\": \"Checks file destinations and basic name/description only; excludes fenced examples and historical development records. Does not verify external URLs, heading anchors or full YAML semantics.\"\n}\n",
+    "stderr": "",
+    "finished": "2026-09-09T13:13:46.322523+00:00"
+  }
+]

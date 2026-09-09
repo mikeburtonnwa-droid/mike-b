@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "git",
+    "fetch",
+    "origin"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started_at": "2026-09-09T13:17:52.905345+00:00",
+  "state": "completed",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "finished_at": "2026-09-09T13:17:53.388042+00:00"
+}

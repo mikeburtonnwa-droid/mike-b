@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "import hashlib,json; from pathlib import Path; base=Path(\"development/gates/G5\"); print(json.dumps({\"command_logs\":len(list(base.glob(\"architecture-command-*.json\"))),\"evidence_hashes\":{n:hashlib.sha256((base/n).read_bytes()).hexdigest() for n in [\"architecture-clean-clone.py\",\"architecture-clone-commands.json\",\"architecture-clone-checks.json\",\"architecture-clone-summary.json\",\"architecture-clone-rehearsal.zip\",\"architecture-packaging.py\",\"architecture-packaging-commands.json\"]}},indent=2))"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T13:14:40.271914+00:00",
+  "status": "finished",
+  "finished": "2026-09-09T13:14:40.376769+00:00",
+  "exit_code": 0,
+  "stdout": "{\n  \"command_logs\": 20,\n  \"evidence_hashes\": {\n    \"architecture-clean-clone.py\": \"a58164761fed514d0923bbe06843321018aac8b07408287c17d1ab218e2b7965\",\n    \"architecture-clone-commands.json\": \"9b6f09686a747298245ac878e6624bdfc6afd62805e4f608b10e53862a03f89e\",\n    \"architecture-clone-checks.json\": \"7cd629bffa5bc46da828b099fea3d57f1e4fe00b732fb10aa1accf9ff642236b\",\n    \"architecture-clone-summary.json\": \"6c162ac0fca06dfdcc0ab8851adbaeadef9e6045f634e238460663cec085b255\",\n    \"architecture-clone-rehearsal.zip\": \"c6fb01fe414bb9fe3a6c2cd6c62f713fa653e432fba9dda1deb8c18a9096f0bd\",\n    \"architecture-packaging.py\": \"ae6a5c03e3a9de9638a7667cc04b3b742ddc31400e1e0b4952f26528603a09c6\",\n    \"architecture-packaging-commands.json\": \"7693ae986e3a03c3c44bcf5142096630e1e758b050591ee40dd367a2a273674b\"\n  }\n}\n",
+  "stderr": ""
+}

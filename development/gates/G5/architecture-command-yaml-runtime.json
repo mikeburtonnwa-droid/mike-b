@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "import yaml; print(yaml.__version__)"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T13:12:40.359494+00:00",
+  "status": "finished",
+  "finished": "2026-09-09T13:12:40.405543+00:00",
+  "exit_code": 0,
+  "stdout": "6.0.3\n",
+  "stderr": ""
+}

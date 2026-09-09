@@ -1,0 +1,631 @@
+[
+  {
+    "action": "initialize",
+    "result": {
+      "status": "saved",
+      "revision": 1,
+      "commit": "de12bb91a55f7e44e93009f5a2bb4cf574ce45e6d53bcb434ba0d26d368c0fd5"
+    }
+  },
+  {
+    "action": "capture S01",
+    "result": {
+      "status": "saved",
+      "revision": 2,
+      "commit": "d5c4647fe2dd70315abab0000afc612cd59dc65131236de1f7a36020a45443d4"
+    }
+  },
+  {
+    "action": "capture S02",
+    "result": {
+      "status": "saved",
+      "revision": 3,
+      "commit": "3f0959a92641974cd366edb4af3829c346b3dc5f29a82dde23c819d4c96b3a84"
+    }
+  },
+  {
+    "action": "capture S03",
+    "result": {
+      "status": "saved",
+      "revision": 4,
+      "commit": "b68f514d1e20273f035f574e4ea8bf02618ca17d9ef4c50b9d9166d389b9faff"
+    }
+  },
+  {
+    "action": "capture S04",
+    "result": {
+      "status": "saved",
+      "revision": 5,
+      "commit": "c3c5e16b689806c8f17c4b32ad078efd70882e05c82d87c3020c4db5ed9776c8"
+    }
+  },
+  {
+    "action": "capture S05",
+    "result": {
+      "status": "saved",
+      "revision": 6,
+      "commit": "00af7815effee4f25a0ee2e52038365f47923d350ff5e78211f98c604b999262"
+    }
+  },
+  {
+    "action": "capture S06",
+    "result": {
+      "status": "saved",
+      "revision": 7,
+      "commit": "7fa8cbe30e9802c23c9b83cca1cb7a1cb13d894ab86c931fd03a8f111ec5aa2a"
+    }
+  },
+  {
+    "action": "capture S07",
+    "result": {
+      "status": "saved",
+      "revision": 8,
+      "commit": "d778ddd1bce1f32250da8d96d8b7074bc87627c17bc71fa9ed58522b922171af"
+    }
+  },
+  {
+    "action": "capture S08",
+    "result": {
+      "status": "saved",
+      "revision": 9,
+      "commit": "b10e4354203590fe56132d84184e277b4d3bfc6e7afdb5510960d98076679d4d"
+    }
+  },
+  {
+    "action": "capture S09",
+    "result": {
+      "status": "saved",
+      "revision": 10,
+      "commit": "6625d75901b740f9dc333af9ebd1115f224f440c46fb2d9246d9ecb01705a77f"
+    }
+  },
+  {
+    "action": "capture S10",
+    "result": {
+      "status": "saved",
+      "revision": 11,
+      "commit": "363c23850ade6a451ff1a93990dd06af5effdbd76f595c4a7c821bc8b5fa4f8b"
+    }
+  },
+  {
+    "action": "capture SRC_SETUP",
+    "result": {
+      "status": "saved",
+      "revision": 12,
+      "commit": "764feb863ae8db6388c43e2594bdd4e0abd09d578920cccd47be9e6d6346cc3a"
+    }
+  },
+  {
+    "action": "capture SRC_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 13,
+      "commit": "8e19c86562aad18a3c34c2208b3c70f78274f76baab3ea03b8a4ea133dfd2512"
+    }
+  },
+  {
+    "action": "capture SRC_SQL",
+    "result": {
+      "status": "saved",
+      "revision": 14,
+      "commit": "095e768e528f2b1a8d43eb57f49632edfc40213df8c85d2df9df4819e8f23110"
+    }
+  },
+  {
+    "action": "capture SRC_RUNNER",
+    "result": {
+      "status": "saved",
+      "revision": 15,
+      "commit": "1d7f75c3dcb27aa621581a884231716464031d10549572304d315fe72932351c"
+    }
+  },
+  {
+    "action": "capture SRC_EXPECTED",
+    "result": {
+      "status": "saved",
+      "revision": 16,
+      "commit": "e0d96a6cf37aa45c1af46a5d9e631ffb0c5aa8d87bc38dd993fb11d3c2688912"
+    }
+  },
+  {
+    "action": "capture SRC_REHEARSAL",
+    "result": {
+      "status": "saved",
+      "revision": 17,
+      "commit": "76f5d1f8fddabbeb893ca12da4ea3b7eec016027b3e8ac4e620a8039e5b6ac00"
+    }
+  },
+  {
+    "action": "clarify authoritative brief",
+    "result": {
+      "status": "saved",
+      "revision": 18,
+      "commit": "0c44251c16cd7788bd90657156ef97692f0a5012e60e682e293e2897668a2921"
+    }
+  },
+  {
+    "action": "save CL_OLD_OWNER, CL_OWNER",
+    "result": {
+      "status": "saved",
+      "revision": 19,
+      "commit": "bc8bea1519f08ca9669c3fa937fded197a78ce03eadf47f1dc120cde54c31411"
+    }
+  },
+  {
+    "action": "supersede hearsay with scenario policy",
+    "result": {
+      "status": "saved",
+      "revision": 20,
+      "commit": "ed1244105ebf068079777150b8ad44db2eab0b1c632aa3452a86e410fdc17fd4"
+    }
+  },
+  {
+    "action": "save CL_OWNER",
+    "result": {
+      "status": "saved",
+      "revision": 21,
+      "commit": "d68b026d674b7707ac6c46803d4d42f6cfe9d4693eddf3dd477188eb139251f6"
+    }
+  },
+  {
+    "action": "save CL_KEYS",
+    "result": {
+      "status": "saved",
+      "revision": 22,
+      "commit": "b320cf817424057a07f25cd2ba26af21624818f85df1e1d9c0b5ae7373f82714"
+    }
+  },
+  {
+    "action": "save P_INTAKE, P_TRIAGE, P_URGENT, P_CREDIT, P_FULFILL, P_HOLD, COV_stakeholder_0, COV_stakeholder_1, COV_stakeholder_2, COV_stakeholder_3, COV_stakeholder_4, COV_variant_0, COV_variant_1, COV_variant_2, COV_exception_0, COV_exception_1, F_INTAKE, F_TRIAGE, F_URGENT, F_CREDIT, F_FULFILL, F_HOLD, D_REQUESTS, D_CUSTOMERS, D_APPROVALS, D_HANDOFFS, REQ_CARDINALITY, REQ_ISOLATION, REQ_ROUTING, DEC_CODE, COMP_ROUTER, CON_context, CON_evaluation, CON_execution, CON_operations, CON_recovery, CON_scope, CON_state, CON_tools_data, HANDOFF",
+    "result": {
+      "status": "saved",
+      "revision": 23,
+      "commit": "5b1f7d2dbc4e8a07f81c68f02a234e0db2733fe2f67a7b9c0e82cde7014bab90"
+    }
+  },
+  {
+    "action": "save Q_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 24,
+      "commit": "0daefc969db14cd7a90427e6872835f94d74c0ffec753f8bd1553866fb722847"
+    }
+  },
+  {
+    "action": "execute Q_NAIVE",
+    "argv": [
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py",
+      "--sql",
+      "naive.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/Q_NAIVE-binding.json",
+      "--fault",
+      "none"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"'/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python' '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py' --sql naive.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/Q_NAIVE-binding.json' --fault none\",\n  \"exit_code\": 0,\n  \"query_fingerprint\": {\n    \"query\": \"Q_NAIVE\",\n    \"definition_hash\": \"48d94f66b9a19c3b3d4aec76f6d2ae567207068fe93eb52146e9a1186f19ab47\",\n    \"dependencies\": {\n      \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n      \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n      \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n      \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n      \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n      \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n      \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n      \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n      \"SRC_NAIVE\": \"297e20339c3ae599fa13f7b679779eb96a706827da901d5b6b291354ac9e24b1\",\n      \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\"\n    }\n  },\n  \"rows\": [\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"frontline\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"operations\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"frontline\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"frontline\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"operations\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"frontline\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R2\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Gamma\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"operations\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R3\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"urgent\",\n      \"approved\": null,\n      \"owner\": \"operations\",\n      \"route\": \"service-desk\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R3\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"urgent\",\n      \"approved\": null,\n      \"owner\": \"operations\",\n      \"route\": \"service-desk\"\n    },\n    {\n      \"tenant\": \"south\",\n      \"request_id\": \"R4\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"south\",\n      \"request_id\": \"R4\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    }\n  ]\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_Q_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 25,
+      "commit": "acc34541676e2f61e25b0710ef051e6e835a32514bddbee020f1728289dc16d5"
+    }
+  },
+  {
+    "action": "bind Q_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 26,
+      "commit": "43e64b2a486955cb5f73cb4c66c776cb10e7675caa0537d063419dee1bc558fc"
+    }
+  },
+  {
+    "action": "save COMP_ROUTER",
+    "result": {
+      "status": "saved",
+      "revision": 27,
+      "commit": "c06693accc74da8c8109affe2902aeca98e11ad93f3bc0edb0e70c7091600af9"
+    }
+  },
+  {
+    "action": "execute EV_NAIVE",
+    "argv": [
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py",
+      "--sql",
+      "naive.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_NAIVE-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "cardinality"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"'/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python' '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py' --sql naive.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_NAIVE-binding.json' --fault none --criterion cardinality\",\n  \"run_id\": \"b024a5b1-ac45-455f-898e-d356db7ac8f3\",\n  \"run_at\": \"2026-09-09T13:11:50.051051+00:00\",\n  \"exit_code\": 1,\n  \"criterion\": \"Exactly one output per supplied tenant/request\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R2\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R2\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"63d524fc8bdc92565e4f7369052a930782b6dc55607a92040d32a46bacb8d502\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_NAIVE\": \"52b0723966d3350e6e6076aed7627b994df5da3a705a1e439aabe08385387536\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_NAIVE\": \"45050a546625a6a099aa39a250d7090d76c63760719b4a13acd5997287edb32c\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_NAIVE\": \"297e20339c3ae599fa13f7b679779eb96a706827da901d5b6b291354ac9e24b1\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 1
+  },
+  {
+    "action": "capture RESULT_EV_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 28,
+      "commit": "4182bd5495d656321de1d2fbd51c6af78320a1c613250728a3ddca16ebb0cd7c"
+    }
+  },
+  {
+    "action": "evaluate EV_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 29,
+      "commit": "504958a49b36cf4bbea581c05be932bec2c17cf452c476c8d5d92244b5767f20",
+      "evaluation": "EV_NAIVE",
+      "outcome": "fail"
+    }
+  },
+  {
+    "action": "failed design cannot release",
+    "expected_rejection": "Release blocked: REQ_CARDINALITY: no passing applicable evaluation of criterion and implementing components; REQ_ISOLATION: no passing applicable evaluation of criterion and implementing components; REQ_ROUTING: no passing applicable evaluation of criterion and implementing components"
+  },
+  {
+    "action": "save Q_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 30,
+      "commit": "dfc484a5b4a28fa15a64a29f7640c901f23c9a187c4d85822d1c498a59cda61e"
+    }
+  },
+  {
+    "action": "save Q_ROUTES",
+    "result": {
+      "status": "saved",
+      "revision": 31,
+      "commit": "8a3617accaead648aa22ca5bcc06429d0953a74e780c0bbd71c58d487ac517e7"
+    }
+  },
+  {
+    "action": "execute Q_ROUTES",
+    "argv": [
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/Q_ROUTES-binding.json",
+      "--fault",
+      "none"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"'/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python' '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py' --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/Q_ROUTES-binding.json' --fault none\",\n  \"exit_code\": 0,\n  \"query_fingerprint\": {\n    \"query\": \"Q_ROUTES\",\n    \"definition_hash\": \"89d696cacdcf516e834a93026ca48d15863d7289e85802b443fcf15bcd96d1e9\",\n    \"dependencies\": {\n      \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n      \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n      \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n      \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n      \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n      \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n      \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n      \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n      \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n      \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n    }\n  },\n  \"rows\": [\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R2\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Gamma\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"operations\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R3\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"urgent\",\n      \"approved\": null,\n      \"owner\": \"operations\",\n      \"route\": \"service-desk\"\n    },\n    {\n      \"tenant\": \"south\",\n      \"request_id\": \"R4\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    }\n  ]\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_Q_ROUTES",
+    "result": {
+      "status": "saved",
+      "revision": 32,
+      "commit": "532ad49b127103990f6f1dfe2d65a1c8599cee7207ae8f34059cbcdb190fa7e7"
+    }
+  },
+  {
+    "action": "bind Q_ROUTES",
+    "result": {
+      "status": "saved",
+      "revision": 33,
+      "commit": "7a59dd5a94964d95242f79a3c47b60284dbfa18ace9168751a859540439cd747"
+    }
+  },
+  {
+    "action": "save COMP_ROUTER",
+    "result": {
+      "status": "saved",
+      "revision": 34,
+      "commit": "77922a5a0300ea56f8c65385e5da9cfce08e46e0abb7fa82e72f53100c68e337"
+    }
+  },
+  {
+    "action": "execute EV_CARDINALITY",
+    "argv": [
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_CARDINALITY-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "cardinality"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"'/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python' '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py' --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_CARDINALITY-binding.json' --fault none --criterion cardinality\",\n  \"run_id\": \"27b69473-d7da-4b0a-a30e-bb01035c0b33\",\n  \"run_at\": \"2026-09-09T13:11:50.319498+00:00\",\n  \"exit_code\": 0,\n  \"criterion\": \"Exactly one output per supplied tenant/request\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R2\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R2\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_EV_CARDINALITY",
+    "result": {
+      "status": "saved",
+      "revision": 35,
+      "commit": "b195cf3b0a60743bc695a8e2c3f8b0b2a5b7e33307f9b9f3e8d31e4bffd49487"
+    }
+  },
+  {
+    "action": "evaluate EV_CARDINALITY",
+    "result": {
+      "status": "saved",
+      "revision": 36,
+      "commit": "42ab8b2353d99dbedada751d531aa2782feea4496bbc0a89db0b2a4eea5f41c5",
+      "evaluation": "EV_CARDINALITY",
+      "outcome": "pass"
+    }
+  },
+  {
+    "action": "execute EV_ISOLATION",
+    "argv": [
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_ISOLATION-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "isolation"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"'/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python' '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py' --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_ISOLATION-binding.json' --fault none --criterion isolation\",\n  \"run_id\": \"54767169-963e-43ac-a311-8a69f9d9ca09\",\n  \"run_at\": \"2026-09-09T13:11:50.417274+00:00\",\n  \"exit_code\": 0,\n  \"criterion\": \"No customer data crosses tenant boundaries\",\n  \"expected\": [],\n  \"observed\": [],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_EV_ISOLATION",
+    "result": {
+      "status": "saved",
+      "revision": 37,
+      "commit": "3f3ed984fee143dd1b84b8bab0c3c9d19aef9a4f0057a711a6697fe181e01176"
+    }
+  },
+  {
+    "action": "evaluate EV_ISOLATION",
+    "result": {
+      "status": "saved",
+      "revision": 38,
+      "commit": "2405fe17bf2a446409feb9056b1d8543482a8c748f42e1cd140368e355deae6b",
+      "evaluation": "EV_ISOLATION",
+      "outcome": "pass"
+    }
+  },
+  {
+    "action": "execute EV_ROUTING",
+    "argv": [
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_ROUTING-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "routing"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"'/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python' '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py' --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_ROUTING-binding.json' --fault none --criterion routing\",\n  \"run_id\": \"a45f6470-88c7-43e3-996a-09502510e21b\",\n  \"run_at\": \"2026-09-09T13:11:50.523998+00:00\",\n  \"exit_code\": 0,\n  \"criterion\": \"Routing dispositions match the declared fixture\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_EV_ROUTING",
+    "result": {
+      "status": "saved",
+      "revision": 39,
+      "commit": "442a430795298782ab15d4359c2a87a18d9e0ab90b07198fff1ae603af7f19a8"
+    }
+  },
+  {
+    "action": "evaluate EV_ROUTING",
+    "result": {
+      "status": "saved",
+      "revision": 40,
+      "commit": "53c43ed6aa8e9a8ad34a4d5a64f0274a0035a20f6be4d9db8b6c88681d771172",
+      "evaluation": "EV_ROUTING",
+      "outcome": "pass"
+    }
+  },
+  {
+    "action": "create REL1",
+    "result": {
+      "status": "saved",
+      "revision": 41,
+      "commit": "57dcbd01e8e2c1c9fe07b34a909229913d83b98d59504d10f77b4b88b98ec710",
+      "deployment_mode": "local-simulation"
+    }
+  },
+  {
+    "action": "activate REL1 simulation",
+    "result": {
+      "status": "saved",
+      "revision": 42,
+      "commit": "827e6ecf34689ab9187c31db69f9b0c11a33bb7c914c4816abfd0ed06fd53588",
+      "deployment_mode": "local-simulation"
+    }
+  },
+  {
+    "action": "execute EV_OUTAGE",
+    "argv": [
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_OUTAGE-binding.json",
+      "--fault",
+      "drop-approvals",
+      "--criterion",
+      "routing"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"'/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python' '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py' --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_OUTAGE-binding.json' --fault drop-approvals --criterion routing\",\n  \"run_id\": \"a9461c60-5077-4058-8d4a-dd20ead4c6ee\",\n  \"run_at\": \"2026-09-09T13:11:50.757322+00:00\",\n  \"exit_code\": 1,\n  \"criterion\": \"Routing dispositions match the declared fixture\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"finance-review\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 1
+  },
+  {
+    "action": "capture RESULT_EV_OUTAGE",
+    "result": {
+      "status": "saved",
+      "revision": 43,
+      "commit": "a6cfcfef29c25204201396abad98be6d6f9b8f5ec7a790368958ff4c941290aa"
+    }
+  },
+  {
+    "action": "evaluate EV_OUTAGE",
+    "result": {
+      "status": "saved",
+      "revision": 44,
+      "commit": "bcb2e520e5f362ae175b2e84d590e43392f8cf500757bd7ad200a668281ca95f",
+      "evaluation": "EV_OUTAGE",
+      "outcome": "fail"
+    }
+  },
+  {
+    "action": "save INC_FEED",
+    "result": {
+      "status": "saved",
+      "revision": 45,
+      "commit": "44aa34c497c67e6d429d5f613fa0143a5106324a60d13ca4304c7223ad2750db"
+    }
+  },
+  {
+    "action": "execute EV_FAILED_RECOVERY",
+    "argv": [
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_FAILED_RECOVERY-binding.json",
+      "--fault",
+      "drop-approvals",
+      "--criterion",
+      "routing"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"'/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python' '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py' --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_FAILED_RECOVERY-binding.json' --fault drop-approvals --criterion routing\",\n  \"run_id\": \"ab1aa55b-5eb0-4ad5-bbe2-893247db8b6e\",\n  \"run_at\": \"2026-09-09T13:11:50.963733+00:00\",\n  \"exit_code\": 1,\n  \"criterion\": \"Routing dispositions match the declared fixture\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"finance-review\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 1
+  },
+  {
+    "action": "capture RESULT_EV_FAILED_RECOVERY",
+    "result": {
+      "status": "saved",
+      "revision": 46,
+      "commit": "ba67eeb388234d3f6bb41e4a51887f8f2409776f58de657e0dc2c71790a6a762"
+    }
+  },
+  {
+    "action": "evaluate EV_FAILED_RECOVERY",
+    "result": {
+      "status": "saved",
+      "revision": 47,
+      "commit": "20864a6026d6e345e229307305eef7544c8ff7d9df9ab0895b51f6d7b3518b14",
+      "evaluation": "EV_FAILED_RECOVERY",
+      "outcome": "fail"
+    }
+  },
+  {
+    "action": "failed recovery stays open",
+    "expected_rejection": "Incident verification failed, expired, changed, premature or environment-mismatched"
+  },
+  {
+    "action": "execute EV_RECOVERED",
+    "argv": [
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_RECOVERED-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "routing"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"'/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/empty runtime/bin/python' '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/independent clone/examples/order-triage/execute.py' --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g5-architecture-yak2au7v/actual rehearsal/EV_RECOVERED-binding.json' --fault none --criterion routing\",\n  \"run_id\": \"393b5dd8-b235-4283-b367-70dda83eb204\",\n  \"run_at\": \"2026-09-09T13:11:51.194671+00:00\",\n  \"exit_code\": 0,\n  \"criterion\": \"Routing dispositions match the declared fixture\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"cfd94b03fcd324a56c610351dbbd6b41e8fec26fec6380cf9b4c78c5d5fd4a2e\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_EV_RECOVERED",
+    "result": {
+      "status": "saved",
+      "revision": 48,
+      "commit": "5e62084f0693b2e219e42d9f82643a8e9b6768a843b0369729468229a00ec51a"
+    }
+  },
+  {
+    "action": "evaluate EV_RECOVERED",
+    "result": {
+      "status": "saved",
+      "revision": 49,
+      "commit": "cd8c676fd5f996b01ab43b18b9d1ef8c7da926ea685cc623eac50e5968804846",
+      "evaluation": "EV_RECOVERED",
+      "outcome": "pass"
+    }
+  },
+  {
+    "action": "close verified incident",
+    "result": {
+      "status": "saved",
+      "revision": 50,
+      "commit": "1fc3cc9f065efbde3b306d5e2febbb37edb9a3f4591730aa8cac676c6549bdfe"
+    }
+  },
+  {
+    "action": "create recovered REL2",
+    "result": {
+      "status": "saved",
+      "revision": 51,
+      "commit": "d433fd9a040f2bc3fdc78ddac12bcd72d3fd4c07c9835c6293cf430de0b53e92",
+      "deployment_mode": "local-simulation"
+    }
+  },
+  {
+    "action": "activate recovered REL2",
+    "result": {
+      "status": "saved",
+      "revision": 52,
+      "commit": "242dc8f426ee8785d11fa02616faf6ae36042501a8d9b99a01bc0f5fabbe9996",
+      "deployment_mode": "local-simulation"
+    }
+  },
+  {
+    "action": "save handoff checkpoint",
+    "result": {
+      "status": "saved",
+      "revision": 53,
+      "commit": "1c8de61ac4bf4df31a9e3140586617b3d24c6fd1187c4f8fbb17fa8c90cb84ad"
+    }
+  },
+  {
+    "action": "save D_APPROVALS",
+    "result": {
+      "status": "saved",
+      "revision": 54,
+      "commit": "dcb36b8fe20a5c67420f6ebbe02748e5c9939202a53b484d5af6f0f1aab11a6f"
+    }
+  },
+  {
+    "action": "changed input blocks old rollback",
+    "expected_rejection": "Activation blocked: REQ_CARDINALITY: no passing applicable evaluation of criterion and implementing components; REQ_ISOLATION: no passing applicable evaluation of criterion and implementing components; REQ_ROUTING: no passing applicable evaluation of criterion and implementing components; Q_ROUTES: executed query dependencies changed; changed D_APPROVALS"
+  }
+]

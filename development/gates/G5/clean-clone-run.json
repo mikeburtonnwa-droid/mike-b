@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "development/gates/G5/clean-clone.py",
+    "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/g5-clean-clone-1"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started_at": "2026-09-09T13:06:15.895944+00:00",
+  "state": "completed",
+  "returncode": 0,
+  "stdout": "{\n  \"status\": \"pass\",\n  \"commit\": \"a0e93349b556709290068ef9aa8d3288de9122af\",\n  \"clone\": \"/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/g5-clean-clone-1/clean library clone\",\n  \"runtime\": {\n    \"executable\": \"/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/g5-clean-clone-1/empty runtime/bin/python\",\n    \"version\": \"3.12.7 (v3.12.7:0b05ead877f, Sep 30 2024, 23:18:00) [Clang 13.0.0 (clang-1300.0.29.30)]\",\n    \"user_site_enabled\": false,\n    \"site_packages\": {\n      \"/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/g5-clean-clone-1/empty runtime/lib/python3.12/site-packages\": []\n    }\n  },\n  \"commands\": 14,\n  \"tests\": 86,\n  \"rehearsal_checks\": 37,\n  \"site_packages_disabled_for_top_level_python_commands\": true,\n  \"nested_interpreter_has_empty_site_packages\": true,\n  \"checkout_clean\": true,\n  \"limits\": \"Actual local macOS clone and empty virtual environment. Hosted Linux/macOS jobs run after approved publication; no CI outcome is inferred here.\"\n}\n",
+  "stderr": "",
+  "finished_at": "2026-09-09T13:06:24.525037+00:00"
+}
