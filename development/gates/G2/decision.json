@@ -1,0 +1,37 @@
+{
+  "gate": "G2",
+  "verdict": "PASS",
+  "time": "2026-09-09T11:08:32.783520+00:00",
+  "orchestrator": "/root",
+  "candidate": "candidate-r2.json",
+  "candidate_hash": "d4daf5f8deec0bc74ec6cf265f81796a4049f61607be56c0c36cc406c8aab8f2",
+  "reviews": [
+    {
+      "role": "product",
+      "verdict": "APPROVE",
+      "report": "product-r2.md",
+      "hash": "ec417cedacbfe34163ef9a2c0ebdfd90ffca2fc5db86b87c53334b2ea9bbcbb4"
+    },
+    {
+      "role": "integrity",
+      "verdict": "APPROVE",
+      "report": "integrity-r2.md",
+      "hash": "06ccbabd1f5e44393c649e58a0ca1df9edfff44394a3674f625dcdeca96294e2"
+    },
+    {
+      "role": "architecture",
+      "verdict": "APPROVE",
+      "report": "architecture-r2.md",
+      "hash": "63a4167fa2d6c08a7166170ee4d334bd66bc0bc5647e3539797554b4269061b6"
+    }
+  ],
+  "previous_gates": [
+    {
+      "gate": "G1",
+      "hash": "60485849b0b9b537f9c437acbdd50282189dfdafc2df0b02dd3ef062c5314e89"
+    }
+  ],
+  "reason": "All three independent reviewers approved the unchanged revised candidate after resolving all original findings. Forty regression tests pass; independent probes confirm provenance, CLI, persistence faults and council evidence validation.",
+  "rework": "rework.md",
+  "scope": "Evidence engine, CLI, audit and review protocol. Authorizes G3 implementation; not a production sign-off."
+}

@@ -1,0 +1,14 @@
+{"expected": "one saved, five rejected, revision/commits 2", "observed": {"commits": 2, "rejected": 5, "revision": 2, "saved": 1}, "passed": true, "probe": "competing_writers"}
+{"expected": "no partial commit; lock recovers", "observed": {"commits": 2, "pre_head_unchanged": true, "recovery_revision": 2}, "passed": true, "probe": "killed_pre_head_writer"}
+{"expected": "explicit committed-durability-uncertain with visible revision/hash", "observed": {"commit_matches": true, "error": null, "head_changed": true, "record_present": true, "revision": 2, "status": "committed-durability-uncertain"}, "passed": true, "probe": "post_head_fsync_failure"}
+{"expected": "exit 0 with explicit uncertainty and visible revision/hash", "observed": {"commit_matches": true, "exit": 0, "revision": 2, "status": "committed-durability-uncertain", "stderr": ""}, "passed": true, "probe": "cli_post_head_fsync_failure"}
+{"expected": "reject stale retry without duplicate commit", "observed": {"commits": 2, "exit": 2, "revision": 2, "stale": true}, "passed": true, "probe": "retry_after_visible_commit"}
+{"expected": "audit and mutation reject; HEAD unchanged", "observed": {"head_unchanged": true, "rejected": [true, true]}, "passed": true, "probe": "historical_tampering"}
+{"expected": "exit 2 with JSON error and unchanged revision 1", "observed": {"exit": 2, "revision": 1, "structured_error": true, "traceback": false}, "passed": true, "probe": "malformed_cli_record"}
+{"expected": "pass", "observed": "pass", "passed": true, "probe": "council_valid"}
+{"expected": "reject", "observed": "rejected: G1: denied or wrong-candidate report", "passed": true, "probe": "council_candidate_substitution"}
+{"expected": "reject", "observed": "rejected: G1: denied or wrong-candidate report", "passed": true, "probe": "council_contradictory_verdict"}
+{"expected": "reject", "observed": "rejected: G1: decision must follow completed council reviews and be final", "passed": true, "probe": "council_early_decision"}
+{"expected": "reject", "observed": "rejected: G1: incomplete transcript event", "passed": true, "probe": "council_missing_time"}
+{"expected": "reject", "observed": "rejected: G2: immediately preceding passed gate required", "passed": true, "probe": "council_missing_previous"}
+{"failed": 0, "passed": 13, "total": 13}

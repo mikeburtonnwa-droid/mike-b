@@ -1,0 +1,45 @@
+test_applicability_cannot_be_superseded (test_core.CoreTests.test_applicability_cannot_be_superseded) ... ok
+test_assertion_rewrite_fails (test_core.CoreTests.test_assertion_rewrite_fails) ... ok
+test_capture_is_content_addressed_and_auditable (test_core.CoreTests.test_capture_is_content_addressed_and_auditable) ... ok
+test_changed_scope_requires_new_claim (test_core.CoreTests.test_changed_scope_requires_new_claim) ... ok
+test_claim_requires_source_and_locator (test_core.CoreTests.test_claim_requires_source_and_locator) ... ok
+test_cli_from_unrelated_working_directory (test_core.CoreTests.test_cli_from_unrelated_working_directory) ... ok
+test_cli_missing_project_is_nonzero_json_error (test_core.CoreTests.test_cli_missing_project_is_nonzero_json_error) ... ok
+test_cold_resume_preserves_pending_work (test_core.CoreTests.test_cold_resume_preserves_pending_work) ... ok
+test_conflicts_must_be_bilateral_and_not_verified (test_core.CoreTests.test_conflicts_must_be_bilateral_and_not_verified) ... ok
+test_date_status_is_explicit (test_core.CoreTests.test_date_status_is_explicit) ... ok
+test_deleted_source_fails (test_core.CoreTests.test_deleted_source_fails) ... ok
+test_dependency_cycle_rejected (test_core.CoreTests.test_dependency_cycle_rejected) ... ok
+test_duplicate_batch_ids_rejected (test_core.CoreTests.test_duplicate_batch_ids_rejected) ... ok
+test_explicit_supersession_preserves_history_and_context (test_core.CoreTests.test_explicit_supersession_preserves_history_and_context) ... ok
+test_failure_before_head_does_not_publish_partial_commit (test_core.CoreTests.test_failure_before_head_does_not_publish_partial_commit) ... ok
+test_forward_links_are_atomic (test_core.CoreTests.test_forward_links_are_atomic) ... ok
+test_history_tampering_blocks_writes (test_core.CoreTests.test_history_tampering_blocks_writes) ... ok
+test_init_never_overwrites (test_core.CoreTests.test_init_never_overwrites) ... ok
+test_invalid_batch_rolls_back (test_core.CoreTests.test_invalid_batch_rolls_back) ... ok
+test_invalid_shapes_are_structured_cli_errors (test_core.CoreTests.test_invalid_shapes_are_structured_cli_errors) ... ok
+test_post_commit_fault_has_explicit_visible_outcome (test_core.CoreTests.test_post_commit_fault_has_explicit_visible_outcome) ... ok
+test_process_lock_and_killed_writer_recovery (test_core.CoreTests.test_process_lock_and_killed_writer_recovery) ... ok
+test_replacement_conflict_fixed_point (test_core.CoreTests.test_replacement_conflict_fixed_point) ... ok
+test_source_records_are_immutable (test_core.CoreTests.test_source_records_are_immutable) ... ok
+test_source_tampering_blocks_read_and_mutation (test_core.CoreTests.test_source_tampering_blocks_read_and_mutation) ... ok
+test_stale_expected_revision_cannot_lose_an_update (test_core.CoreTests.test_stale_expected_revision_cannot_lose_an_update) ... ok
+test_supersession_chain_reaches_latest (test_core.CoreTests.test_supersession_chain_reaches_latest) ... ok
+test_symlink_source_fails (test_core.CoreTests.test_symlink_source_fails) ... ok
+test_unknown_fields_and_bad_types_rejected (test_core.CoreTests.test_unknown_fields_and_bad_types_rejected) ... ok
+test_verified_claim_needs_verification_and_dates (test_core.CoreTests.test_verified_claim_needs_verification_and_dates) ... ok
+test_denial_cannot_be_overridden_by_example (test_council.CouncilTests.test_denial_cannot_be_overridden_by_example) ... ok
+test_early_decision_rejected (test_council.CouncilTests.test_early_decision_rejected) ... ok
+test_missing_predecessor_rejected (test_council.CouncilTests.test_missing_predecessor_rejected) ... ok
+test_missing_reviewer_fails (test_council.CouncilTests.test_missing_reviewer_fails) ... ok
+test_missing_timestamp_rejected (test_council.CouncilTests.test_missing_timestamp_rejected) ... ok
+test_path_escape_rejected (test_council.CouncilTests.test_path_escape_rejected) ... ok
+test_real_recorded_gate (test_council.CouncilTests.test_real_recorded_gate) ... ok
+test_tampered_approval_fails (test_council.CouncilTests.test_tampered_approval_fails) ... ok
+test_tampered_transcript_fails (test_council.CouncilTests.test_tampered_transcript_fails) ... ok
+test_wrong_candidate_approval_rejected (test_council.CouncilTests.test_wrong_candidate_approval_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.348s
+
+OK

@@ -1,0 +1,735 @@
+{
+  "checks": [
+    {
+      "name": "candidate_before",
+      "passed": true,
+      "details": {
+        "entries": 29
+      },
+      "last_command_index": 0
+    },
+    {
+      "name": "missing_project",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "No project at /private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project; run init first"
+      },
+      "last_command_index": 1
+    },
+    {
+      "name": "help_from_unrelated_directory",
+      "passed": true,
+      "details": {
+        "exit_code": 0,
+        "checkpoint_listed": true
+      },
+      "last_command_index": 2
+    },
+    {
+      "name": "init_accepts_explicit_unknown_owner",
+      "passed": true,
+      "details": {
+        "revision": 1
+      },
+      "last_command_index": 3
+    },
+    {
+      "name": "repeat_init_preserves_project",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "Project already exists; initialization never overwrites it"
+      },
+      "last_command_index": 4
+    },
+    {
+      "name": "missing_input_preserves_project",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "[Errno 2] No such file or directory: 'missing.txt'"
+      },
+      "last_command_index": 5
+    },
+    {
+      "name": "cold_resume_and_freshness",
+      "passed": true,
+      "details": {
+        "revision": 4,
+        "stage": "discovery",
+        "checkpoint": {
+          "completed": [
+            "First interview captured"
+          ],
+          "current_task": "Map exception paths",
+          "next_action": "Ask operations for a rejected request example",
+          "relevant_ids": [
+            "C01",
+            "I01"
+          ],
+          "stage": "discovery",
+          "unresolved": [
+            "Owner unknown",
+            "Exception paths missing"
+          ]
+        },
+        "warnings": [
+          "C01: reported, freshness=unknown",
+          "CSTALE: verified, freshness=stale"
+        ],
+        "deployment_mode": "local-simulation"
+      },
+      "last_command_index": 9
+    },
+    {
+      "name": "transitive_impact",
+      "passed": true,
+      "details": {
+        "record": "S01",
+        "affected": [
+          "C01",
+          "CSTALE",
+          "I01",
+          "N01"
+        ]
+      },
+      "last_command_index": 10
+    },
+    {
+      "name": "stale_edit_has_recovery_instruction",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "Stale revision: expected 2, current 4; reread and reconcile"
+      },
+      "last_command_index": 11
+    },
+    {
+      "name": "malformed_json_has_structured_error",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      },
+      "last_command_index": 12
+    },
+    {
+      "name": "null_record_has_structured_error",
+      "passed": true,
+      "details": {
+        "exit_code": 2,
+        "structured": true,
+        "stderr_last_line": "{\"status\": \"error\", \"message\": \"Each record must be an object\"}",
+        "head_unchanged": true
+      },
+      "last_command_index": 13
+    },
+    {
+      "name": "nonobject_batch_has_structured_error",
+      "passed": true,
+      "details": {
+        "exit_code": 2,
+        "structured": true,
+        "stderr_last_line": "{\"status\": \"error\", \"message\": \"Each record must be an object\"}",
+        "head_unchanged": true
+      },
+      "last_command_index": 14
+    },
+    {
+      "name": "unhashable_type_has_structured_error",
+      "passed": true,
+      "details": {
+        "exit_code": 2,
+        "structured": true,
+        "stderr_last_line": "{\"status\": \"error\", \"message\": \"BAD: unsupported type []\"}",
+        "head_unchanged": true
+      },
+      "last_command_index": 15
+    },
+    {
+      "name": "checkpoint_missing_reference_rejected",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "Checkpoint references missing record MISSING"
+      },
+      "last_command_index": 16
+    },
+    {
+      "name": "replacement_context_includes_direct_conflict",
+      "passed": true,
+      "details": {
+        "records": [
+          "CNEW",
+          "COTHER",
+          "S01"
+        ],
+        "historical": [
+          "COLD"
+        ],
+        "warnings": [
+          "CNEW: disputed, freshness=unknown",
+          "COLD superseded by CNEW; dependent records may need revision",
+          "COTHER: disputed, freshness=unknown"
+        ]
+      },
+      "last_command_index": 19
+    },
+    {
+      "name": "completed_journey_audits",
+      "passed": true,
+      "details": {
+        "status": "pass",
+        "commits": 6
+      },
+      "last_command_index": 20
+    },
+    {
+      "name": "resume_rejects_tampered_source",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "S01: missing, replaced or tampered captured source"
+      },
+      "last_command_index": 22
+    },
+    {
+      "name": "synthetic_council_positive",
+      "passed": true,
+      "details": {
+        "gate": "G1",
+        "status": "pass",
+        "messages": 7,
+        "reviewers": 3,
+        "current_candidate_checked": false,
+        "limit": "Recorded agreement and local integrity; does not prove review quality or message delivery."
+      },
+      "last_command_index": 23
+    },
+    {
+      "name": "synthetic_council_tampered_report_rejected",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "G1: nonapproval or altered report"
+      },
+      "last_command_index": 24
+    },
+    {
+      "name": "synthetic_council_explicit_denial_rejected",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "G1: denied or wrong-candidate report"
+      },
+      "last_command_index": 25
+    },
+    {
+      "name": "synthetic_council_wrong_candidate_rejected",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "G1: denied or wrong-candidate report"
+      },
+      "last_command_index": 26
+    },
+    {
+      "name": "synthetic_council_wrong_dispatch_rejected",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "G1: final review dispatch did not identify accepted candidate"
+      },
+      "last_command_index": 27
+    },
+    {
+      "name": "synthetic_council_ambiguous_header_rejected",
+      "passed": true,
+      "details": {
+        "status": "error",
+        "message": "Report requires one authoritative verdict and candidate SHA-256 header"
+      },
+      "last_command_index": 28
+    },
+    {
+      "name": "synthetic_council_body_example_is_not_verdict",
+      "passed": true,
+      "details": {
+        "gate": "G1",
+        "status": "pass",
+        "messages": 7,
+        "reviewers": 3,
+        "current_candidate_checked": false,
+        "limit": "Recorded agreement and local integrity; does not prove review quality or message delivery."
+      },
+      "last_command_index": 29
+    },
+    {
+      "name": "candidate_after",
+      "passed": true,
+      "details": {
+        "entries": 29
+      },
+      "last_command_index": 29
+    },
+    {
+      "name": "original_review_evidence_preserved",
+      "passed": true,
+      "details": {
+        "product.md": "be142561979ee2d3e7941f8d8a8962fc1de57d1aba2a8e9286175f3f4026ce19",
+        "product-checks.py": "eb5d8dff699be6db46132a3002361f83c3cec20fa9d12095f6d07372c067969c",
+        "product-cli-evidence.json": "41f41019a7a98d2c5b959a68edd2ee098f3da1ea80d9c392c108154fbf695383"
+      },
+      "last_command_index": 29
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "show"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"No project at /private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project; run init first\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "--help"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "usage: aa.py [-h] --project PROJECT [--actor ACTOR]\n             {init,source,put,checkpoint,supersede,context,impact,show,audit}\n             ...\n\nAgent Architect local project tools (Python 3.10+, macOS/Linux).\n\npositional arguments:\n  {init,source,put,checkpoint,supersede,context,impact,show,audit}\n    init                Create a project; never overwrite an existing one\n    source              Capture original material and its provenance\n    put                 Validate and atomically save one JSON record or a\n                        batch\n    checkpoint          Save progress for a new session\n    supersede           Explicitly replace a claim while retaining its history\n    context             Retrieve relevant evidence with conflicts/freshness\n                        visible\n    impact              Find transitive dependents of a record\n    show                Read canonical current records\n    audit               Check committed history and captured source hashes\n\noptions:\n  -h, --help            show this help message and exit\n  --project PROJECT     Adopter project directory, separate from the public\n                        library\n  --actor ACTOR\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "init",
+        "--title",
+        "Account onboarding",
+        "--scope",
+        "Provisional scope",
+        "--owner",
+        "unknown"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"saved\",\n  \"revision\": 1,\n  \"commit\": \"3fb64154290229006212e4d344414eb1ce00e31242d061221b3dc271be573b17\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "init",
+        "--title",
+        "Again",
+        "--scope",
+        "Again",
+        "--owner",
+        "Again"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"Project already exists; initialization never overwrites it\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "source",
+        "--id",
+        "S01",
+        "--title",
+        "Interview",
+        "--file",
+        "missing.txt",
+        "--kind",
+        "interview",
+        "--locator",
+        "Meeting 1",
+        "--environment",
+        "operations",
+        "--expect-revision",
+        "1"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"[Errno 2] No such file or directory: 'missing.txt'\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "source",
+        "--id",
+        "S01",
+        "--title",
+        "Interview",
+        "--file",
+        "interview notes.txt",
+        "--kind",
+        "interview",
+        "--locator",
+        "Meeting 1, lines 1-2",
+        "--environment",
+        "operations",
+        "--captured-on",
+        "2026-09-01",
+        "--expect-revision",
+        "1"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"saved\",\n  \"revision\": 2,\n  \"commit\": \"b8021ec8aec5ab2ee4b6a417a6b83b3f092dbf4d379b0eee4c40f988eff78fe6\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "put",
+        "records.json",
+        "--expect-revision",
+        "2"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"saved\",\n  \"revision\": 3,\n  \"commit\": \"67238f2c50f3cdeebc39d0ff32022df512e08a063100592bf86284512e65b1ca\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "checkpoint",
+        "checkpoint.json",
+        "--expect-revision",
+        "3"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"saved\",\n  \"revision\": 4,\n  \"commit\": \"baab0ab6aa3eada994b7eeacf29ac877be947ac53383851c77f3f219204f2ed7\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "context",
+        "--as-of",
+        "2026-09-09"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"project\": \"Account onboarding\",\n  \"revision\": 4,\n  \"as_of\": \"2026-09-09\",\n  \"stage\": \"discovery\",\n  \"checkpoint\": {\n    \"completed\": [\n      \"First interview captured\"\n    ],\n    \"current_task\": \"Map exception paths\",\n    \"next_action\": \"Ask operations for a rejected request example\",\n    \"relevant_ids\": [\n      \"C01\",\n      \"I01\"\n    ],\n    \"stage\": \"discovery\",\n    \"unresolved\": [\n      \"Owner unknown\",\n      \"Exception paths missing\"\n    ]\n  },\n  \"query\": \"\",\n  \"records\": [\n    {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"Operations creates accounts\",\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"C01\",\n      \"status\": \"reported\",\n      \"title\": \"C01\",\n      \"type\": \"claim\",\n      \"freshness\": \"unknown\"\n    },\n    {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"Legacy evidence remains applicable\",\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"CSTALE\",\n      \"review_due\": \"2026-09-01\",\n      \"status\": \"verified\",\n      \"title\": \"CSTALE\",\n      \"type\": \"claim\",\n      \"verification\": \"Synthetic observed case\",\n      \"verified_on\": \"2026-08-01\",\n      \"freshness\": \"stale\"\n    },\n    {\n      \"critical\": true,\n      \"description\": \"Owner unknown\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 2\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"I01\",\n      \"next_action\": \"Ask operations\",\n      \"owner\": \"unknown\",\n      \"status\": \"open\",\n      \"title\": \"Missing owner\",\n      \"type\": \"issue\"\n    },\n    {\n      \"depends_on\": [\n        \"C01\"\n      ],\n      \"description\": \"Follow-up\",\n      \"id\": \"N01\",\n      \"next_action\": \"Ask who owns rejected requests\",\n      \"owner\": \"unknown\",\n      \"status\": \"active\",\n      \"title\": \"Account follow-up\",\n      \"type\": \"note\"\n    },\n    {\n      \"blob\": \"sources/1145e30a56eb9401151b4cdede9be7a77d4978e8a97b679030b97368fe4a20f7.blob\",\n      \"captured_on\": \"2026-09-01\",\n      \"content_hash\": \"1145e30a56eb9401151b4cdede9be7a77d4978e8a97b679030b97368fe4a20f7\",\n      \"description\": \"Interview\",\n      \"environment\": \"operations\",\n      \"id\": \"S01\",\n      \"kind\": \"interview\",\n      \"locator\": \"Meeting 1, lines 1-2\",\n      \"status\": \"captured\",\n      \"title\": \"Interview\",\n      \"type\": \"source\"\n    }\n  ],\n  \"historical_dependencies\": [],\n  \"warnings\": [\n    \"C01: reported, freshness=unknown\",\n    \"CSTALE: verified, freshness=stale\"\n  ],\n  \"active_release\": null,\n  \"deployment_mode\": \"local-simulation\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "impact",
+        "S01"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"record\": \"S01\",\n  \"affected\": [\n    \"C01\",\n    \"CSTALE\",\n    \"I01\",\n    \"N01\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "put",
+        "records.json",
+        "--expect-revision",
+        "2"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"Stale revision: expected 2, current 4; reread and reconcile\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "put",
+        "syntax.json",
+        "--expect-revision",
+        "4"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "put",
+        "null_record.json",
+        "--expect-revision",
+        "4"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"Each record must be an object\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "put",
+        "nonobject_batch.json",
+        "--expect-revision",
+        "4"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"Each record must be an object\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "put",
+        "unhashable_type.json",
+        "--expect-revision",
+        "4"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"BAD: unsupported type []\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "checkpoint",
+        "missing-ref.json",
+        "--expect-revision",
+        "4"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"Checkpoint references missing record MISSING\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "put",
+        "replacement-conflict.json",
+        "--expect-revision",
+        "4"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"saved\",\n  \"revision\": 5,\n  \"commit\": \"03fad922f39e68d2ae5bd4d15f7446ed08fbd399c84dc5af90a933ebad0ed825\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "supersede",
+        "COLD",
+        "CNEW",
+        "--reason",
+        "New interview interpretation",
+        "--expect-revision",
+        "5"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"saved\",\n  \"revision\": 6,\n  \"commit\": \"64767cd9176dd0f9e512361f04930417816765bc59b86ce5b4a1222105f74b1b\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "context",
+        "retired-route",
+        "--as-of",
+        "2026-09-09"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"project\": \"Account onboarding\",\n  \"revision\": 6,\n  \"as_of\": \"2026-09-09\",\n  \"stage\": \"discovery\",\n  \"checkpoint\": {\n    \"completed\": [\n      \"First interview captured\"\n    ],\n    \"current_task\": \"Map exception paths\",\n    \"next_action\": \"Ask operations for a rejected request example\",\n    \"relevant_ids\": [\n      \"C01\",\n      \"I01\"\n    ],\n    \"stage\": \"discovery\",\n    \"unresolved\": [\n      \"Owner unknown\",\n      \"Exception paths missing\"\n    ]\n  },\n  \"query\": \"retired-route\",\n  \"records\": [\n    {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"Operations owns current routing\",\n      \"conflicts_with\": [\n        \"COTHER\"\n      ],\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"CNEW\",\n      \"status\": \"disputed\",\n      \"supersedes\": \"COLD\",\n      \"title\": \"CNEW\",\n      \"type\": \"claim\",\n      \"freshness\": \"unknown\"\n    },\n    {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"Compliance owns current routing\",\n      \"conflicts_with\": [\n        \"CNEW\"\n      ],\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"COTHER\",\n      \"status\": \"disputed\",\n      \"title\": \"COTHER\",\n      \"type\": \"claim\",\n      \"freshness\": \"unknown\"\n    },\n    {\n      \"blob\": \"sources/1145e30a56eb9401151b4cdede9be7a77d4978e8a97b679030b97368fe4a20f7.blob\",\n      \"captured_on\": \"2026-09-01\",\n      \"content_hash\": \"1145e30a56eb9401151b4cdede9be7a77d4978e8a97b679030b97368fe4a20f7\",\n      \"description\": \"Interview\",\n      \"environment\": \"operations\",\n      \"id\": \"S01\",\n      \"kind\": \"interview\",\n      \"locator\": \"Meeting 1, lines 1-2\",\n      \"status\": \"captured\",\n      \"title\": \"Interview\",\n      \"type\": \"source\"\n    }\n  ],\n  \"historical_dependencies\": [\n    {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"retired-route\",\n      \"conflicts_with\": [],\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"COLD\",\n      \"rationale\": \"New interview interpretation\",\n      \"status\": \"superseded\",\n      \"superseded_by\": \"CNEW\",\n      \"title\": \"COLD\",\n      \"type\": \"claim\",\n      \"freshness\": \"unknown\"\n    }\n  ],\n  \"warnings\": [\n    \"CNEW: disputed, freshness=unknown\",\n    \"COLD superseded by CNEW; dependent records may need revision\",\n    \"COTHER: disputed, freshness=unknown\"\n  ],\n  \"active_release\": null,\n  \"deployment_mode\": \"local-simulation\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "audit"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"commits\": 6,\n  \"head\": \"64767cd9176dd0f9e512361f04930417816765bc59b86ce5b4a1222105f74b1b\",\n  \"limit\": \"Local hash consistency; does not authenticate authors or truth.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "show"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"active_release\": null,\n  \"checkpoint\": {\n    \"completed\": [\n      \"First interview captured\"\n    ],\n    \"current_task\": \"Map exception paths\",\n    \"next_action\": \"Ask operations for a rejected request example\",\n    \"relevant_ids\": [\n      \"C01\",\n      \"I01\"\n    ],\n    \"stage\": \"discovery\",\n    \"unresolved\": [\n      \"Owner unknown\",\n      \"Exception paths missing\"\n    ]\n  },\n  \"created\": \"2026-09-09T11:04:27.009991+00:00\",\n  \"id\": \"project\",\n  \"owner\": \"unknown\",\n  \"records\": {\n    \"C01\": {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"Operations creates accounts\",\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"C01\",\n      \"status\": \"reported\",\n      \"title\": \"C01\",\n      \"type\": \"claim\"\n    },\n    \"CNEW\": {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"Operations owns current routing\",\n      \"conflicts_with\": [\n        \"COTHER\"\n      ],\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"CNEW\",\n      \"status\": \"disputed\",\n      \"supersedes\": \"COLD\",\n      \"title\": \"CNEW\",\n      \"type\": \"claim\"\n    },\n    \"COLD\": {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"retired-route\",\n      \"conflicts_with\": [],\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"COLD\",\n      \"rationale\": \"New interview interpretation\",\n      \"status\": \"superseded\",\n      \"superseded_by\": \"CNEW\",\n      \"title\": \"COLD\",\n      \"type\": \"claim\"\n    },\n    \"COTHER\": {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"Compliance owns current routing\",\n      \"conflicts_with\": [\n        \"CNEW\"\n      ],\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"COTHER\",\n      \"status\": \"disputed\",\n      \"title\": \"COTHER\",\n      \"type\": \"claim\"\n    },\n    \"CSTALE\": {\n      \"applicability\": \"standard onboarding\",\n      \"assertion\": \"Legacy evidence remains applicable\",\n      \"description\": \"Synthetic interview interpretation\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 1\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"CSTALE\",\n      \"review_due\": \"2026-09-01\",\n      \"status\": \"verified\",\n      \"title\": \"CSTALE\",\n      \"type\": \"claim\",\n      \"verification\": \"Synthetic observed case\",\n      \"verified_on\": \"2026-08-01\"\n    },\n    \"I01\": {\n      \"critical\": true,\n      \"description\": \"Owner unknown\",\n      \"evidence\": [\n        {\n          \"locator\": \"line 2\",\n          \"source\": \"S01\"\n        }\n      ],\n      \"id\": \"I01\",\n      \"next_action\": \"Ask operations\",\n      \"owner\": \"unknown\",\n      \"status\": \"open\",\n      \"title\": \"Missing owner\",\n      \"type\": \"issue\"\n    },\n    \"N01\": {\n      \"depends_on\": [\n        \"C01\"\n      ],\n      \"description\": \"Follow-up\",\n      \"id\": \"N01\",\n      \"next_action\": \"Ask who owns rejected requests\",\n      \"owner\": \"unknown\",\n      \"status\": \"active\",\n      \"title\": \"Account follow-up\",\n      \"type\": \"note\"\n    },\n    \"S01\": {\n      \"blob\": \"sources/1145e30a56eb9401151b4cdede9be7a77d4978e8a97b679030b97368fe4a20f7.blob\",\n      \"captured_on\": \"2026-09-01\",\n      \"content_hash\": \"1145e30a56eb9401151b4cdede9be7a77d4978e8a97b679030b97368fe4a20f7\",\n      \"description\": \"Interview\",\n      \"environment\": \"operations\",\n      \"id\": \"S01\",\n      \"kind\": \"interview\",\n      \"locator\": \"Meeting 1, lines 1-2\",\n      \"status\": \"captured\",\n      \"title\": \"Interview\",\n      \"type\": \"source\"\n    }\n  },\n  \"releases\": {},\n  \"revision\": 6,\n  \"schema_version\": 1,\n  \"scope\": \"Provisional scope\",\n  \"stage\": \"discovery\",\n  \"title\": \"Account onboarding\",\n  \"updated\": \"2026-09-09T11:04:27.530246+00:00\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/scripts/aa.py",
+        "--project",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/private project",
+        "context",
+        "--as-of",
+        "2026-09-09"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"error\", \"message\": \"S01: missing, replaced or tampered captured source\"}\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/synthetic council/scripts/check_council.py",
+        "G1"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"gate\": \"G1\",\n  \"status\": \"pass\",\n  \"messages\": 7,\n  \"reviewers\": 3,\n  \"current_candidate_checked\": false,\n  \"limit\": \"Recorded agreement and local integrity; does not prove review quality or message delivery.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/synthetic council/scripts/check_council.py",
+        "G1"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "{\"status\": \"error\", \"message\": \"G1: nonapproval or altered report\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/synthetic council/scripts/check_council.py",
+        "G1"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "{\"status\": \"error\", \"message\": \"G1: denied or wrong-candidate report\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/synthetic council/scripts/check_council.py",
+        "G1"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "{\"status\": \"error\", \"message\": \"G1: denied or wrong-candidate report\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/synthetic council/scripts/check_council.py",
+        "G1"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "{\"status\": \"error\", \"message\": \"G1: final review dispatch did not identify accepted candidate\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/synthetic council/scripts/check_council.py",
+        "G1"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 2,
+      "stdout": "{\"status\": \"error\", \"message\": \"Report requires one authoritative verdict and candidate SHA-256 header\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+        "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/synthetic council/scripts/check_council.py",
+        "G1"
+      ],
+      "cwd": "/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/aa-g2-product-s4xp17l5/unrelated working directory",
+      "exit_code": 0,
+      "stdout": "{\n  \"gate\": \"G1\",\n  \"status\": \"pass\",\n  \"messages\": 7,\n  \"reviewers\": 3,\n  \"current_candidate_checked\": false,\n  \"limit\": \"Recorded agreement and local integrity; does not prove review quality or message delivery.\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}
