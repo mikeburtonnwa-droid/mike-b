@@ -1,0 +1,32 @@
+{
+  "gate": "G1",
+  "verdict": "PASS",
+  "time": "2026-09-09T10:43:18.369578+00:00",
+  "orchestrator": "/root",
+  "candidate": "candidate-r2.json",
+  "candidate_hash": "9dabbb66c03d0ef4610f39bc08ceabeb84daeab9fc7010fd66b428a84db98a63",
+  "reviews": [
+    {
+      "role": "product",
+      "verdict": "APPROVE",
+      "report": "product-r2.md",
+      "hash": "8f328c99693df7cfd3f8ccf78915cddac9e02cf7f9d714751a456ffd56939f9f"
+    },
+    {
+      "role": "integrity",
+      "verdict": "APPROVE",
+      "report": "integrity-r2.md",
+      "hash": "a0e776b804a5e72c2ab7ad468ae4f16b780d722fc19737d99f26e7883a1cd712"
+    },
+    {
+      "role": "architecture",
+      "verdict": "APPROVE",
+      "report": "architecture-r2.md",
+      "hash": "ecc3399b4d2808e551d1731c06f22fda29c31ed62e8763326bf7f8e96b0c4d01"
+    }
+  ],
+  "previous_gates": [],
+  "reason": "All three independent reviewers explicitly approved the revised contract. All original blockers resolved; later-gate evidence obligations retained.",
+  "rework": "rework.md",
+  "scope": "Plan and contracts only; authorizes G2 implementation, not product or production sign-off."
+}
