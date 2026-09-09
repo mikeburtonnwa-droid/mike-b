@@ -1,0 +1,178 @@
+[
+  {
+    "action": "initialize",
+    "result": {
+      "status": "saved",
+      "revision": 1,
+      "commit": "63d0512ef59e6e040e43edc458363fe01f40efa80d026346996376fa5eebd7d2"
+    }
+  },
+  {
+    "action": "capture S01",
+    "result": {
+      "status": "saved",
+      "revision": 2,
+      "commit": "e18251d351e721def0960cbc23a218078754ed8db8e500ea27d5e88b6d4c0290"
+    }
+  },
+  {
+    "action": "capture S02",
+    "result": {
+      "status": "saved",
+      "revision": 3,
+      "commit": "9bb298480ed0da45bdc9bc3ff4e2bb7b73c029b9566539eecf47ed98deaad1cb"
+    }
+  },
+  {
+    "action": "capture S03",
+    "result": {
+      "status": "saved",
+      "revision": 4,
+      "commit": "fe36bd6cb9a1841c3f17709cd7ee18ccfe363ec2eb260abbe0c5edd2b8e0e1d4"
+    }
+  },
+  {
+    "action": "capture S04",
+    "result": {
+      "status": "saved",
+      "revision": 5,
+      "commit": "5bc339508da863f594cce4b971db0ffb5a091fa5446609749625b2635b9a32bf"
+    }
+  },
+  {
+    "action": "capture S05",
+    "result": {
+      "status": "saved",
+      "revision": 6,
+      "commit": "e25c785613a850cd7bc18bf724a9e0e80b6081e231cb2a50ab1bb7897124469d"
+    }
+  },
+  {
+    "action": "capture S06",
+    "result": {
+      "status": "saved",
+      "revision": 7,
+      "commit": "288a75a14c8fbd35f3b7e7b4f6d30f732f4e9c1cb6f93a481eb669d32d4e37d6"
+    }
+  },
+  {
+    "action": "capture S07",
+    "result": {
+      "status": "saved",
+      "revision": 8,
+      "commit": "b1a2cef26c871b7b600434b456be44fca1aed54fd3761ace6925f0876ef71a5f"
+    }
+  },
+  {
+    "action": "capture S08",
+    "result": {
+      "status": "saved",
+      "revision": 9,
+      "commit": "63f6f9d51a14f58ec9b04f1d4d79ddb6cbc5a99abfa3e59aae1a6428a8c4631f"
+    }
+  },
+  {
+    "action": "capture S09",
+    "result": {
+      "status": "saved",
+      "revision": 10,
+      "commit": "bb70600327ce557b231936bc910397c5a87b3a9435fe0eb3d530bd32c0400039"
+    }
+  },
+  {
+    "action": "capture S10",
+    "result": {
+      "status": "saved",
+      "revision": 11,
+      "commit": "52e4a4093ff3d07d9a3674d7c36b489519ef7ad105279cf62b50591e8670105b"
+    }
+  },
+  {
+    "action": "capture SRC_SETUP",
+    "result": {
+      "status": "saved",
+      "revision": 12,
+      "commit": "b77f2d1d1b0aa2959556e17ca01c55748fddd70f317a6d66e14b845560cbd188"
+    }
+  },
+  {
+    "action": "capture SRC_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 13,
+      "commit": "d1c5759570d3e1a3c0bbcd651b21334cfbccca802d0c6962f900917830903329"
+    }
+  },
+  {
+    "action": "capture SRC_SQL",
+    "result": {
+      "status": "saved",
+      "revision": 14,
+      "commit": "0f71c4924b38c27dd4f042d155a87e0021fde40df9883f0dfa1097ed8402d473"
+    }
+  },
+  {
+    "action": "capture SRC_RUNNER",
+    "result": {
+      "status": "saved",
+      "revision": 15,
+      "commit": "4ea4ba859b486ccc3e56623402e26ce8fd50232b218543e264ba81a0be2c0e26"
+    }
+  },
+  {
+    "action": "capture SRC_EXPECTED",
+    "result": {
+      "status": "saved",
+      "revision": 16,
+      "commit": "c41631b4cd1eacde9094d265885071a6dacd697e57080c7e0c697ee98a48e6f9"
+    }
+  },
+  {
+    "action": "capture SRC_REHEARSAL",
+    "result": {
+      "status": "saved",
+      "revision": 17,
+      "commit": "560965c60a21f8771fadeaafad680dbca90992ffafc0955f40dd147d951f7465"
+    }
+  },
+  {
+    "action": "clarify authoritative brief",
+    "result": {
+      "status": "saved",
+      "revision": 18,
+      "commit": "b7b68fa73cf648975b7c970203a5ffc415e493e645d3ffb8bada78cfc1484976"
+    }
+  },
+  {
+    "action": "save CL_OLD_OWNER, CL_OWNER",
+    "result": {
+      "status": "saved",
+      "revision": 19,
+      "commit": "e67e5c641503640c74847095522981a1abde2251f712f38b3714d65c92051646"
+    }
+  },
+  {
+    "action": "supersede hearsay with scenario policy",
+    "result": {
+      "status": "saved",
+      "revision": 20,
+      "commit": "6f7f4da4d7fc735c507f29440ec385c9ad1ca16de0e61b89d25c254d12cafc58"
+    }
+  },
+  {
+    "action": "save CL_OWNER",
+    "result": {
+      "status": "saved",
+      "revision": 21,
+      "commit": "85c8cd45165c77b09f5a072870bb4121cb1e6e1e7d4ef9763567f77edc98e4f1"
+    }
+  },
+  {
+    "action": "save CL_KEYS",
+    "result": {
+      "status": "saved",
+      "revision": 22,
+      "commit": "5b2404c863d3fe8e4f287f71106cf9185c05e17ea9fdd6cce5170ea5df9c546e"
+    }
+  }
+]

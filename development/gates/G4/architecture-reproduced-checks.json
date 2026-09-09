@@ -1,0 +1,224 @@
+[
+  {
+    "name": "conflict retrieved bilaterally",
+    "expected": true,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "name": "superseded claim excluded from active recall",
+    "expected": true,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "name": "current map",
+    "expected": [],
+    "observed": [],
+    "passed": true
+  },
+  {
+    "name": "proposed map",
+    "expected": [],
+    "observed": [],
+    "passed": true
+  },
+  {
+    "name": "architecture",
+    "expected": [],
+    "observed": [],
+    "passed": true
+  },
+  {
+    "name": "Q_NAIVE exit faithfully captured",
+    "expected": 0,
+    "observed": 0,
+    "passed": true
+  },
+  {
+    "name": "naive join cardinality demonstrates defect",
+    "expected": 13,
+    "observed": 13,
+    "passed": true
+  },
+  {
+    "name": "EV_NAIVE exit faithfully captured",
+    "expected": 1,
+    "observed": 1,
+    "passed": true
+  },
+  {
+    "name": "EV_NAIVE computed outcome",
+    "expected": "fail",
+    "observed": "fail",
+    "passed": true
+  },
+  {
+    "name": "failed cardinality preserved",
+    "expected": "fail",
+    "observed": "fail",
+    "passed": true
+  },
+  {
+    "name": "failed design cannot release rejects atomically",
+    "expected": true,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "name": "Q_ROUTES exit faithfully captured",
+    "expected": 0,
+    "observed": 0,
+    "passed": true
+  },
+  {
+    "name": "corrected join cardinality",
+    "expected": 4,
+    "observed": 4,
+    "passed": true
+  },
+  {
+    "name": "EV_CARDINALITY exit faithfully captured",
+    "expected": 0,
+    "observed": 0,
+    "passed": true
+  },
+  {
+    "name": "EV_CARDINALITY computed outcome",
+    "expected": "pass",
+    "observed": "pass",
+    "passed": true
+  },
+  {
+    "name": "EV_ISOLATION exit faithfully captured",
+    "expected": 0,
+    "observed": 0,
+    "passed": true
+  },
+  {
+    "name": "EV_ISOLATION computed outcome",
+    "expected": "pass",
+    "observed": "pass",
+    "passed": true
+  },
+  {
+    "name": "EV_ROUTING exit faithfully captured",
+    "expected": 0,
+    "observed": 0,
+    "passed": true
+  },
+  {
+    "name": "EV_ROUTING computed outcome",
+    "expected": "pass",
+    "observed": "pass",
+    "passed": true
+  },
+  {
+    "name": "ready for bounded simulation",
+    "expected": [],
+    "observed": [],
+    "passed": true
+  },
+  {
+    "name": "EV_OUTAGE exit faithfully captured",
+    "expected": 1,
+    "observed": 1,
+    "passed": true
+  },
+  {
+    "name": "EV_OUTAGE computed outcome",
+    "expected": "fail",
+    "observed": "fail",
+    "passed": true
+  },
+  {
+    "name": "later failure blocks readiness",
+    "expected": "fail",
+    "observed": "fail",
+    "passed": true
+  },
+  {
+    "name": "EV_FAILED_RECOVERY exit faithfully captured",
+    "expected": 1,
+    "observed": 1,
+    "passed": true
+  },
+  {
+    "name": "EV_FAILED_RECOVERY computed outcome",
+    "expected": "fail",
+    "observed": "fail",
+    "passed": true
+  },
+  {
+    "name": "failed recovery stays open rejects atomically",
+    "expected": true,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "name": "incident remains open",
+    "expected": "open",
+    "observed": "open",
+    "passed": true
+  },
+  {
+    "name": "EV_RECOVERED exit faithfully captured",
+    "expected": 0,
+    "observed": 0,
+    "passed": true
+  },
+  {
+    "name": "EV_RECOVERED computed outcome",
+    "expected": "pass",
+    "observed": "pass",
+    "passed": true
+  },
+  {
+    "name": "incident closed with fresh evidence",
+    "expected": "EV_RECOVERED",
+    "observed": "EV_RECOVERED",
+    "passed": true
+  },
+  {
+    "name": "readiness restored",
+    "expected": [],
+    "observed": [],
+    "passed": true
+  },
+  {
+    "name": "snapshot unchanged through incident",
+    "expected": "c1ca4f08e964b9857a9541933dd21332d13e4c61412e5574fd8e9637077834be",
+    "observed": "c1ca4f08e964b9857a9541933dd21332d13e4c61412e5574fd8e9637077834be",
+    "passed": true
+  },
+  {
+    "name": "full project audit",
+    "expected": "pass",
+    "observed": "pass",
+    "passed": true
+  },
+  {
+    "name": "data change reaches query and implementation",
+    "expected": true,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "name": "changed input blocks old rollback rejects atomically",
+    "expected": true,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "name": "expired knowledge exposed on recall",
+    "expected": true,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "name": "changed project audit",
+    "expected": "pass",
+    "observed": "pass",
+    "passed": true
+  }
+]

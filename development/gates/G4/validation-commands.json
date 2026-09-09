@@ -1,0 +1,85 @@
+[
+  {
+    "argv": [
+      "python3",
+      "examples/order-triage/rehearse.py",
+      "--output",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/order-rehearsal-1"
+    ],
+    "returncode": 1,
+    "output_file": "rehearsal-first.txt"
+  },
+  {
+    "argv": [
+      "python3",
+      "examples/order-triage/rehearse.py",
+      "--output",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/order-rehearsal-2"
+    ],
+    "returncode": 1,
+    "output_file": "rehearsal-second.txt"
+  },
+  {
+    "argv": [
+      "python3",
+      "examples/order-triage/rehearse.py",
+      "--output",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/order-rehearsal-3"
+    ],
+    "returncode": 0,
+    "output_file": "rehearsal-third.txt"
+  },
+  {
+    "argv": [
+      "python3",
+      "examples/order-triage/rehearse.py",
+      "--output",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/order-rehearsal-4"
+    ],
+    "returncode": 0,
+    "output_file": "rehearsal-fourth.txt"
+  },
+  {
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "returncode": 0,
+    "output_file": "regression-final.txt"
+  },
+  {
+    "argv": [
+      "mmdc",
+      "-i",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/current-map.mmd",
+      "-o",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/current-map.png",
+      "-b",
+      "white",
+      "-w",
+      "1400"
+    ],
+    "returncode": 0,
+    "output_file": "mermaid-current.txt"
+  },
+  {
+    "argv": [
+      "mmdc",
+      "-i",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/proposed-map.mmd",
+      "-o",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/work/proposed-map.png",
+      "-b",
+      "white",
+      "-w",
+      "1400"
+    ],
+    "returncode": 0,
+    "output_file": "mermaid-proposed.txt"
+  }
+]

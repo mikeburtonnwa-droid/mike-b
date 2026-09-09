@@ -1,0 +1,15 @@
+{
+  "revision": 4,
+  "unknown_owner": true,
+  "all_claims_reported": true,
+  "source_bytes_exact": true,
+  "source_hash_valid": true,
+  "checkpoint_has_focused_next_action": "Identify the operations recipient and ask for a walkthrough of one concrete normal request, from the handoff email to its final outcome, using that session's supplied evidence and existing authorization. Record receiving systems, acknowledgements, owners, credit-check outcomes, fulfillment outcome and status chases. In that same conversation identify the overall owner and who can explain urgent exceptions. Capture the new material before updating records; do not contact anyone without authorization.",
+  "unresolved": [
+    "I01: Overall accountable process owner, full business boundary and completion criteria are unknown; update the canonical brief only after captured clarification.",
+    "I02/CV02/CV04: Operations has not supplied evidence. Receiving system, acknowledgement, credit-check and fulfillment actors, outcomes and timing remain unknown. The downstream sequence is reported context only.",
+    "I03/CV05/CV06: Urgent routing, decision point, receiver and accountable owner are unknown; other failed, delayed or rejected cases need discovery.",
+    "I04: Status chasing is reported but its location, cause, frequency and elapsed time are unmeasured.",
+    "All evidence is synthetic, from one recollection-based account. Effective date is the stated scenario date; individual verification and review dates are unknown. No architecture or readiness conclusion is supported."
+  ]
+}

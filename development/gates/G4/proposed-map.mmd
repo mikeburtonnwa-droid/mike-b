@@ -1,0 +1,12 @@
+flowchart TD
+  F_CREDIT{"F_CREDIT: Assess latest credit status / routing-service"}
+  F_FULFILL(["F_FULFILL: Record fulfillment disposition / fulfillment"])
+  F_HOLD(["F_HOLD: Record finance-review disposition / finance"])
+  F_INTAKE(["F_INTAKE: Accept request / frontline"])
+  F_TRIAGE{"F_TRIAGE: Triage urgency / routing-service"}
+  F_URGENT(["F_URGENT: Record manual-review disposition / service-desk"])
+  F_CREDIT -->|"handoff: approved"| F_FULFILL
+  F_CREDIT -->|"exception: denied-or-missing"| F_HOLD
+  F_INTAKE -->|"handoff: accepted"| F_TRIAGE
+  F_TRIAGE -->|"exception: urgent"| F_URGENT
+  F_TRIAGE -->|"handoff: standard"| F_CREDIT

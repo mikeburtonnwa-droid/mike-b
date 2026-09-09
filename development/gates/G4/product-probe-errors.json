@@ -1,0 +1,18 @@
+[
+  {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 development/gates/G4/product-checks.py",
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/development/gates/G4/product-checks.py\", line 87, in <module>\n    check('saved_query_routes_match_sponsor',sorted(v['disposition'] for v in rows['Q04'])==sorted(expected.values()) and all(v['tenant']==v['customer_tenant'] for v in rows['Q04']),dict(rows=rows['Q04']))\n                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/development/gates/G4/product-checks.py\", line 87, in <genexpr>\n    check('saved_query_routes_match_sponsor',sorted(v['disposition'] for v in rows['Q04'])==sorted(expected.values()) and all(v['tenant']==v['customer_tenant'] for v in rows['Q04']),dict(rows=rows['Q04']))\n                                                    ~^^^^^^^^^^^^^^^\nKeyError: 'disposition'\n",
+    "note": "Reviewer probe error. Original script preserved as product-checks-first.py. It aborted before flushing its child-command log. Final and second attempts preserve complete child logs."
+  },
+  {
+    "command": "python3 - <<'PY'\nfrom pathlib import Path\nimport json,zipfile,shutil\np=Path('development/gates/G4')\nshutil.copy2(p/'product-checks.py',p/'product-checks-first.py')\nwith zipfile.ZipFile(p/'novice-resume-project.zip') as z:\n    head=json.loads(z.read('HEAD')); print('HEAD',head)\n    key=head['commit'] if isinstance(head,dict) else head\n    s=json.loads(z.read('history/'+key+'.json'))['state'];print(s['records']['Q04']['sql'])\nPY",
+    "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py\", line 340, in decode\n    raise JSONDecodeError(\"Extra data\", s, end)\njson.decoder.JSONDecodeError: Extra data: line 1 column 6 (char 5)\n",
+    "note": "Reviewer inspection error: HEAD is a plain hash, not JSON. Corrected read used z.read('HEAD').decode().strip()."
+  }
+]

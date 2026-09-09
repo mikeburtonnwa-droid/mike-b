@@ -1,0 +1,39 @@
+{
+  "gate": "G4",
+  "verdict": "PASS",
+  "time": "2026-09-09T12:57:45.105514+00:00",
+  "orchestrator": "/root",
+  "candidate": "candidate.json",
+  "candidate_hash": "e4a716bd9181b99725a7f05c027970832f7faa7c047652824ce7f9afdf30deb9",
+  "reviews": [
+    {
+      "role": "product",
+      "verdict": "APPROVE",
+      "report": "product.md",
+      "hash": "7d14e9d362c62e34610dcb68dce012aff5453e70094a93e56d7a70b83fb5ab5d"
+    },
+    {
+      "role": "integrity",
+      "verdict": "APPROVE",
+      "report": "integrity.md",
+      "hash": "0bd67038642032bd1e3947adbc86fd11023323502840473d5a29eda4ba5f1f48"
+    },
+    {
+      "role": "architecture",
+      "verdict": "APPROVE",
+      "report": "architecture.md",
+      "hash": "e42adc1561489fedc8e45abec2fb8d4776bd0be39b304bd48f5d10656f95e411"
+    }
+  ],
+  "previous_gates": [
+    {
+      "gate": "G3",
+      "hash": "afe4b1d2735e0e5bff5df9ba02c965d0befe690c880a62bc176bfc7922729ff9"
+    }
+  ],
+  "reason": "All three independent reviewers approve the frozen 66-file candidate. Two fresh-context experiments meet bounded start/resume acceptance; actual SQL and execution evidence are independently reproduced; all 86 regression tests pass. Failed join/recovery and stale rollback remain blocked, and original uncertainty/errors remain visible. No unresolved blocker remains.",
+  "rework": [
+    "development-observations.md"
+  ],
+  "scope": "Executed synthetic journey and independent agent start/resume, with honest incomplete design and production boundaries. Authorizes G5 packaging and final validation. Product reviewer nonblocking expected-path error presentation refinement is assigned to G5."
+}

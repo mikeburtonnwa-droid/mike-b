@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "git",
+    "diff",
+    "e0357b8..71afb9e",
+    "--stat"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T12:47:27.743165+00:00",
+  "finished": "2026-09-09T12:47:27.756191+00:00",
+  "exit_code": 128,
+  "stdout": "",
+  "stderr": "fatal: ambiguous argument 'e0357b8..71afb9e': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n"
+}

@@ -1,0 +1,19 @@
+{
+  "synthetic": true,
+  "deployment_mode": "local-simulation",
+  "as_of": "2026-09-09",
+  "checks": 37,
+  "failed": [],
+  "naive_rows": 13,
+  "corrected_rows": 4,
+  "ready_project": "ready-project",
+  "adversarial_changed_project": "project",
+  "incident": "INC_FEED closed using EV_RECOVERED",
+  "final_release": "REL2",
+  "limits": [
+    "Not real stakeholder research",
+    "Not a production deployment",
+    "No model-provider performance benchmark",
+    "Fixed four-request dataset does not certify other schemas or policy variants"
+  ]
+}

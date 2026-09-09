@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/rehearse.py", line 325, in <module>
+    main()
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/rehearse.py", line 321, in main
+    build(Rehearsal(args.output))
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/rehearse.py", line 169, in build
+    values.append(record(rid, 'process', view='current', kind=kind, actor=actor, system=system,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: record() got multiple values for argument 'kind'

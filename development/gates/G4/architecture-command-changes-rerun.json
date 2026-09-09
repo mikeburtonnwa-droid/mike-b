@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "import json; from pathlib import Path; old=json.loads(Path(\"development/gates/G3/candidate-r3.json\").read_text()); new=json.loads(Path(\"development/gates/G4/candidate.json\").read_text()); print(\"changed_existing:\"); print(\"\\n\".join(k for k,v in new.items() if k in old and old[k]!=v)); print(\"added:\"); print(\"\\n\".join(k for k in new if k not in old))"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T12:47:43.112778+00:00",
+  "finished": "2026-09-09T12:47:43.139439+00:00",
+  "exit_code": 0,
+  "stdout": "changed_existing:\nREADME.md\ndocs/CONTRACT.md\ndocs/RECORDS.md\nsrc/agent_architect/workflow.py\ntests/test_workflow.py\nadded:\nexamples/order-triage/README.md\nexamples/order-triage/execute.py\nexamples/order-triage/expected.json\nexamples/order-triage/inputs/01-frontline.md\nexamples/order-triage/inputs/02-sales.md\nexamples/order-triage/inputs/03-operations.md\nexamples/order-triage/inputs/04-finance.md\nexamples/order-triage/inputs/05-data-engineer.md\nexamples/order-triage/inputs/06-reporting.md\nexamples/order-triage/inputs/07-security.md\nexamples/order-triage/inputs/08-platform.md\nexamples/order-triage/inputs/09-reliability.md\nexamples/order-triage/inputs/10-sponsor.md\nexamples/order-triage/inputs/setup.sql\nexamples/order-triage/naive.sql\nexamples/order-triage/rehearse.py\nexamples/order-triage/routes.sql\nexamples/order-triage/sample-change-impact.json\nexamples/order-triage/sample-current-map.md\nexamples/order-triage/sample-proposed-map.md\nexamples/order-triage/sample-report.json\ntests/test_rehearsal.py\n",
+  "stderr": ""
+}

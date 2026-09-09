@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/rehearse.py", line 325, in <module>
+    main()
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/rehearse.py", line 321, in main
+    build(Rehearsal(args.output))
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/rehearse.py", line 283, in build
+    r.run('save handoff checkpoint', lambda: p.checkpoint(dict(current_task='Bounded simulation complete',
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/rehearse.py", line 54, in run
+    result = fn()
+             ^^^^
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/rehearse.py", line 283, in <lambda>
+    r.run('save handoff checkpoint', lambda: p.checkpoint(dict(current_task='Bounded simulation complete',
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/src/agent_architect/core.py", line 477, in checkpoint
+    return self.mutate('checkpoint', update, expected, actor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/src/agent_architect/core.py", line 361, in mutate
+    return self.commit(state, key, envelope['after_hash'], actor, operation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/src/agent_architect/core.py", line 323, in commit
+    validate_state(state)
+  File "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/src/agent_architect/core.py", line 171, in validate_state
+    raise Invalid('Invalid stage')
+agent_architect.core.Invalid: Invalid stage

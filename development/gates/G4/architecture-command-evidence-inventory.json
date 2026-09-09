@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "import hashlib,json; from pathlib import Path; base=Path(\"development/gates/G4\"); names=[\"candidate.json\",\"novice-start.md\",\"novice-resume.md\",\"novice-start-commands.json\",\"novice-resume-commands.json\",\"novice-start-project.zip\",\"novice-resume-project.zip\",\"current-map.png\",\"proposed-map.png\",\"architecture-probes.py\",\"architecture-supplement.py\",\"architecture-probe-checks.json\",\"architecture-probe-commands.json\",\"architecture-reproduced-projects.zip\",\"architecture-second-lifecycle.zip\"]; print(json.dumps({n:hashlib.sha256((base/n).read_bytes()).hexdigest() for n in names},indent=2))"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T12:52:28.172247+00:00",
+  "finished": "2026-09-09T12:52:28.205452+00:00",
+  "exit_code": 0,
+  "stdout": "{\n  \"candidate.json\": \"e4a716bd9181b99725a7f05c027970832f7faa7c047652824ce7f9afdf30deb9\",\n  \"novice-start.md\": \"b381f6c60ba6622ac1544fe88cddcede5999a30b1b0f8fac65e7db2ed670eba0\",\n  \"novice-resume.md\": \"176796a7afb15d9ad424f39191c708b6af1d106a52ec4d8d510a720e2b00829c\",\n  \"novice-start-commands.json\": \"ad779f59367d0580064e80746460a4e66906c8d571c33a93bd9797337c125052\",\n  \"novice-resume-commands.json\": \"ccf79b3caa94a039edf2bf29fa5267499799d8a82053dd5628fd32e5d6248191\",\n  \"novice-start-project.zip\": \"b38f9b187e43cbdacfb656604c3a68268cf9e8e7050c35bb0e5fc1485ac0b05c\",\n  \"novice-resume-project.zip\": \"dab735759589a4d76e8ae5e5237f92fdd1be3ee99f61865cccc50c13d5a9a28a\",\n  \"current-map.png\": \"d255a386cb94f519ac2494d7d2ad585077d4c6e2d62314b93e22aa4a11e1c876\",\n  \"proposed-map.png\": \"40229b0f93180de10d219e3a7d18d5b05fd6d08c4c196f84bf0fc6b5ead4a4c3\",\n  \"architecture-probes.py\": \"c45cdc7ccf718b6f3793615887c6a0902403d0f4b9568cb84dca69e79b027e02\",\n  \"architecture-supplement.py\": \"af80873c33cafe6315f5bb0718d4f09d9533d6680b7d214037c61cb0e69a1646\",\n  \"architecture-probe-checks.json\": \"8e6c11fe8725a6a489ffb02245494cc05c38a57c72fb117707bb4d523a301461\",\n  \"architecture-probe-commands.json\": \"6530e5a7a1ca9efb8f9bdeab45616c410521fa3f6b62c485bcfecaadd08e12ce\",\n  \"architecture-reproduced-projects.zip\": \"dd4fc0125dc29e9b1e387c114bb90a3e803d1a504879aa3dd99ce06a8a86a2bf\",\n  \"architecture-second-lifecycle.zip\": \"8b781fa7e570e7cd317d1141cdbb4201086a75289f78842630529206b93b3ed8\"\n}\n",
+  "stderr": ""
+}

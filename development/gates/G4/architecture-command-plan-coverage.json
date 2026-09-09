@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "rg",
+    "-n",
+    "R02|R06|R07|R08|R11|R12|G4|## Journey|## Consequential|## Evaluation|## Runtime|## Review",
+    "development/PLAN.md",
+    "docs/CONTRACT.md"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T12:51:11.656812+00:00",
+  "finished": "2026-09-09T12:51:11.674101+00:00",
+  "exit_code": 0,
+  "stdout": "development/PLAN.md:12:| R02 | Current-state records identify actors, systems, boundaries, inputs, outputs, handoffs, branches, variants, exceptions, evidence and gaps | Process checks and rendered map |\ndevelopment/PLAN.md:16:| R06 | Requirements trace to decisions, components, and evaluation evidence; current/proposed/deployed views stay distinct | Architecture checks and negative tests |\ndevelopment/PLAN.md:17:| R07 | A release pins evaluated knowledge and fails on unresolved critical coverage; later edits do not silently mutate it | Snapshot/activation/change tests |\ndevelopment/PLAN.md:18:| R08 | Recovery records cause, authorized action, verification and follow-up without rewriting history or weakening criteria | Incident rehearsal |\ndevelopment/PLAN.md:21:| R11 | Public reusable material is separated from adopter project data; local CLI needs no credentials or third-party Python packages | Clean-clone smoke test and storage guidance |\ndevelopment/PLAN.md:22:| R12 | Skills have clear inputs, methods, outputs, references, handoffs and failure behavior | Skill validation and specialist review |\ndevelopment/PLAN.md:31:| G4 | Ten-stakeholder fixture, independent fresh-context use, operational rehearsal | Novice operator; evidence auditor; production/evaluation reviewer | Executed fixture, cold resume, incident/release checks |\ndocs/CONTRACT.md:37:## Journey and resumption\ndocs/CONTRACT.md:50:## Consequential transition predicates\ndocs/CONTRACT.md:56:Incident closure requires stated recovery criteria, a successful applicable evaluation of the affected elements, observed result evidence and recorded authority/action. Merely attaching a failed check does not close an incident. G3/G4 must test failing/missing/expired/environment-mismatched evaluations, source tampering, dependency change, stale rollback and unsuccessful incident verification as well as passing paths.\ndocs/CONTRACT.md:58:## Review audit operation\n",
+  "stderr": ""
+}

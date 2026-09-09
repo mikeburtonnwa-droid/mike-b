@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "import hashlib,json,subprocess; from pathlib import Path; p=Path(\"development/gates/G4/candidate.json\"); m=json.loads(p.read_text()); bad=[k for k,v in m.items() if hashlib.sha256(Path(k).read_bytes()).hexdigest()!=v]; print(\"candidate_sha256\",hashlib.sha256(p.read_bytes()).hexdigest()); print(\"entries\",len(m),\"mismatches\",bad); print(\"commit\",subprocess.check_output([\"git\",\"rev-parse\",\"--short\",\"HEAD\"],text=True).strip()); assert not bad"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T12:47:03.485197+00:00",
+  "finished": "2026-09-09T12:47:03.533783+00:00",
+  "exit_code": 0,
+  "stdout": "candidate_sha256 e4a716bd9181b99725a7f05c027970832f7faa7c047652824ce7f9afdf30deb9\nentries 66 mismatches []\ncommit 71afb9e\n",
+  "stderr": ""
+}

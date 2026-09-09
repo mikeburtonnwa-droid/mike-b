@@ -1,0 +1,631 @@
+[
+  {
+    "action": "initialize",
+    "result": {
+      "status": "saved",
+      "revision": 1,
+      "commit": "a4693af4e0e195c5d22c3c2b95f56c39a22c82a2ddd8e422340c05d0a7e6cb26"
+    }
+  },
+  {
+    "action": "capture S01",
+    "result": {
+      "status": "saved",
+      "revision": 2,
+      "commit": "022b55cf85afa538769324cd962c8d8f9d68861779cb8935acf8b25d0553d744"
+    }
+  },
+  {
+    "action": "capture S02",
+    "result": {
+      "status": "saved",
+      "revision": 3,
+      "commit": "712ead1441afae9cf4c4e5ec74fcbc6204ae7bfa2d85e4dedfb165598cb76221"
+    }
+  },
+  {
+    "action": "capture S03",
+    "result": {
+      "status": "saved",
+      "revision": 4,
+      "commit": "c4f9a025ba98062a9dec5e98e714629c9f989949333cdfe9929048cb057e3174"
+    }
+  },
+  {
+    "action": "capture S04",
+    "result": {
+      "status": "saved",
+      "revision": 5,
+      "commit": "dd122fcc3024436088a46f13ea05452c289685dbb9cfdb09869a80f0d4f445dc"
+    }
+  },
+  {
+    "action": "capture S05",
+    "result": {
+      "status": "saved",
+      "revision": 6,
+      "commit": "d0e01ffe3cdcee8e688d46b27d54e4200c1f4bf4d53607242d7699e2f551f619"
+    }
+  },
+  {
+    "action": "capture S06",
+    "result": {
+      "status": "saved",
+      "revision": 7,
+      "commit": "848a2df1d94c19b94ea29e360a36e4ff35598aa3f51144c0e2c43c921b14e44e"
+    }
+  },
+  {
+    "action": "capture S07",
+    "result": {
+      "status": "saved",
+      "revision": 8,
+      "commit": "a0839eb9d035844f160efd7e38be1be77ed081c6c941587d330136331fb90ec2"
+    }
+  },
+  {
+    "action": "capture S08",
+    "result": {
+      "status": "saved",
+      "revision": 9,
+      "commit": "e926052c319850d1b0a79e5935c2e4d4ce014687135e680c05b66a2e77aea8be"
+    }
+  },
+  {
+    "action": "capture S09",
+    "result": {
+      "status": "saved",
+      "revision": 10,
+      "commit": "6dbcd8563e152a698ba9c30f05635dcce94a74e53a89f51bb8481fab6e0cb7cd"
+    }
+  },
+  {
+    "action": "capture S10",
+    "result": {
+      "status": "saved",
+      "revision": 11,
+      "commit": "9ee224dfef94f45afcc551a690e09c02635af86cd78be429401c3ddedcd4e495"
+    }
+  },
+  {
+    "action": "capture SRC_SETUP",
+    "result": {
+      "status": "saved",
+      "revision": 12,
+      "commit": "46153fb26b10b4fa75a2491a934e8cde9b68b542aa06238b3a1ca0b08aa4ce64"
+    }
+  },
+  {
+    "action": "capture SRC_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 13,
+      "commit": "738d1e34701dceffc449c99bbc660ed6633755c8c9cb5594372a26425672d864"
+    }
+  },
+  {
+    "action": "capture SRC_SQL",
+    "result": {
+      "status": "saved",
+      "revision": 14,
+      "commit": "d4e1ab9744f9f841c11cd9b08ed2d77e79dead541737d5c5ee08ad2a4afa121a"
+    }
+  },
+  {
+    "action": "capture SRC_RUNNER",
+    "result": {
+      "status": "saved",
+      "revision": 15,
+      "commit": "2591a1d48f98e67e030a4a0178d3f14a393297743ace491e0435c5d57c6fb956"
+    }
+  },
+  {
+    "action": "capture SRC_EXPECTED",
+    "result": {
+      "status": "saved",
+      "revision": 16,
+      "commit": "559765aa69171c6ab183882be9c3500ac8b4bcfde4683b755b011fe609fb9d23"
+    }
+  },
+  {
+    "action": "capture SRC_REHEARSAL",
+    "result": {
+      "status": "saved",
+      "revision": 17,
+      "commit": "1b493cd3c24818ff4dd6d89ec6d64686b8f172336bcafae8db1a0b7ce631aa7c"
+    }
+  },
+  {
+    "action": "clarify authoritative brief",
+    "result": {
+      "status": "saved",
+      "revision": 18,
+      "commit": "4e1821ec5b7079759d1964247b57cdb3f0496c171368db74beff5c2852831a1d"
+    }
+  },
+  {
+    "action": "save CL_OLD_OWNER, CL_OWNER",
+    "result": {
+      "status": "saved",
+      "revision": 19,
+      "commit": "95973311ebe8c8b83ec669f941a5288c63dcaa127f9d357265fd785e48937136"
+    }
+  },
+  {
+    "action": "supersede hearsay with scenario policy",
+    "result": {
+      "status": "saved",
+      "revision": 20,
+      "commit": "d203eebcef5ee4038e4e1c1b82013163132843c435288a084854b45a1d60b552"
+    }
+  },
+  {
+    "action": "save CL_OWNER",
+    "result": {
+      "status": "saved",
+      "revision": 21,
+      "commit": "66abb2a29ce6e8a8ad730087a410e9bb7d623a253fad4618e905f26f8d607bec"
+    }
+  },
+  {
+    "action": "save CL_KEYS",
+    "result": {
+      "status": "saved",
+      "revision": 22,
+      "commit": "007da21033e7a8157d1c799643ed30e53b0c0e4f6963a8f05d7cb9bf30014b07"
+    }
+  },
+  {
+    "action": "save P_INTAKE, P_TRIAGE, P_URGENT, P_CREDIT, P_FULFILL, P_HOLD, COV_stakeholder_0, COV_stakeholder_1, COV_stakeholder_2, COV_stakeholder_3, COV_stakeholder_4, COV_variant_0, COV_variant_1, COV_variant_2, COV_exception_0, COV_exception_1, F_INTAKE, F_TRIAGE, F_URGENT, F_CREDIT, F_FULFILL, F_HOLD, D_REQUESTS, D_CUSTOMERS, D_APPROVALS, D_HANDOFFS, REQ_CARDINALITY, REQ_ISOLATION, REQ_ROUTING, DEC_CODE, COMP_ROUTER, CON_context, CON_evaluation, CON_execution, CON_operations, CON_recovery, CON_scope, CON_state, CON_tools_data, HANDOFF",
+    "result": {
+      "status": "saved",
+      "revision": 23,
+      "commit": "6c7e1884d1240c89b12f3c7c299a40b76e4bdbc18e7b4301837ce9aa9c94febb"
+    }
+  },
+  {
+    "action": "save Q_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 24,
+      "commit": "1be68d655c0d1b27d7634c9a5477dda1632cc714ae456930c9d7faa1e6334e3d"
+    }
+  },
+  {
+    "action": "execute Q_NAIVE",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py",
+      "--sql",
+      "naive.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/Q_NAIVE-binding.json",
+      "--fault",
+      "none"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py --sql naive.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/Q_NAIVE-binding.json' --fault none\",\n  \"exit_code\": 0,\n  \"query_fingerprint\": {\n    \"query\": \"Q_NAIVE\",\n    \"definition_hash\": \"48d94f66b9a19c3b3d4aec76f6d2ae567207068fe93eb52146e9a1186f19ab47\",\n    \"dependencies\": {\n      \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n      \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n      \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n      \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n      \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n      \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n      \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n      \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n      \"SRC_NAIVE\": \"297e20339c3ae599fa13f7b679779eb96a706827da901d5b6b291354ac9e24b1\",\n      \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\"\n    }\n  },\n  \"rows\": [\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"frontline\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"operations\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"frontline\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"frontline\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"operations\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"frontline\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R2\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Gamma\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"operations\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R3\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"urgent\",\n      \"approved\": null,\n      \"owner\": \"operations\",\n      \"route\": \"service-desk\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R3\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"urgent\",\n      \"approved\": null,\n      \"owner\": \"operations\",\n      \"route\": \"service-desk\"\n    },\n    {\n      \"tenant\": \"south\",\n      \"request_id\": \"R4\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"south\",\n      \"request_id\": \"R4\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    }\n  ]\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_Q_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 25,
+      "commit": "c2780d5edea6a7c6c99ba22a5f52a5c2c1e1dbaabfc2853ad93596afc4833421"
+    }
+  },
+  {
+    "action": "bind Q_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 26,
+      "commit": "3321173a75f65f0e027c4ddeaed092448192c8866eb8a5865d3fee877fedcc13"
+    }
+  },
+  {
+    "action": "save COMP_ROUTER",
+    "result": {
+      "status": "saved",
+      "revision": 27,
+      "commit": "99213d4f16da26daa7f680f2f177c5e6ad27b1c52f3527488ffc7ebb7f869d12"
+    }
+  },
+  {
+    "action": "execute EV_NAIVE",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py",
+      "--sql",
+      "naive.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_NAIVE-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "cardinality"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py --sql naive.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_NAIVE-binding.json' --fault none --criterion cardinality\",\n  \"run_id\": \"244f60fe-8920-4ae2-bfbc-924ea83f6e12\",\n  \"run_at\": \"2026-09-09T12:50:35.678858+00:00\",\n  \"exit_code\": 1,\n  \"criterion\": \"Exactly one output per supplied tenant/request\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R2\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R2\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"63d524fc8bdc92565e4f7369052a930782b6dc55607a92040d32a46bacb8d502\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_NAIVE\": \"52b0723966d3350e6e6076aed7627b994df5da3a705a1e439aabe08385387536\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_NAIVE\": \"a547a5dc384edcaba6d1d338ad69395153e716fa45f49ea276d545799b8f0199\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_NAIVE\": \"297e20339c3ae599fa13f7b679779eb96a706827da901d5b6b291354ac9e24b1\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 1
+  },
+  {
+    "action": "capture RESULT_EV_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 28,
+      "commit": "fd905500fc1ddf0ca277b9a3a73c570bce7ff72cc308db905c15658897724b66"
+    }
+  },
+  {
+    "action": "evaluate EV_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 29,
+      "commit": "5026f2aede4bb94ac8566d1de0118eae5e4fa72cb48e24b00c1cbb98172818ff",
+      "evaluation": "EV_NAIVE",
+      "outcome": "fail"
+    }
+  },
+  {
+    "action": "failed design cannot release",
+    "expected_rejection": "Release blocked: REQ_CARDINALITY: no passing applicable evaluation of criterion and implementing components; REQ_ISOLATION: no passing applicable evaluation of criterion and implementing components; REQ_ROUTING: no passing applicable evaluation of criterion and implementing components"
+  },
+  {
+    "action": "save Q_NAIVE",
+    "result": {
+      "status": "saved",
+      "revision": 30,
+      "commit": "78817eae678a7b2e044407b1b5fd68748459ade37e83f64e25fa9c029a81b4d9"
+    }
+  },
+  {
+    "action": "save Q_ROUTES",
+    "result": {
+      "status": "saved",
+      "revision": 31,
+      "commit": "0944947def63ea73faf07f44cfa17696a125bfd746206346f5be71b721459e6b"
+    }
+  },
+  {
+    "action": "execute Q_ROUTES",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/Q_ROUTES-binding.json",
+      "--fault",
+      "none"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/Q_ROUTES-binding.json' --fault none\",\n  \"exit_code\": 0,\n  \"query_fingerprint\": {\n    \"query\": \"Q_ROUTES\",\n    \"definition_hash\": \"89d696cacdcf516e834a93026ca48d15863d7289e85802b443fcf15bcd96d1e9\",\n    \"dependencies\": {\n      \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n      \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n      \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n      \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n      \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n      \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n      \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n      \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n      \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n      \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n    }\n  },\n  \"rows\": [\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R1\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R2\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Gamma\",\n      \"urgency\": \"standard\",\n      \"approved\": 0,\n      \"owner\": \"operations\",\n      \"route\": \"finance-review\"\n    },\n    {\n      \"tenant\": \"north\",\n      \"request_id\": \"R3\",\n      \"customer_tenant\": \"north\",\n      \"name\": \"Alpha\",\n      \"urgency\": \"urgent\",\n      \"approved\": null,\n      \"owner\": \"operations\",\n      \"route\": \"service-desk\"\n    },\n    {\n      \"tenant\": \"south\",\n      \"request_id\": \"R4\",\n      \"customer_tenant\": \"south\",\n      \"name\": \"Beta\",\n      \"urgency\": \"standard\",\n      \"approved\": 1,\n      \"owner\": \"operations\",\n      \"route\": \"fulfillment\"\n    }\n  ]\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_Q_ROUTES",
+    "result": {
+      "status": "saved",
+      "revision": 32,
+      "commit": "c779a48a84ebff4d8aac1f2d9000bf25f4117cc260f95b25f3b9e4fe385ec9a7"
+    }
+  },
+  {
+    "action": "bind Q_ROUTES",
+    "result": {
+      "status": "saved",
+      "revision": 33,
+      "commit": "eed3008695a90247e276c0c45e840e155f1bb598abccafb3cd9e60b58074c121"
+    }
+  },
+  {
+    "action": "save COMP_ROUTER",
+    "result": {
+      "status": "saved",
+      "revision": 34,
+      "commit": "d387e2d3d7d178c1bea112a44617a4e91d46f33196f76f0f6a79a443b749fea3"
+    }
+  },
+  {
+    "action": "execute EV_CARDINALITY",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_CARDINALITY-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "cardinality"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_CARDINALITY-binding.json' --fault none --criterion cardinality\",\n  \"run_id\": \"e698f0b0-f3d6-43c9-994d-4542a6c09009\",\n  \"run_at\": \"2026-09-09T12:50:35.977571+00:00\",\n  \"exit_code\": 0,\n  \"criterion\": \"Exactly one output per supplied tenant/request\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R2\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\"\n    ],\n    [\n      \"north\",\n      \"R2\"\n    ],\n    [\n      \"north\",\n      \"R3\"\n    ],\n    [\n      \"south\",\n      \"R4\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"bcfa0c74b90dbb803d618984c1fa38094941c5ea79cdd4e7c7feb352d4725b0c\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_EV_CARDINALITY",
+    "result": {
+      "status": "saved",
+      "revision": 35,
+      "commit": "59c6e386527e778793536ad69218e4e78d0034087af631fcb6f6a290486d8b73"
+    }
+  },
+  {
+    "action": "evaluate EV_CARDINALITY",
+    "result": {
+      "status": "saved",
+      "revision": 36,
+      "commit": "22286499d097073a5a87f4d2e0106290207618d647dfd813db2daebc3e89bd86",
+      "evaluation": "EV_CARDINALITY",
+      "outcome": "pass"
+    }
+  },
+  {
+    "action": "execute EV_ISOLATION",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_ISOLATION-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "isolation"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_ISOLATION-binding.json' --fault none --criterion isolation\",\n  \"run_id\": \"821d9f8a-70e4-477a-b992-1dfbbdd883c9\",\n  \"run_at\": \"2026-09-09T12:50:36.084819+00:00\",\n  \"exit_code\": 0,\n  \"criterion\": \"No customer data crosses tenant boundaries\",\n  \"expected\": [],\n  \"observed\": [],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"bcfa0c74b90dbb803d618984c1fa38094941c5ea79cdd4e7c7feb352d4725b0c\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_EV_ISOLATION",
+    "result": {
+      "status": "saved",
+      "revision": 37,
+      "commit": "ae070730ebc11e07fa5c20286dfcbbfe8f66345387b7cb4b450ba0d445b4a2e6"
+    }
+  },
+  {
+    "action": "evaluate EV_ISOLATION",
+    "result": {
+      "status": "saved",
+      "revision": 38,
+      "commit": "dab5a722ae1ec44b0d418e7173e8cfb47312fcb61500a1d1ea546e726d10ce83",
+      "evaluation": "EV_ISOLATION",
+      "outcome": "pass"
+    }
+  },
+  {
+    "action": "execute EV_ROUTING",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_ROUTING-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "routing"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_ROUTING-binding.json' --fault none --criterion routing\",\n  \"run_id\": \"6eabc112-2cd3-4b58-9fc9-3d6bfdb87202\",\n  \"run_at\": \"2026-09-09T12:50:36.201139+00:00\",\n  \"exit_code\": 0,\n  \"criterion\": \"Routing dispositions match the declared fixture\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"bcfa0c74b90dbb803d618984c1fa38094941c5ea79cdd4e7c7feb352d4725b0c\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_EV_ROUTING",
+    "result": {
+      "status": "saved",
+      "revision": 39,
+      "commit": "51283bd735d86c43690027d3696c501fbb4288d9e5aec6fdcfe08c94ab137ef9"
+    }
+  },
+  {
+    "action": "evaluate EV_ROUTING",
+    "result": {
+      "status": "saved",
+      "revision": 40,
+      "commit": "24ecd09b3695cc263af165041c6539e4abe9c499dbbeaa57dab590d09fe64dd3",
+      "evaluation": "EV_ROUTING",
+      "outcome": "pass"
+    }
+  },
+  {
+    "action": "create REL1",
+    "result": {
+      "status": "saved",
+      "revision": 41,
+      "commit": "1f0e67e1bb5852228f1bcd7dfd52d80810ea17f5d94829ee4a317a145712f39c",
+      "deployment_mode": "local-simulation"
+    }
+  },
+  {
+    "action": "activate REL1 simulation",
+    "result": {
+      "status": "saved",
+      "revision": 42,
+      "commit": "430d33b8794e61ffc4537d63e0d590d732494601a1250a3f32c511937c4166bc",
+      "deployment_mode": "local-simulation"
+    }
+  },
+  {
+    "action": "execute EV_OUTAGE",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_OUTAGE-binding.json",
+      "--fault",
+      "drop-approvals",
+      "--criterion",
+      "routing"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_OUTAGE-binding.json' --fault drop-approvals --criterion routing\",\n  \"run_id\": \"35a8b380-2308-4181-8f1c-c513975f71fe\",\n  \"run_at\": \"2026-09-09T12:50:36.434825+00:00\",\n  \"exit_code\": 1,\n  \"criterion\": \"Routing dispositions match the declared fixture\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"finance-review\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"bcfa0c74b90dbb803d618984c1fa38094941c5ea79cdd4e7c7feb352d4725b0c\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 1
+  },
+  {
+    "action": "capture RESULT_EV_OUTAGE",
+    "result": {
+      "status": "saved",
+      "revision": 43,
+      "commit": "66ac1df6e0ddbfe0a97443970034d80c0ee43b39c0528f3737b5335a14dd1ee1"
+    }
+  },
+  {
+    "action": "evaluate EV_OUTAGE",
+    "result": {
+      "status": "saved",
+      "revision": 44,
+      "commit": "5fcb5941e93c28e1acb09b6814b50fa0c40b31131744a9f71f4c85f5b3e3e632",
+      "evaluation": "EV_OUTAGE",
+      "outcome": "fail"
+    }
+  },
+  {
+    "action": "save INC_FEED",
+    "result": {
+      "status": "saved",
+      "revision": 45,
+      "commit": "eb61a720c25d79125c42ce952e3707d7c1d49f1a25b8e3e8d345939103680f39"
+    }
+  },
+  {
+    "action": "execute EV_FAILED_RECOVERY",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_FAILED_RECOVERY-binding.json",
+      "--fault",
+      "drop-approvals",
+      "--criterion",
+      "routing"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_FAILED_RECOVERY-binding.json' --fault drop-approvals --criterion routing\",\n  \"run_id\": \"fec8c5cc-9b62-424e-8289-00cefd04b2ad\",\n  \"run_at\": \"2026-09-09T12:50:36.650031+00:00\",\n  \"exit_code\": 1,\n  \"criterion\": \"Routing dispositions match the declared fixture\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"finance-review\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"bcfa0c74b90dbb803d618984c1fa38094941c5ea79cdd4e7c7feb352d4725b0c\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 1
+  },
+  {
+    "action": "capture RESULT_EV_FAILED_RECOVERY",
+    "result": {
+      "status": "saved",
+      "revision": 46,
+      "commit": "931aba9dd1e580cc65a24ea700b9acdb182c95c610371c8f36bcd47ada78c4bc"
+    }
+  },
+  {
+    "action": "evaluate EV_FAILED_RECOVERY",
+    "result": {
+      "status": "saved",
+      "revision": 47,
+      "commit": "efb343a6dc3860b0018fc3e0fd6aea28e39a79e8b5aa4be04819eeed661bfb3c",
+      "evaluation": "EV_FAILED_RECOVERY",
+      "outcome": "fail"
+    }
+  },
+  {
+    "action": "failed recovery stays open",
+    "expected_rejection": "Incident verification failed, expired, changed, premature or environment-mismatched"
+  },
+  {
+    "action": "execute EV_RECOVERED",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py",
+      "--sql",
+      "routes.sql",
+      "--binding",
+      "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_RECOVERED-binding.json",
+      "--fault",
+      "none",
+      "--criterion",
+      "routing"
+    ],
+    "cwd": "/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces",
+    "stdout": "{\n  \"environment\": \"fixture\",\n  \"run_on\": \"2026-09-09\",\n  \"command\": \"/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect/examples/order-triage/execute.py --sql routes.sql --binding '/private/var/folders/z_/3mwf8byx1cv402v7sgx7dbbh0000gn/T/g4-architecture-nmcfxsxo/rehearsal with spaces/EV_RECOVERED-binding.json' --fault none --criterion routing\",\n  \"run_id\": \"2a83758a-fde6-4bc7-b32f-cc24cffe3c88\",\n  \"run_at\": \"2026-09-09T12:50:36.890308+00:00\",\n  \"exit_code\": 0,\n  \"criterion\": \"Routing dispositions match the declared fixture\",\n  \"expected\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"observed\": [\n    [\n      \"north\",\n      \"R1\",\n      \"fulfillment\"\n    ],\n    [\n      \"north\",\n      \"R2\",\n      \"finance-review\"\n    ],\n    [\n      \"north\",\n      \"R3\",\n      \"service-desk\"\n    ],\n    [\n      \"south\",\n      \"R4\",\n      \"fulfillment\"\n    ]\n  ],\n  \"target_hashes\": {\n    \"CL_KEYS\": \"da15a379bc7f928237cc96656c5630bb4c953df6d5f49ae128949c31e0865706\",\n    \"CL_OWNER\": \"7edc97d5907b4952380dd432c0a05e502fd06255170ae07af5cc6032afce2915\",\n    \"COMP_ROUTER\": \"a7eae1ff9cecc3e9f73d85645a2fc71d43402135a97b38b02ccff6b36e5044cc\",\n    \"DEC_CODE\": \"21162c8ebc1531cb5e4059df61776a3f5f1af068ab21ac554d6f74efba90f812\",\n    \"D_APPROVALS\": \"0e8c1174138d1db560456a57cff7507e15c343873effa652f2070ac725be04c3\",\n    \"D_CUSTOMERS\": \"ceb1f118edab52e0133dc8aadf76e8fb273318d072662ac2334c5c28f539b8ab\",\n    \"D_HANDOFFS\": \"87faf4c7096a25e1418b32465c9cd02f29817ce2fb4909a848beb35771622587\",\n    \"D_REQUESTS\": \"5abb719bf6ce01cdc25429d5f60a086ec3c84ac53e123a44b2c283f2689719e5\",\n    \"F_CREDIT\": \"81aefc52e6eb0097220343f02fb6e345875f3f8072b8157d90ed67b9ca1b786e\",\n    \"F_TRIAGE\": \"ff5356423412efa6d56afac9665a569ce31d133dc51bfd5abaac31937544be3c\",\n    \"P_CREDIT\": \"cae7b98f68c2b20debeb206c9ebd3c0b95f61858b3827bdfe7064cfa8d1e677f\",\n    \"P_TRIAGE\": \"62c371dd43eeadb3e8387e24fc3007ccf47c4e4d291f6faf850d91b3c2be37f7\",\n    \"Q_ROUTES\": \"768c090bdae5eefc5248e3474d70a67291db0b4be912708de958bce3c5680ad1\",\n    \"REQ_CARDINALITY\": \"1ef085bfc88bbb225f8269032613d0aee3c9460fac0c2aec62e329d780b4e984\",\n    \"REQ_ISOLATION\": \"09c2e8ca0bcf565a1dcaf7779d1930edecac50dc2e028034efdf4142e4215eeb\",\n    \"REQ_ROUTING\": \"75f77871fdc70b9880122275e7bc2b35354cdc031dee2eee821100e16338de0b\",\n    \"RESULT_Q_ROUTES\": \"bcfa0c74b90dbb803d618984c1fa38094941c5ea79cdd4e7c7feb352d4725b0c\",\n    \"S01\": \"ee15acc748dfbc9b6c6b605841b286814c0dcaff1a5ec82c751a205a71564490\",\n    \"S03\": \"181189b877c228d4eb774949dfa18dfe82677ddb2f3a24bd5034f3628b483885\",\n    \"S04\": \"f65b2014f64523390c0a64ed4690c37f0f95c1a247d247b08ef16562566c2329\",\n    \"S05\": \"1442c30251eb9fd988f495aef5c0b6cf75bd24a64955b324a8939920bfecdf65\",\n    \"S06\": \"6eb7ea1b3f69e53d1a6859185bc5eb6b3aa4b3f03bb04ad2838b11b0d59584ec\",\n    \"S07\": \"e03bbba0d761028798691aab6fb05f8f6967ff94e0fb16159ccd91a569a5595c\",\n    \"S08\": \"3ff7f4d861abe60047d273657005c9fc296fc2a04e62eabb540e2c9168a74159\",\n    \"S10\": \"8e6d626fa79c5042fa63d90e1d3bd672f47104c20b800ca602225382291b7342\",\n    \"SRC_EXPECTED\": \"497cf8898c72bef8e948d21875362e32645c59b3b7994242ddba2be72dd7cf01\",\n    \"SRC_RUNNER\": \"312cbe3114ca2ff2ddb480a01fdb1abc2524277a68c3e41ad7169842f2cfa55d\",\n    \"SRC_SETUP\": \"e0f0d91b3f4b68f0cf72ff63890e458586059ce5ddb93fa883715d4da8a43fa3\",\n    \"SRC_SQL\": \"d9410e3000602436e703aaba2fa56b82437444b6ce7a278ee06b6b6f292e404b\"\n  },\n  \"brief_hash\": \"faa4aebc9c305229d81bcee97d94562b50be61379554506615c9133a17e46ba4\"\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "action": "capture RESULT_EV_RECOVERED",
+    "result": {
+      "status": "saved",
+      "revision": 48,
+      "commit": "ee5d4f05694e292b0bb94607b3fbe77d58dcce8c334dce8594357c54a6ce502b"
+    }
+  },
+  {
+    "action": "evaluate EV_RECOVERED",
+    "result": {
+      "status": "saved",
+      "revision": 49,
+      "commit": "3b6cf81314ebfe063ce687c12ba20b1be5e1f147bc562eef2d8e152142e21680",
+      "evaluation": "EV_RECOVERED",
+      "outcome": "pass"
+    }
+  },
+  {
+    "action": "close verified incident",
+    "result": {
+      "status": "saved",
+      "revision": 50,
+      "commit": "9e835820352be8220832847662d8d1e0b0eaed6ee2b63ee8d4d37721c0ac54ef"
+    }
+  },
+  {
+    "action": "create recovered REL2",
+    "result": {
+      "status": "saved",
+      "revision": 51,
+      "commit": "59e81c85003f653fd86b12cd7d45989f3c0228265a3c5652791c5834118ec731",
+      "deployment_mode": "local-simulation"
+    }
+  },
+  {
+    "action": "activate recovered REL2",
+    "result": {
+      "status": "saved",
+      "revision": 52,
+      "commit": "eb99b0ca27017007feb1ea9b56771b769ffed6c329ce8e5fd2a754ec6825eda9",
+      "deployment_mode": "local-simulation"
+    }
+  },
+  {
+    "action": "save handoff checkpoint",
+    "result": {
+      "status": "saved",
+      "revision": 53,
+      "commit": "578a10a93829981ca74c0249bb8e24638471a31528cf282f711e5cd87c41e10c"
+    }
+  },
+  {
+    "action": "save D_APPROVALS",
+    "result": {
+      "status": "saved",
+      "revision": 54,
+      "commit": "cbaeaf43be533606545dab7831fbb07d628e49bf9d7e9c8b67e08173c4892317"
+    }
+  },
+  {
+    "action": "changed input blocks old rollback",
+    "expected_rejection": "Activation blocked: REQ_CARDINALITY: no passing applicable evaluation of criterion and implementing components; REQ_ISOLATION: no passing applicable evaluation of criterion and implementing components; REQ_ROUTING: no passing applicable evaluation of criterion and implementing components; Q_ROUTES: executed query dependencies changed; changed D_APPROVALS"
+  }
+]

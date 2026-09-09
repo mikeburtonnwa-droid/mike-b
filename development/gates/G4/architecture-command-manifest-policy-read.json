@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "sed",
+    "-n",
+    "1,130p",
+    "scripts/record_development.py"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T12:52:03.946667+00:00",
+  "finished": "2026-09-09T12:52:03.950275+00:00",
+  "exit_code": 0,
+  "stdout": "\"\"\"Record exact development messages and generate candidate manifests (stdlib only).\"\"\"\nimport argparse\nimport hashlib\nimport json\nfrom datetime import datetime, timezone\nfrom pathlib import Path\n\nROOT = Path(__file__).resolve().parents[1]\n\n\ndef manifest():\n    excluded = {'.git', '__pycache__', '.venv', '.pytest_cache', '.DS_Store'}\n    return {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()\n            for p in sorted(ROOT.rglob('*')) if p.is_file()\n            and not excluded.intersection(p.relative_to(ROOT).parts)\n            and (p.relative_to(ROOT).parts[0] != 'development'\n                 or p.relative_to(ROOT).as_posix() == 'development/PLAN.md')}\n\n\ndef main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('action', choices=['message', 'manifest'])\n    parser.add_argument('gate')\n    parser.add_argument('--sender', default='orchestrator')\n    parser.add_argument('--recipient', default='council')\n    parser.add_argument('--kind', default='dispatch')\n    parser.add_argument('--file')\n    parser.add_argument('--name', default='candidate.json')\n    args = parser.parse_args()\n    directory = ROOT / 'development' / 'gates' / args.gate\n    directory.mkdir(parents=True, exist_ok=True)\n    if args.action == 'manifest':\n        (directory / args.name).write_text(json.dumps(manifest(), indent=2) + '\\n')\n        return\n    log = directory / 'transcript.jsonl'\n    previous = log.read_text().splitlines() if log.exists() else []\n    event = dict(sequence=len(previous) + 1,\n                 time=datetime.now(timezone.utc).isoformat(), sender=args.sender,\n                 recipient=args.recipient, kind=args.kind,\n                 message=Path(args.file).read_text(),\n                 previous_hash=hashlib.sha256(previous[-1].encode()).hexdigest() if previous else None)\n    with log.open('a') as handle:\n        handle.write(json.dumps(event, ensure_ascii=False) + '\\n')\n\n\nif __name__ == '__main__':\n    main()\n",
+  "stderr": ""
+}

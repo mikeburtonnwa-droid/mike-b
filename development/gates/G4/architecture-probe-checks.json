@@ -1,0 +1,323 @@
+[
+  {
+    "name": "reproduce rehearsal from separate directory",
+    "passed": true,
+    "evidence": 0
+  },
+  {
+    "name": "all 37 predefined rehearsal assertions",
+    "passed": true,
+    "evidence": {
+      "synthetic": true,
+      "deployment_mode": "local-simulation",
+      "as_of": "2026-09-09",
+      "checks": 37,
+      "failed": [],
+      "naive_rows": 13,
+      "corrected_rows": 4,
+      "ready_project": "ready-project",
+      "adversarial_changed_project": "project",
+      "incident": "INC_FEED closed using EV_RECOVERED",
+      "final_release": "REL2",
+      "limits": [
+        "Not real stakeholder research",
+        "Not a production deployment",
+        "No model-provider performance benchmark",
+        "Fixed four-request dataset does not certify other schemas or policy variants"
+      ]
+    }
+  },
+  {
+    "name": "ready and changed histories independently audit",
+    "passed": true,
+    "evidence": {
+      "ready_revision": 53,
+      "changed_revision": 54
+    }
+  },
+  {
+    "name": "all ten stakeholder sources preserve input bytes",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "current map has complete declared structure and six steps",
+    "passed": true,
+    "evidence": {
+      "kinds": [
+        "decision",
+        "end",
+        "end",
+        "start",
+        "decision",
+        "end"
+      ],
+      "actors": [
+        "finance",
+        "frontline",
+        "fulfillment",
+        "operations",
+        "service-desk"
+      ]
+    }
+  },
+  {
+    "name": "proposed map has complete declared structure and six steps",
+    "passed": true,
+    "evidence": {
+      "kinds": [
+        "decision",
+        "end",
+        "end",
+        "start",
+        "decision",
+        "end"
+      ],
+      "actors": [
+        "finance",
+        "frontline",
+        "fulfillment",
+        "routing-service",
+        "service-desk"
+      ]
+    }
+  },
+  {
+    "name": "proposed steps explicitly trace current baselines",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "three distinct critical criteria trace deterministic component",
+    "passed": true,
+    "evidence": {
+      "REQ_CARDINALITY": "Exactly one output per supplied tenant/request",
+      "REQ_ISOLATION": "No customer data crosses tenant boundaries",
+      "REQ_ROUTING": "Routing dispositions match the declared fixture"
+    }
+  },
+  {
+    "name": "eight concerns supported and architecture checks pass",
+    "passed": true,
+    "evidence": [
+      "context",
+      "evaluation",
+      "execution",
+      "operations",
+      "recovery",
+      "scope",
+      "state",
+      "tools/data"
+    ]
+  },
+  {
+    "name": "handoff states limited authorization and real deployment work",
+    "passed": true,
+    "evidence": {
+      "artifact": "examples/order-triage/execute.py; reproduce via rehearse.py",
+      "authorization": "Local synthetic SQLite/Python and simulation only; S07, S09",
+      "description": "Synthetic order-triage exercise",
+      "environment": "fixture",
+      "evidence": [
+        {
+          "locator": "complete captured fixture document",
+          "source": "S07"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S08"
+        },
+        {
+          "locator": "complete captured fixture document",
+          "source": "S10"
+        }
+      ],
+      "id": "HANDOFF",
+      "owner": "operations",
+      "prerequisites": [
+        "Python with sqlite3",
+        "Captured fixture and expected outcomes"
+      ],
+      "remaining_steps": [
+        "Select and authorize real runtime",
+        "Validate real stakeholders, schema, volume and input freshness",
+        "Implement identity/access controls, deployment integration, monitoring and service objectives before real deployment"
+      ],
+      "runtime": "Local Python 3.10+ and SQLite with window functions",
+      "status": "active",
+      "title": "HANDOFF",
+      "type": "handoff"
+    }
+  },
+  {
+    "name": "actual bad join has duplicates and cross-tenant enrichment",
+    "passed": true,
+    "evidence": {
+      "rows": 13,
+      "keys": 4,
+      "cross_tenant": 6
+    }
+  },
+  {
+    "name": "actual corrected rows satisfy independent fixture oracle",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "failure exits preserved separately from successful execution",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "seven executions have unique canonical IDs and aware UTC dates",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "failed recovery remains retained and fresh recovery closes",
+    "passed": true,
+    "evidence": {
+      "EV_NAIVE": "fail",
+      "EV_FAILED_RECOVERY": "fail",
+      "EV_RECOVERED": "pass",
+      "INC_FEED": "closed"
+    }
+  },
+  {
+    "name": "complete REL1 snapshot immutable throughout later history",
+    "passed": true,
+    "evidence": {
+      "later_commits": 13,
+      "snapshot_hash": "c1ca4f08e964b9857a9541933dd21332d13e4c61412e5574fd8e9637077834be"
+    }
+  },
+  {
+    "name": "ready release passes while changed data invalidates readiness",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "rollback on changed dependency is atomic rejection",
+    "passed": true,
+    "evidence": "Activation blocked: REQ_CARDINALITY: no passing applicable evaluation of criterion and implementing components; REQ_ISOLATION: no passing applicable evaluation of criterion and implementing components; REQ_ROUTING: no passing applicable evaluation of criterion and implementing components; Q_ROUTES: executed query dependencies changed; changed D_APPROVALS"
+  },
+  {
+    "name": "change impact includes executed query and component",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "new failure overrides the older passing handoff evidence",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "older passing evaluation cannot close after latest failure",
+    "passed": true,
+    "evidence": "Use the latest matching recovery evaluation; an earlier pass cannot hide a later result"
+  },
+  {
+    "name": "latest failed evaluation cannot close incident",
+    "passed": true,
+    "evidence": "Incident verification failed, expired, changed, premature or environment-mismatched"
+  },
+  {
+    "name": "failed state cannot create release",
+    "passed": true,
+    "evidence": "Release blocked: INC_ARCH: open incident in release environment; REQ_ROUTING: no passing applicable evaluation of criterion and implementing components"
+  },
+  {
+    "name": "unchanged old result source alias cannot be promoted",
+    "passed": true,
+    "evidence": "Execution evidence already evaluated; reuse its existing evaluation ID, not a new run order"
+  },
+  {
+    "name": "incident still open after all rejected transitions",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "fresh actual recovery closes and restores readiness",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "second lifecycle preserves REL1 and REL2",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "release identifier cannot be replaced through record put",
+    "passed": true,
+    "evidence": "REL1.owner: required"
+  },
+  {
+    "name": "second lifecycle retains clean full audit",
+    "passed": true,
+    "evidence": {
+      "status": "pass",
+      "commits": 60,
+      "head": "e0e951444d417b19cbcfedca613844f314a644cf372cc5fcc6d2150984ba1799",
+      "limit": "Local hash consistency; does not authenticate authors or truth."
+    }
+  },
+  {
+    "name": "start archived project audit and revision",
+    "passed": true,
+    "evidence": {
+      "status": "pass",
+      "commits": 4,
+      "head": "3a620c4695da6bfc38f75c7fe1a4d192c0e407f792f77d74d39444d231ce68bd",
+      "limit": "Local hash consistency; does not authenticate authors or truth."
+    }
+  },
+  {
+    "name": "start preserves exact first source and no activated release",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "single interview remains reported and incomplete",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "resume archived project audit and revision",
+    "passed": true,
+    "evidence": {
+      "status": "pass",
+      "commits": 40,
+      "head": "47520d000963aed60e31ea175b52907e7dd7ba0135d55f19f7c02a24497beddf",
+      "limit": "Local hash consistency; does not authenticate authors or truth."
+    }
+  },
+  {
+    "name": "resume preserves exact first source and no activated release",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "cold resume is a bounded design checkpoint with explicit failing gates",
+    "passed": true,
+    "evidence": {
+      "process": "fail",
+      "architecture": "fail",
+      "release": "fail"
+    }
+  },
+  {
+    "name": "cold resume reconciles hearsay and separates three requirements/eight deferred concerns",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "cold resume preserves old query versions and current fresh bindings",
+    "passed": true,
+    "evidence": null
+  },
+  {
+    "name": "cold resume source data and routing observations agree with oracle",
+    "passed": true,
+    "evidence": null
+  }
+]

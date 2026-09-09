@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "sed",
+    "-n",
+    "20,75p",
+    "src/agent_architect/core.py"
+  ],
+  "cwd": "/Users/michaelburton/Documents/Codex/2026-09-09/i-w/outputs/agent-architect",
+  "started": "2026-09-09T12:51:11.584442+00:00",
+  "finished": "2026-09-09T12:51:11.588915+00:00",
+  "exit_code": 0,
+  "stdout": "\n\nclass Invalid(ValueError):\n    \"\"\"An input or stored artifact violates the project contract.\"\"\"\n\n\ndef canonical(value):\n    return json.dumps(value, sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False).encode()\n\n\ndef digest(value):\n    return hashlib.sha256(canonical(value)).hexdigest()\n\n\ndef now():\n    return datetime.now(timezone.utc).isoformat()\n\n\ndef day(value):\n    if not isinstance(value, str) or not re.fullmatch(r'\\d{4}-\\d{2}-\\d{2}', value):\n        raise Invalid(f'Expected YYYY-MM-DD, got {value!r}')\n    try:\n        return date.fromisoformat(value)\n    except ValueError as exc:\n        raise Invalid(str(exc)) from exc\n\n\ndef identifier(value):\n    if not isinstance(value, str) or not re.fullmatch(r'[A-Za-z][A-Za-z0-9_-]{0,79}', value):\n        raise Invalid(f'Invalid stable ID: {value!r}')\n    return value\n\n\ndef text(value, label):\n    if not isinstance(value, str) or not value.strip():\n        raise Invalid(f'{label}: nonempty text required')\n\n\n# Optional fields are still typed. Unknown fields fail rather than silently becoming typos.\nBASE = {'id': str, 'type': str, 'title': str, 'description': str, 'status': str,\n        'depends_on': list, 'evidence': list, 'tags': list}\nSPECS = {\n    'source': {'kind': str, 'locator': str, 'captured_on': str, 'effective_on': str,\n               'environment': str, 'content_hash': str, 'blob': str},\n    'claim': {'assertion': str, 'applicability': str, 'verified_on': str, 'review_due': str,\n              'verification': str, 'conflicts_with': list, 'superseded_by': str,\n              'supersedes': str, 'rationale': str},\n    'note': {'owner': str, 'next_action': str},\n    'issue': {'critical': bool, 'owner': str, 'next_action': str, 'resolution': str},\n}\nREQUIRED = {\n    'source': ['kind', 'locator', 'captured_on', 'environment', 'content_hash', 'blob'],\n    'claim': ['assertion', 'applicability'],\n    'note': ['owner', 'next_action'],\n    'issue': ['critical', 'owner', 'next_action'],\n}\n",
+  "stderr": ""
+}
